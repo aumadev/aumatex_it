@@ -1,5 +1,13 @@
+html, body {
+    font-family: inherit !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, a, ul, li {
+    font-family: inherit !important;
+}
+
 body {
-    font-family: 'HelveticaNeueLTStd-Lt', Helvetica, Arial, sans-serif;
     background-color: #e0f7ff;
     color: #333;
     margin: 0;

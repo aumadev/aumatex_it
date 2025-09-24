@@ -1,3 +1,9 @@
+/* Il banner eredita il font del sito */
+.cookie-banner,
+.cookie-banner * {
+    font-family: inherit !important;
+}
+
 .cookie-banner {
     position: fixed;
     bottom: 0;
@@ -6,13 +12,11 @@
     background-color: #e0f7ff;
     color: #333;
     padding: 15px;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     z-index: 9999;
     font-size: 16px;
-    font-family: 'HelveticaNeueLTStd-Lt', Helvetica, Arial, sans-serif;
-    display: none;
     box-sizing: border-box;
     border-top: 2px solid #333;
 }
@@ -25,15 +29,14 @@
 }
 
 .cookie-banner button {
-    color: #005fa3;
+    color: #e0f7ff;
     border: none;
     padding: 12px 24px;
     cursor: pointer;
     margin: 5px;
-    font-family: 'HelveticaNeueLTStd-Bd', Helvetica, Arial, sans-serif;
     border-radius: 8px;
     font-size: 1rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.2s ease;
     min-width: 100px;
 }
 
@@ -43,6 +46,7 @@
 
 .cookie-banner button#acceptCookies:hover {
     background-color: rgb(34, 89, 148);
+    color: #e0f7ff;
 }
 
 .cookie-banner button#declineCookies {
@@ -51,6 +55,7 @@
 
 .cookie-banner button#declineCookies:hover {
     background-color: #5a6268;
+    color: #e0f7ff;
 }
 
 .cookie-banner a {
