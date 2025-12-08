@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="cookiePolicy.titolo">Cookie Policy</title>
+  <link rel="stylesheet" href="./src/styles/base/variabili-estetiche.css">
+  <link rel="stylesheet" href="./src/styles/base/variabili-animazioni.css">
+  <link rel="stylesheet" href="./src/styles/base/root.css">
+  <link rel="stylesheet" href="./src/styles/base/reset.css">
+  <link rel="stylesheet" href="./src/styles/base/typography.css">
+  <link rel="stylesheet" href="./src/styles/layouts/grid.css">
+  <link rel="stylesheet" href="./src/styles/layouts/header.css">
+  <link rel="stylesheet" href="./src/styles/layouts/footer.css">
+  <link rel="stylesheet" href="./src/styles/components/buttons.css">
+  <link rel="stylesheet" href="./src/styles/components/banner-cookie.css">
+  <link rel="stylesheet" href="./src/styles/themes/light.css" media="(prefers-color-scheme: light)">
+  <link rel="stylesheet" href="./src/styles/themes/dark.css" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" href="./src/styles/overrides/print.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <div class="container header-bar">
+      <a class="brand" href="./index.html">
+        <img src="./src/media/images/logoHeader.png" alt="Logo Aumatex" data-i18n="header.logoAlt" data-i18n-attr="alt">
+        <span>Aumatex</span>
+      </a>
+      <button class="menu-toggle" type="button" data-nav-toggle="#menuPrincipale">
+        <span class="sr-only" data-i18n="header.menu">Apri menu</span>
+        <span class="linea"></span>
+      </button>
+      <nav id="menuPrincipale" class="primary-nav" aria-label="Menu principale">
+        <ul class="nav-list">
+          <li><a href="./index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="./about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="./services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="./blog.html" data-i18n="nav.blog">Blog</a></li>
+          <li><a class="btn-link" href="./contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-tools">
+        <div class="selettore-lingua">
+          <label class="sr-only" for="selettoreLingua" data-i18n="header.langLabel">Lingua</label>
+          <select id="selettoreLingua" data-lang-select>
+            <option value="en">EN</option>
+            <option value="it">IT</option>
+            <option value="es">ES</option>
+          </select>
+        </div>
+        <button class="btn-ghost" data-theme-toggle aria-label="Toggle theme">☀︎/☾</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="page" class="layout-shell">
+    <section class="container prose">
+      <h1 data-i18n="cookiePolicy.titolo">Cookie Policy</h1>
+      <p data-i18n="cookiePolicy.introduzione">Questa pagina descrive come utilizziamo i cookie e come puoi gestire le tue preferenze.</p>
+
+      <h2 data-i18n="cookiePolicy.sezioneTecniciTitolo">Cookie tecnici ed essenziali</h2>
+      <p data-i18n="cookiePolicy.sezioneTecniciDescrizione">Questi cookie sono indispensabili per il funzionamento del sito e non possono essere disattivati.</p>
+
+      <h2 data-i18n="cookiePolicy.sezioneAnalisiTitolo">Cookie di analisi</h2>
+      <p data-i18n="cookiePolicy.sezioneAnalisiDescrizione">Servono a raccogliere dati aggregati sull'uso del sito per migliorarne le funzionalità.</p>
+
+      <h2 data-i18n="cookiePolicy.sezioneMarketingTitolo">Cookie di marketing</h2>
+      <p data-i18n="cookiePolicy.sezioneMarketingDescrizione">Utilizzati per personalizzazione, remarketing e contenuti promozionali.</p>
+
+      <h2 data-i18n="cookiePolicy.gestioneTitolo">Gestione delle preferenze</h2>
+      <p data-i18n="cookiePolicy.gestioneDescrizione">Puoi modificare le scelte in qualsiasi momento tramite il banner o il link nelle note legali del sito.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h2 data-i18n="footer.company">Aumatex</h2>
+        <p data-i18n="footer.tagline">We build sharp digital products.</p>
+      </section>
+      <section>
+        <h2 data-i18n="footer.links">Links</h2>
+        <ul>
+          <li><a href="./privacy-policy.html" data-i18n="footer.privacy">Privacy policy</a></li>
+          <li><a href="./cookie-policy.html" data-i18n="footer.cookies">Cookie policy</a></li>
+          <li><a href="./terms.html" data-i18n="footer.terms">Terms</a></li>
+          <li><a href="./support.html" data-i18n="footer.support">Support</a></li>
+          <li><a href="#" data-riapri-cookie data-i18n="footer.cookiePreferences">Preferenze cookie</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2 data-i18n="footer.contact">Contact</h2>
+        <ul>
+          <li><a href="mailto:info@example.com">info@example.com</a></li>
+          <li><a href="tel:+391234567890">+39 123 456 7890</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="container footer-bottom">
+      <small>© <span data-year></span> Aumatex</small>
+    </div>
+  </footer>
+
+  <div class="banner-cookie" data-banner-cookie hidden>
+    <div class="banner-cookie__testo">
+      <h2 data-i18n="cookie.titolo">Preferenze cookie</h2>
+      <p data-i18n="cookie.descrizione">Utilizziamo cookie per migliorare l'esperienza. Scegli cosa attivare.</p>
+    </div>
+    <div class="banner-cookie__sezione">
+      <div class="banner-cookie__riga">
+        <div>
+          <strong data-i18n="cookie.essenzialiTitolo">Essenziali</strong>
+          <div class="banner-cookie__descrizione" data-i18n="cookie.essenzialiDescrizione">Necessari per il funzionamento del sito.</div>
+        </div>
+        <input type="checkbox" checked disabled data-opzione-cookie="essenziali" aria-label="Cookie essenziali" data-i18n="cookie.essenzialiTitolo" data-i18n-attr="aria-label">
+      </div>
+      <div class="banner-cookie__riga">
+        <div>
+          <strong data-i18n="cookie.analisiTitolo">Analisi</strong>
+          <div class="banner-cookie__descrizione" data-i18n="cookie.analisiDescrizione">Ci aiutano a capire l'uso del sito.</div>
+        </div>
+        <input type="checkbox" data-opzione-cookie="analisi" aria-label="Cookie di analisi" data-i18n="cookie.analisiTitolo" data-i18n-attr="aria-label">
+      </div>
+      <div class="banner-cookie__riga">
+        <div>
+          <strong data-i18n="cookie.marketingTitolo">Marketing</strong>
+          <div class="banner-cookie__descrizione" data-i18n="cookie.marketingDescrizione">Personalizzazione e pubblicità.</div>
+        </div>
+        <input type="checkbox" data-opzione-cookie="marketing" aria-label="Cookie di marketing" data-i18n="cookie.marketingTitolo" data-i18n-attr="aria-label">
+      </div>
+    </div>
+    <div class="banner-cookie__azioni">
+      <button class="btn-ghost" data-cookie-personalizza data-i18n="cookie.personalizza">Personalizza</button>
+      <button class="btn-ghost" data-cookie-rifiuta data-i18n="cookie.rifiuta">Rifiuta opzionali</button>
+      <button class="btn-ghost" data-cookie-salva data-i18n="cookie.salva">Salva preferenze</button>
+      <button class="btn-solid" data-cookie-accetta data-i18n="cookie.accetta">Accetta tutto</button>
+    </div>
+    <div class="banner-cookie__link">
+      <a href="./privacy-policy.html" data-i18n="cookie.linkPrivacy">Privacy policy</a>
+      <span>·</span>
+      <a href="./cookie-policy.html" data-i18n="cookie.linkCookie">Cookie policy</a>
+    </div>
+  </div>
+
+  <script src="./src/scripts/core/app.js" defer></script>
+  <script src="./src/scripts/core/cookie-consenso.js" defer></script>
+  <script src="./src/scripts/data/content-loader.js" defer></script>
+  <script src="./src/scripts/core/i18n.js" defer></script>
+  <script src="./src/scripts/ui/nav.js" defer></script>
+  <script src="./src/scripts/ui/accordion.js" defer></script>
+  <script src="./src/scripts/forms/validation.js" defer></script>
+  <script src="./src/scripts/analytics/tracking.js" defer></script>
+</body>
+</html>

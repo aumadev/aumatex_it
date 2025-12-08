@@ -1,0 +1,20 @@
+{
+  "chiaro": {
+    "sfondo": "#f8f6f2",
+    "superficie": "#ffffff",
+    "testoPrimario": "#161c2d",
+    "testoSecondario": "#4b5563",
+    "accento": "#0f9bbe",
+    "accentoSecondario": "#f2a33a",
+    "bordo": "#dce1eb"
+  },
+  "scuro": {
+    "sfondo": "#0c1624",
+    "superficie": "#111c2f",
+    "testoPrimario": "#e6edf5",
+    "testoSecondario": "#b4c2d4",
+    "accento": "#5ad1ff",
+    "accentoSecondario": "#ffb86c",
+    "bordo": "#1f2a3c"
+  }
+}

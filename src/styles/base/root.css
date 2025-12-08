@@ -1,0 +1,37 @@
+:root {
+  color-scheme: light;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-primario);
+  font-size: var(--testo-base);
+  background: var(--colore-sfondo);
+  color: var(--colore-testo);
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transizione-base);
+}
+
+a:hover {
+  color: var(--colore-accento);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+body.nav-aperta {
+  overflow: hidden;
+}

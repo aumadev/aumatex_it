@@ -1,0 +1,25 @@
+{
+  "siteName": "Aumatex Base Template",
+  "defaultLanguage": "en",
+  "supportedLanguages": ["en", "it", "es"],
+  "brand": {
+    "tagline": "Multi-page HTML starter",
+    "author": "Aumatex"
+  },
+  "paths": {
+    "assets": "src/media",
+    "styles": "src/styles",
+    "scripts": "src/scripts"
+  },
+  "seo": {
+    "title": "Starter Site",
+    "description": "Modular HTML/CSS/JS base with i18n and assets.",
+    "canonical": "https://example.com"
+  },
+  "features": {
+    "multilingual": true,
+    "darkMode": true,
+    "formValidation": true,
+    "analytics": true
+  }
+}

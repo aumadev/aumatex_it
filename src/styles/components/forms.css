@@ -1,0 +1,36 @@
+.form-field {
+  display: grid;
+  gap: var(--spazio-xs);
+  margin-bottom: var(--spazio-md);
+}
+
+.form-field label {
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  padding: var(--spazio-sm);
+  border: var(--bordo-sottile) solid var(--colore-bordo);
+  border-radius: var(--raggio-sm);
+  background: var(--colore-superficie);
+  transition: var(--transizione-base);
+}
+
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus {
+  outline: 2px solid var(--colore-accento);
+  outline-offset: 2px;
+}
+
+.form-hint {
+  color: var(--colore-testo-secondario);
+  font-size: 0.875rem;
+}
+
+.form-error {
+  color: #dc2626;
+  font-size: 0.875rem;
+}

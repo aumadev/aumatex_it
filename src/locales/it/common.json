@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "services": "Servizi",
+    "blog": "Blog",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "eyebrow": "Template Aumatex",
+    "title": "Lancia più veloce con una base modulare",
+    "subtitle": "Layout, componenti e asset ordinati per siti multilingua.",
+    "ctaPrimary": "Avvia un progetto",
+    "ctaSecondary": "Vedi servizi",
+    "alt": "Anteprima area di lavoro"
+  },
+  "buttons": {
+    "readMore": "Scopri di più"
+  },
+  "footer": {
+    "company": "Aumatex",
+    "tagline": "Costruiamo prodotti digitali di qualità.",
+    "links": "Link",
+    "privacy": "Privacy",
+    "cookies": "Cookie",
+    "terms": "Termini",
+    "support": "Supporto",
+    "contact": "Contatti",
+    "cookiePreferences": "Preferenze cookie"
+  },
+  "privacy": {
+    "title": "Informativa Privacy",
+    "intro": "Questa pagina è un segnaposto per l'informativa privacy. Inserisci qui i testi legali aggiornati.",
+    "dataTitle": "Dati raccolti",
+    "dataPoint1": "Dati di contatto forniti tramite form.",
+    "dataPoint2": "Log tecnici minimi per sicurezza e performance.",
+    "rightsTitle": "Diritti degli interessati",
+    "rightsCopy": "Descrivi come gli utenti possono esercitare i diritti di accesso, rettifica, cancellazione e portabilità."
+  },
+  "header": {
+    "menu": "Apri menu",
+    "langLabel": "Lingua",
+    "logoAlt": "Logo Aumatex"
+  },
+  "cookie": {
+    "titolo": "Preferenze cookie",
+    "descrizione": "Utilizziamo cookie per migliorare l'esperienza. Scegli cosa attivare.",
+    "essenzialiTitolo": "Essenziali",
+    "essenzialiDescrizione": "Necessari al funzionamento del sito e non disattivabili.",
+    "analisiTitolo": "Analisi",
+    "analisiDescrizione": "Ci aiutano a capire come viene usato il sito.",
+    "marketingTitolo": "Marketing",
+    "marketingDescrizione": "Personalizzazione, remarketing e promozioni.",
+    "accetta": "Accetta tutto",
+    "rifiuta": "Rifiuta opzionali",
+    "salva": "Salva preferenze",
+    "personalizza": "Personalizza",
+    "linkPrivacy": "Privacy policy",
+    "linkCookie": "Cookie policy"
+  },
+  "cookiePolicy": {
+    "titolo": "Cookie Policy",
+    "introduzione": "Questa pagina descrive come utilizziamo i cookie e come puoi gestire le tue preferenze.",
+    "sezioneTecniciTitolo": "Cookie tecnici ed essenziali",
+    "sezioneTecniciDescrizione": "Questi cookie sono indispensabili per il funzionamento del sito e non possono essere disattivati.",
+    "sezioneAnalisiTitolo": "Cookie di analisi",
+    "sezioneAnalisiDescrizione": "Servono a raccogliere dati aggregati sull'uso del sito per migliorarne le funzionalità.",
+    "sezioneMarketingTitolo": "Cookie di marketing",
+    "sezioneMarketingDescrizione": "Utilizzati per personalizzazione, remarketing e contenuti promozionali.",
+    "gestioneTitolo": "Gestione delle preferenze",
+    "gestioneDescrizione": "Puoi modificare le scelte in qualsiasi momento tramite il banner o il link nelle note legali del sito."
+  }
+}

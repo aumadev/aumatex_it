@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "eyebrow": "Plantilla Aumatex",
+    "title": "Lanza más rápido con una base modular",
+    "subtitle": "Layouts, componentes y assets organizados para sitios multilenguaje.",
+    "ctaPrimary": "Iniciar proyecto",
+    "ctaSecondary": "Ver servicios",
+    "alt": "Vista previa del workspace"
+  },
+  "buttons": {
+    "readMore": "Leer más"
+  },
+  "footer": {
+    "company": "Aumatex",
+    "tagline": "Creamos productos digitales de calidad.",
+    "links": "Enlaces",
+    "privacy": "Privacidad",
+    "cookies": "Política de cookies",
+    "terms": "Términos",
+    "support": "Soporte",
+    "contact": "Contacto",
+    "cookiePreferences": "Preferencias de cookies"
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "intro": "Esta página es un marcador para la política de privacidad. Sustituye con tu texto legal.",
+    "dataTitle": "Datos recopilados",
+    "dataPoint1": "Datos de contacto proporcionados mediante formularios.",
+    "dataPoint2": "Registros técnicos mínimos para seguridad y rendimiento.",
+    "rightsTitle": "Derechos de los usuarios",
+    "rightsCopy": "Describe cómo los usuarios pueden ejercer los derechos de acceso, rectificación, eliminación y portabilidad."
+  },
+  "header": {
+    "menu": "Abrir menú",
+    "langLabel": "Idioma",
+    "logoAlt": "Logo Aumatex"
+  },
+  "cookie": {
+    "titolo": "Preferencias de cookies",
+    "descrizione": "Usamos cookies para mejorar tu experiencia. Elige cuáles activar.",
+    "essenzialiTitolo": "Esenciales",
+    "essenzialiDescrizione": "Necesarias para que el sitio funcione y no se pueden desactivar.",
+    "analisiTitolo": "Analítica",
+    "analisiDescrizione": "Nos ayudan a entender cómo se usa el sitio.",
+    "marketingTitolo": "Marketing",
+    "marketingDescrizione": "Personalización, remarketing y anuncios.",
+    "accetta": "Aceptar todo",
+    "rifiuta": "Rechazar opcionales",
+    "salva": "Guardar preferencias",
+    "personalizza": "Personalizar",
+    "linkPrivacy": "Política de privacidad",
+    "linkCookie": "Política de cookies"
+  },
+  "cookiePolicy": {
+    "titolo": "Política de Cookies",
+    "introduzione": "Esta página explica cómo usamos las cookies y cómo puedes gestionar tus elecciones.",
+    "sezioneTecniciTitolo": "Cookies técnicas y esenciales",
+    "sezioneTecniciDescrizione": "Son indispensables para que el sitio funcione y no se pueden desactivar.",
+    "sezioneAnalisiTitolo": "Cookies de analítica",
+    "sezioneAnalisiDescrizione": "Recogen datos agregados sobre el uso del sitio para mejorar sus funciones.",
+    "sezioneMarketingTitolo": "Cookies de marketing",
+    "sezioneMarketingDescrizione": "Usadas para personalización, remarketing y contenidos promocionales.",
+    "gestioneTitolo": "Gestión de preferencias",
+    "gestioneDescrizione": "Puedes cambiar tus elecciones en cualquier momento mediante el banner o el enlace en las notas legales."
+  }
+}

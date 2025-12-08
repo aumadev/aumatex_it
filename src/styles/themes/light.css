@@ -1,0 +1,11 @@
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+  --colore-sfondo: #f8f6f2;
+  --colore-superficie: #ffffff;
+  --colore-testo: #161c2d;
+  --colore-testo-secondario: #4b5563;
+  --colore-accento: #0f9bbe;
+  --colore-accento-secondario: #f2a33a;
+  --colore-bordo: #dce1eb;
+}

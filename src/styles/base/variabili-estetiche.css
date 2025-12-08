@@ -1,0 +1,45 @@
+:root {
+  /* Tipografia */
+  --font-primario: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+  --testo-base: 16px;
+  --titolo-1: 2.6rem;
+  --titolo-2: 2rem;
+  --titolo-3: 1.6rem;
+  --titolo-4: 1.25rem;
+  --testo-lead: 1.125rem;
+
+  /* Colori (override nei temi) */
+  --colore-sfondo: #f7f5f1;
+  --colore-superficie: #ffffff;
+  --colore-testo: #1f2933;
+  --colore-testo-secondario: #4b5563;
+  --colore-accento: #0f9bbe;
+  --colore-accento-secondario: #f28b2b;
+  --colore-bordo: #e5e7eb;
+
+  /* Spaziature */
+  --spazio-2xs: 0.25rem;
+  --spazio-xs: 0.5rem;
+  --spazio-sm: 0.75rem;
+  --spazio-md: 1rem;
+  --spazio-lg: 1.5rem;
+  --spazio-xl: 2rem;
+  --spazio-2xl: 3rem;
+
+  /* Raggi */
+  --raggio-xs: 4px;
+  --raggio-sm: 8px;
+  --raggio-md: 12px;
+  --raggio-lg: 18px;
+  --raggio-xl: 24px;
+
+  /* Bordi */
+  --bordo-sottile: 1px;
+  --bordo-medio: 2px;
+
+  /* Ombre */
+  --ombra-leggera: 0 8px 24px rgba(17, 24, 39, 0.08);
+  --ombra-media: 0 14px 36px rgba(17, 24, 39, 0.12);
+  --ombra-profonda: 0 18px 60px rgba(17, 24, 39, 0.18);
+}

@@ -1,0 +1,36 @@
+.btn-solid {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spazio-sm) var(--spazio-md);
+  border-radius: var(--raggio-md);
+  border: var(--bordo-medio) solid transparent;
+  background: var(--colore-accento);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transizione-base);
+}
+
+.btn-solid:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--ombra-leggera);
+}
+
+.btn-ghost, .btn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spazio-xs);
+  padding: var(--spazio-xs) var(--spazio-sm);
+  border: var(--bordo-sottile) solid var(--colore-bordo);
+  border-radius: var(--raggio-sm);
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transizione-base);
+}
+
+.btn-link {
+  border: none;
+  color: var(--colore-accento);
+}

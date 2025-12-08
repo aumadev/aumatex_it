@@ -1,0 +1,8 @@
+:root {
+  --durata-breve: 120ms;
+  --durata-media: 180ms;
+  --durata-lunga: 260ms;
+  --easing-base: cubic-bezier(0.4, 0.14, 0.3, 1);
+  --easing-uscita: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --transizione-base: color var(--durata-media) var(--easing-base), background-color var(--durata-media) var(--easing-base), border-color var(--durata-media) var(--easing-base), box-shadow var(--durata-media) var(--easing-base), transform var(--durata-media) var(--easing-base);
+}

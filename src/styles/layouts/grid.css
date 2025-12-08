@@ -1,0 +1,23 @@
+.container {
+  width: min(1200px, 90vw);
+  margin: 0 auto;
+}
+
+.layout-shell {
+  padding: var(--spazio-2xl) 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spazio-xl);
+  align-items: center;
+  padding: var(--spazio-2xl) 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--spazio-lg);
+  margin-top: var(--spazio-2xl);
+}

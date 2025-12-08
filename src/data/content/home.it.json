@@ -1,0 +1,28 @@
+{
+  "cards": [
+    {
+      "categoria": "Design",
+      "titolo": "Layout centrati sulla UX",
+      "descrizione": "Pattern pronti per partire dall'hero al footer.",
+      "url": "/services/design",
+      "immagine": "./src/media/images/optimized/card-design.jpg",
+      "cta": "Scopri di più"
+    },
+    {
+      "categoria": "Sviluppo",
+      "titolo": "Codice pronto per la produzione",
+      "descrizione": "HTML, CSS e JS modulari pronti per il bundling.",
+      "url": "/services/dev",
+      "immagine": "./src/media/images/optimized/card-dev.jpg",
+      "cta": "Scopri di più"
+    },
+    {
+      "categoria": "Contenuti",
+      "titolo": "Pronto per il multilingua",
+      "descrizione": "Localizzazioni, rotte e dati strutturati per più lingue.",
+      "url": "/services/content",
+      "immagine": "./src/media/images/optimized/card-content.jpg",
+      "cta": "Scopri di più"
+    }
+  ]
+}

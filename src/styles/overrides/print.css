@@ -1,0 +1,10 @@
+@media print {
+  * {
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.875rem;
+  }
+}

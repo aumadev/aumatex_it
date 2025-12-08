@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Aumatex template",
+    "title": "Launch faster with a modular HTML base",
+    "subtitle": "Layouts, components, and assets organized for real-world multi-language sites.",
+    "ctaPrimary": "Start a project",
+    "ctaSecondary": "View services",
+    "alt": "Design workspace preview"
+  },
+  "buttons": {
+    "readMore": "Read more"
+  },
+  "footer": {
+    "company": "Aumatex",
+    "tagline": "We build sharp digital products.",
+    "links": "Links",
+    "privacy": "Privacy policy",
+    "cookies": "Cookie policy",
+    "terms": "Terms",
+    "support": "Support",
+    "contact": "Contact",
+    "cookiePreferences": "Cookie preferences"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "This is a placeholder for the privacy policy. Replace with your legal copy.",
+    "dataTitle": "Data collected",
+    "dataPoint1": "Contact data provided via forms.",
+    "dataPoint2": "Minimal technical logs for security and performance.",
+    "rightsTitle": "User rights",
+    "rightsCopy": "Describe how users can exercise access, rectification, deletion, and portability rights."
+  },
+  "header": {
+    "menu": "Open menu",
+    "langLabel": "Language",
+    "logoAlt": "Aumatex logo"
+  },
+  "cookie": {
+    "titolo": "Cookie preferences",
+    "descrizione": "We use cookies to improve your experience. Choose what to enable.",
+    "essenzialiTitolo": "Essential",
+    "essenzialiDescrizione": "Required for the site to work and cannot be disabled.",
+    "analisiTitolo": "Analytics",
+    "analisiDescrizione": "Help us understand how the site is used.",
+    "marketingTitolo": "Marketing",
+    "marketingDescrizione": "Personalization, remarketing and ads.",
+    "accetta": "Accept all",
+    "rifiuta": "Reject optional",
+    "salva": "Save preferences",
+    "personalizza": "Customize",
+    "linkPrivacy": "Privacy policy",
+    "linkCookie": "Cookie policy"
+  },
+  "cookiePolicy": {
+    "titolo": "Cookie Policy",
+    "introduzione": "This page explains how we use cookies and how you can manage your choices.",
+    "sezioneTecniciTitolo": "Technical and essential cookies",
+    "sezioneTecniciDescrizione": "These cookies are indispensable for the site to function and cannot be disabled.",
+    "sezioneAnalisiTitolo": "Analytics cookies",
+    "sezioneAnalisiDescrizione": "They collect aggregated data on site usage to improve features.",
+    "sezioneMarketingTitolo": "Marketing cookies",
+    "sezioneMarketingDescrizione": "Used for personalization, remarketing and promotional content.",
+    "gestioneTitolo": "Managing preferences",
+    "gestioneDescrizione": "You can change your choices at any time via the banner or the link in the legal notes."
+  }
+}

@@ -1,0 +1,33 @@
+h1, h2, h3, h4, h5, h6 {
+  color: var(--colore-testo);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 { font-size: var(--titolo-1); }
+h2 { font-size: var(--titolo-2); }
+h3 { font-size: var(--titolo-3); }
+h4 { font-size: var(--titolo-4); }
+
+p { color: var(--colore-testo-secondario); }
+
+.eyebrow {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--colore-accento);
+}
+
+.lede {
+  font-size: var(--testo-lead);
+  color: var(--colore-testo-secondario);
+}
+
+.prose h2 {
+  margin-top: var(--spazio-lg);
+  margin-bottom: var(--spazio-sm);
+}
+
+.prose p, .prose ul {
+  margin-bottom: var(--spazio-sm);
+}
