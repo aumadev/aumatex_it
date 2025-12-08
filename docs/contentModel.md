@@ -1,8 +1,49 @@
+<!--
+PROJECT: Interactive Muse
+───────────────────────────────────────────────────────────────────────────────
+    |     '||'  '|' '||    ||'     |     '||''|.   '||''''|  '||'  '|'
+   |||     ||    |   |||  |||     |||     ||   ||   ||  .     '|.  .'
+  |  ||    ||    |   |'|..'||    |  ||    ||    ||  ||''|      ||  |
+ .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
+.|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
+───────────────────────────────────────────────────────────────────────────────
+FILE:        docs/contentModel.md
+SCOPO:       Descrizione del modello contenuti e dati
+VERSIONE:    1.0
+DATA:        04/11/2025
+AUTORE:      Aumatex srls  |  www.aumatex.it
+AMBIENTE:    sviluppo
+BUILD:       beta
+STACK:       Markdown
+REPO:        https://github.com/aumadev/openart
+LICENZA:     Software proprietario © 2025 Aumatex srls
+NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzata.
+───────────────────────────────────────────────────────────────────────────────
+-->
+
 # Content model
-- **Navigation**: `config/navigation.json` per label e percorsi.
-- **Pages**: markup condiviso (`index.html`, `privacy-policy.html` ecc.) con testi localizzati via i18n loader. Contenuto dinamico (card, hero, ecc.) letto da JSON in `src/data/`.
-- **Locales**: stringhe UI in `src/locales/<lang>/common.json` per testi ripetuti.
-- **Media**: immagini raw/ottimizzate, icone SVG, favicons, video/audio, download.
-- **Themes**: token colore in `config/themes/palette.json` e CSS in `src/styles/themes/`.
-- **Consenso cookie**: banner e preferenze gestite da `src/scripts/core/cookie-consenso.js` con testi i18n e controlli essenziali/analisi/marketing.
-- **Automation**: pipeline Python da completare per rendering e deploy statico.
+
+## Navigazione e pagine
+- Navigazione principale in `config/navigation.json`.
+- Pagine root condivise (`index.html`, `privacy-policy.html`, `cookie-policy.html`) con testi i18n.
+- Sezioni riutilizzabili (hero, card, footer) via partial `src/html/partials/`.
+
+## Localizzazione e dati
+- Stringhe UI in `src/locales/<lang>/common.json`.
+- Contenuti dinamici (es. card home) in `src/data/content/`.
+- Dizionari caricati client-side e sincronizzati con select lingua.
+
+## Media
+- Immagini, icone, font, audio, video, download in `src/media/` con manifest dettagliato (`docs/mediaManifest.md`).
+- Palette temi in `config/themes/palette.json` usata da CSS.
+
+## Temi e stili
+- Temi light/dark in `src/styles/themes/`.
+- Variabili estetiche e animazioni in `src/styles/base/`.
+- Componenti e layout separati per header, footer, card, banner cookie.
+
+## Consenso e compliance
+- Banner cookie gestito da `src/scripts/core/cookie-consenso.js` con preferenze essenziali/analisi/marketing e link a policy.
+
+## Automazione
+- Pipeline Python da completare per render statico, merge i18n/dati, ottimizzazione asset (`python/tasks/`).

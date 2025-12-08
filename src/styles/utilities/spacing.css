@@ -1,3 +1,26 @@
+/*
+PROJECT: Interactive Muse
+───────────────────────────────────────────────────────────────────────────────
+    |     '||'  '|' '||    ||'     |     '||''|.   '||''''|  '||'  '|'
+   |||     ||    |   |||  |||     |||     ||   ||   ||  .     '|.  .'
+  |  ||    ||    |   |'|..'||    |  ||    ||    ||  ||''|      ||  |
+ .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
+.|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
+───────────────────────────────────────────────────────────────────────────────
+FILE:        src/styles/utilities/spacing.css
+SCOPO:       Utility di spaziatura
+VERSIONE:    1.0
+DATA:        04/11/2025
+AUTORE:      Aumatex srls  |  www.aumatex.it
+AMBIENTE:    sviluppo
+BUILD:       beta
+STACK:       CSS3
+REPO:        https://github.com/aumadev/openart
+LICENZA:     Software proprietario © 2025 Aumatex srls
+NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzata.
+───────────────────────────────────────────────────────────────────────────────
+*/
+
 .mt-xs { margin-top: var(--spazio-xs); }
 .mt-sm { margin-top: var(--spazio-sm); }
 .mt-md { margin-top: var(--spazio-md); }

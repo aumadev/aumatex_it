@@ -1,8 +1,54 @@
+<!--
+PROJECT: Interactive Muse
+───────────────────────────────────────────────────────────────────────────────
+    |     '||'  '|' '||    ||'     |     '||''|.   '||''''|  '||'  '|'
+   |||     ||    |   |||  |||     |||     ||   ||   ||  .     '|.  .'
+  |  ||    ||    |   |'|..'||    |  ||    ||    ||  ||''|      ||  |
+ .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
+.|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
+───────────────────────────────────────────────────────────────────────────────
+FILE:        docs/architecture.md
+SCOPO:       Documentazione dell'architettura del template
+VERSIONE:    1.0
+DATA:        04/11/2025
+AUTORE:      Aumatex srls  |  www.aumatex.it
+AMBIENTE:    sviluppo
+BUILD:       beta
+STACK:       Markdown
+REPO:        https://github.com/aumadev/openart
+LICENZA:     Software proprietario © 2025 Aumatex srls
+NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzata.
+───────────────────────────────────────────────────────────────────────────────
+-->
+
 # Architettura del template
-- **Config-driven**: impostazioni in `config/` e token colore in `config/themes/`.
-- **HTML modulare**: layout base in `src/html/layouts`, partial per header/footer/componenti in `src/html/partials`, pagine principali in root (`index.html`, `privacy-policy.html`) con testi gestiti via i18n.
-- **CSS a layer**: base (root, variabili estetiche, variabili animazioni, reset, typo), layout, componenti, temi light/dark, utility, overrides.
-- **JS a responsabilita**: core/app, i18n loader, UI (nav/accordion), forms (validation), analytics (tracking).
-- **Contenuti**: dati JSON in `src/data/`, testi in `src/locales/`, media in `src/media/`.
-- **Compliance**: banner cookie modulare con preferenze persistite in localStorage e link alle policy dedicate.
-- **Automazione**: script Python in `python/tasks/` per build, ottimizzazione asset e merging dati/lingue.
+
+## Config e token
+- Config-driven con impostazioni in `config/` e palette in `config/themes/`.
+- Variabili CSS separate per estetica e animazioni.
+
+## HTML e contenuti
+- Layout base in `src/html/layouts`, partial header/footer/componenti in `src/html/partials`.
+- Pagine root (`index.html`, `privacy-policy.html`, `cookie-policy.html`) neutre e i18n-driven.
+- Contenuti strutturati in `src/data/`, stringhe UI in `src/locales/`.
+
+## CSS a layer
+- Base: root, variabili estetiche/animazioni, reset, typo.
+- Layout: grid, header, footer.
+- Componenti: card, bottoni, form, banner cookie.
+- Temi: light/dark.
+- Utility e overrides (print, RTL).
+
+## JS a responsabilita
+- Core/app: tema, header, consenso cookie.
+- i18n loader: caricamento dizionari, sync lingua/select.
+- UI: nav mobile/overlay, accordion.
+- Form: validation.
+- Analytics: tracking base.
+
+## Media e compliance
+- Media organizzati per tipo in `src/media/` con manifest dedicato.
+- Banner cookie modulare con preferenze persistite e link alle policy.
+
+## Automazione
+- Script Python in `python/tasks/` per build e ottimizzazione asset (da completare/estendere).
