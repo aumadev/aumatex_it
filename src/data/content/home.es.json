@@ -5,7 +5,7 @@
       "titolo": "Layouts centrados en UX",
       "descrizione": "Patrones listos desde el hero hasta el footer.",
       "url": "/services/design",
-      "immagine": "./src/media/images/optimized/card-design.jpg",
+      "immagine": "./src/media/images/optimized/card-1.png",
       "cta": "Leer más"
     },
     {
@@ -13,7 +13,7 @@
       "titolo": "Código listo para producción",
       "descrizione": "HTML, CSS y JS modulares listos para empaquetar.",
       "url": "/services/dev",
-      "immagine": "./src/media/images/optimized/card-dev.jpg",
+      "immagine": "./src/media/images/optimized/card-2.png",
       "cta": "Leer más"
     },
     {
@@ -21,7 +21,7 @@
       "titolo": "Preparado para multilenguaje",
       "descrizione": "Locales, rutas y datos estructurados por idioma.",
       "url": "/services/content",
-      "immagine": "./src/media/images/optimized/card-content.jpg",
+      "immagine": "./src/media/images/optimized/card-3.png",
       "cta": "Leer más"
     }
   ]

@@ -5,7 +5,7 @@
       "titolo": "Layout centrati sulla UX",
       "descrizione": "Pattern pronti per partire dall'hero al footer.",
       "url": "/services/design",
-      "immagine": "./src/media/images/optimized/card-design.jpg",
+      "immagine": "./src/media/images/optimized/card-1.png",
       "cta": "Scopri di più"
     },
     {
@@ -13,7 +13,7 @@
       "titolo": "Codice pronto per la produzione",
       "descrizione": "HTML, CSS e JS modulari pronti per il bundling.",
       "url": "/services/dev",
-      "immagine": "./src/media/images/optimized/card-dev.jpg",
+      "immagine": "./src/media/images/optimized/card-2.png",
       "cta": "Scopri di più"
     },
     {
@@ -21,7 +21,7 @@
       "titolo": "Pronto per il multilingua",
       "descrizione": "Localizzazioni, rotte e dati strutturati per più lingue.",
       "url": "/services/content",
-      "immagine": "./src/media/images/optimized/card-content.jpg",
+      "immagine": "./src/media/images/optimized/card-3.png",
       "cta": "Scopri di più"
     }
   ]

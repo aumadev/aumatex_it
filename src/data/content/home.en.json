@@ -5,7 +5,7 @@
       "titolo": "UX-first layouts",
       "descrizione": "Pre-built patterns to start from hero to footer.",
       "url": "/services/design",
-      "immagine": "./src/media/images/optimized/card-design.jpg",
+      "immagine": "./src/media/images/optimized/card-1.png",
       "cta": "Read more"
     },
     {
@@ -13,7 +13,7 @@
       "titolo": "Production-ready code",
       "descrizione": "Modular HTML, CSS, and JS ready for bundling.",
       "url": "/services/dev",
-      "immagine": "./src/media/images/optimized/card-dev.jpg",
+      "immagine": "./src/media/images/optimized/card-2.png",
       "cta": "Read more"
     },
     {
@@ -21,7 +21,7 @@
       "titolo": "Multilingual ready",
       "descrizione": "Locales, routes, and content data structured per language.",
       "url": "/services/content",
-      "immagine": "./src/media/images/optimized/card-content.jpg",
+      "immagine": "./src/media/images/optimized/card-3.png",
       "cta": "Read more"
     }
   ]
