@@ -21,7 +21,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 ───────────────────────────────────────────────────────────────────────────────
 */
 
-.btn-solid {
+.bottonePrimario {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -36,14 +36,14 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   transition: var(--transizione-base);
 }
 
-.btn-solid:hover {
+.bottonePrimario:hover {
   background: var(--coloreAccentoHover, var(--colore-accento-secondario));
   color: var(--colore-superficie);
   transform: translateY(-1px);
   box-shadow: var(--ombra-leggera);
 }
 
-.btn-ghost, .btn-link {
+.bottoneSecondario, .bottoneCollegamento {
   display: inline-flex;
   align-items: center;
   gap: var(--spazio-xs);
@@ -56,7 +56,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   transition: var(--transizione-base);
 }
 
-.btn-link {
+.bottoneCollegamento {
   border: none;
   color: var(--colore-accento);
 }

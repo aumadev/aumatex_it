@@ -29,7 +29,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 ## HTML e contenuti
 - Layout base in `src/html/layouts`, partial header/footer/componenti in `src/html/partials`.
-- Pagine root (`index.html`, `privacyPolicy.html`, `cookiePolicy.html`) neutre e i18n-driven.
+- Pagine root (`index.html`, `privacy-policy.html`, `cookie-policy.html`) neutre e i18n-driven.
 - Header principale replicato dai partial in `src/html/partials/header/nav.html` con brand i18n (`header.brand`) e toggle tema (`header.themeToggle`).
 - Homepage potenziata con sezioni premium (pillars, statistiche, CTA) e styling dedicato in `src/styles/pages/homeSections.css`.
 - Contenuti strutturati in `src/data/`, stringhe UI in `src/locales/`.
@@ -45,7 +45,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 - Font principali: `RobotoSlab` per titoli/UI e `Mulish` per testo corrente; entrambi variable (pesi 100–900) con italic Mulish.
 - Definizioni @font-face centralizzate in `src/styles/base/fontFace.css` che punta ai file `src/media/fonts/RobotoSlab-wght.ttf`, `src/media/fonts/Mulish-wght.ttf`, `src/media/fonts/Mulish-Italic-wght.ttf`.
 - Variabili di font e pesi in `src/styles/base/variabiliEstetiche.css` (`--fontPrimaria`, `--fontSecondaria`, `--pesoTitolo*`, `--pesoTesto*`), applicate a body e heading in `src/styles/base/root.css` e `src/styles/base/typography.css`.
-- Utility tipografiche in `src/styles/utilities/typographyUtilities.css` per applicare rapidamente famiglia/peso ai componenti.
+- Utility tipografiche in `src/styles/utilities/typography-utilities.css` per applicare rapidamente famiglia/peso ai componenti.
 
 ## JS a responsabilita
 - Core/app: gestione tema; consenso cookie in `src/scripts/core/cookie-consenso.js` con stato persistito (`cookieConsent`).

@@ -7,7 +7,7 @@ PROJECT: Aumatex Template
  .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
-FILE:        codexInstructions.md
+FILE:        codex-instructions.md
 SCOPO:       Istruzioni di sviluppo per Codex
 VERSIONE:    1.0
 DATA:        04/11/2025
@@ -127,7 +127,7 @@ devono essere **in camelCase**.
 
 Quando ricevi un nuovo comando per modificare il progetto:
 
-1. **Leggi prima questo file** `codexInstructions.md`.
+1. **Leggi prima questo file** `codex-instructions.md`.
 2. Applica SEMPRE tutte le regole sopra, a prescindere dal prompt specifico.
 3. Se una richiesta contraddice queste regole:
    - cerca una soluzione che le rispetti comunque (ad es. aggiungi i18n, camelCase, modularità),

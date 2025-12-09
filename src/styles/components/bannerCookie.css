@@ -21,7 +21,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 ───────────────────────────────────────────────────────────────────────────────
 */
 
-.banner-cookie {
+.bannerCookie {
   position: fixed;
   inset: auto 50% var(--spazio-md);
   transform: translateX(-50%);
@@ -48,19 +48,19 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   pointer-events: none;
 }
 
-.banner-cookie__intestazione {
+.bannerCookieIntestazione {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: var(--spazio-md);
 }
 
-.banner-cookie__testo p {
+.bannerCookieTesto p {
   margin-bottom: var(--spazio-xs);
   color: var(--colore-testo-secondario);
 }
 
-.banner-cookie__sezione {
+.bannerCookieSezione {
   border: var(--bordo-sottile) solid var(--colore-bordo);
   border-radius: var(--raggio-md);
   padding: var(--spazio-md);
@@ -69,38 +69,38 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   background: var(--colore-sfondo);
 }
 
-.banner-cookie__riga {
+.bannerCookieRiga {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: var(--spazio-sm);
 }
 
-.banner-cookie__descrizione {
+.bannerCookieDescrizione {
   font-size: 0.9rem;
   color: var(--colore-testo-secondario);
 }
 
-.banner-cookie__azioni {
+.bannerCookieAzioni {
   display: flex;
   gap: var(--spazio-sm);
   flex-wrap: wrap;
 }
 
-.banner-cookie__azioni .btn-solid {
+.bannerCookieAzioni .bottonePrimario {
   flex: 1 1 auto;
 }
 
-.banner-cookie__azioni .btn-ghost {
+.bannerCookieAzioni .bottoneSecondario {
   flex: 1 1 auto;
 }
 
-.banner-cookie input[type="checkbox"] {
+.bannerCookie input[type="checkbox"] {
   width: 18px;
   height: 18px;
 }
 
-.banner-cookie__chiudi {
+.bannerCookieChiudi {
   min-width: 40px;
   height: 40px;
   display: inline-grid;
@@ -112,14 +112,14 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   transition: var(--transizione-base);
 }
 
-.banner-cookie__chiudi:hover {
+.bannerCookieChiudi:hover {
   background: var(--colore-superficie);
   color: var(--colore-accento);
   border-color: var(--colore-accento);
   box-shadow: var(--ombra-leggera);
 }
 
-.banner-cookie__link {
+.bannerCookieLink {
   display: inline-flex;
   gap: var(--spazio-xs);
   align-items: center;
@@ -127,12 +127,12 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   font-weight: 600;
 }
 
-.cookieBannerCompatto .banner-cookie__sezione,
+.cookieBannerCompatto .bannerCookieSezione,
 .cookieBannerCompatto [data-cookie-salva] {
   display: none;
 }
 
-.cookieBannerCompatto .banner-cookie__azioni {
+.cookieBannerCompatto .bannerCookieAzioni {
   justify-content: center;
 }
 
@@ -141,12 +141,12 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 }
 
 @media (max-width: 640px) {
-  .banner-cookie {
+  .bannerCookie {
     inset: auto 50% var(--spazio-sm);
     width: min(520px, 94vw);
     padding: var(--spazio-md);
   }
-  .banner-cookie__riga {
+  .bannerCookieRiga {
     align-items: flex-start;
   }
 }

@@ -49,7 +49,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
           <p class="eyebrow">${card.categoria}</p>
           <h3>${card.titolo}</h3>
           <p>${card.descrizione}</p>
-          <a class="btn-link" href="${card.url}">${card.cta || "Scopri di più"}</a>
+          <a class="bottoneCollegamento" href="${card.url}">${card.cta || "Scopri di più"}</a>
         </div>
       </article>
     `;

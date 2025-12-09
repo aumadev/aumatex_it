@@ -25,7 +25,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 ## Navigazione e pagine
 - Navigazione principale in `config/navigation.json`.
-- Pagine root condivise (`index.html`, `privacyPolicy.html`, `cookiePolicy.html`) con testi i18n.
+- Pagine root condivise (`index.html`, `privacy-policy.html`, `cookie-policy.html`) con testi i18n.
 - Sezioni riutilizzabili (hero, card, footer) via partial `src/html/partials/`.
 - Homepage con sezioni aggiuntive (pillars, statistiche, CTA) gestite in `index.html` con stili `src/styles/pages/homeSections.css`.
 

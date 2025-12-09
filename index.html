@@ -44,7 +44,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   <link rel="stylesheet" href="./src/styles/themes/light.css" media="(prefers-color-scheme: light)">
   <link rel="stylesheet" href="./src/styles/themes/dark.css" media="(prefers-color-scheme: dark)">
   <link rel="stylesheet" href="./src/styles/pages/homeSections.css">
-  <link rel="stylesheet" href="./src/styles/utilities/typographyUtilities.css">
+  <link rel="stylesheet" href="./src/styles/utilities/typography-utilities.css">
   <link rel="stylesheet" href="./src/styles/utilities/spacing.css">
   <link rel="stylesheet" href="./src/styles/utilities/display.css">
   <link rel="stylesheet" href="./src/styles/overrides/print.css">
@@ -85,7 +85,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
           <li><a href="./about.html" data-i18n="nav.about">About</a></li>
           <li><a href="./services.html" data-i18n="nav.services">Services</a></li>
           <li><a href="./blog.html" data-i18n="nav.blog">Blog</a></li>
-          <li><a class="btn-link" href="./contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li><a class="bottoneCollegamento" href="./contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </nav>
       <div class="header-tools">
@@ -97,7 +97,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
             <option value="es">ES</option>
           </select>
         </div>
-        <button class="btn-ghost" data-theme-toggle aria-label="Toggle theme" data-i18n="header.themeToggle" data-i18n-attr="aria-label">
+        <button class="bottoneSecondario" data-theme-toggle aria-label="Toggle theme" data-i18n="header.themeToggle" data-i18n-attr="aria-label">
           <i class="fa-solid fa-sun" aria-hidden="true" data-theme-icon></i>
           <span class="sr-only" data-i18n="header.themeToggle">Toggle theme</span>
         </button>
@@ -122,11 +122,11 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
             <li data-i18n="hero.point3">Secure, analytics-ready stack with governance.</li>
           </ul>
           <div class="hero-actions">
-            <a class="btn-solid" href="./contact.html">
+            <a class="bottonePrimario" href="./contact.html">
               <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
               <span data-i18n="hero.ctaPrimary">Start a project</span>
             </a>
-            <a class="btn-ghost" href="./services.html">
+            <a class="bottoneSecondario" href="./services.html">
               <i class="fa-brands fa-figma" aria-hidden="true"></i>
               <span data-i18n="hero.ctaSecondary">View services</span>
             </a>
@@ -229,11 +229,11 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
         <h2 class="titoloSezione" data-i18n="cta.title">Allineiamo prodotto, tecnologia e business con roadmap misurabili</h2>
         <p class="lede" data-i18n="cta.subtitle">Avviamo discovery mirate, definiamo KPI chiari e portiamo in produzione feature che sbloccano crescita e efficienza.</p>
         <div class="cta-actions">
-          <a class="btn-solid" href="./contact.html">
+          <a class="bottonePrimario" href="./contact.html">
             <i class="fa-solid fa-headset" aria-hidden="true"></i>
             <span data-i18n="cta.primary">Prenota una call</span>
           </a>
-          <a class="btn-ghost" href="./services.html">
+          <a class="bottoneSecondario" href="./services.html">
             <i class="fa-brands fa-aws" aria-hidden="true"></i>
             <span data-i18n="cta.secondary">Scopri i nostri servizi</span>
           </a>
@@ -267,8 +267,8 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
         <section>
           <h2 class="footer-heading"><i class="fa-solid fa-link" aria-hidden="true"></i><span data-i18n="footer.links">Links</span></h2>
           <ul>
-            <li class="footer-list-item"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><a href="./privacyPolicy.html" data-i18n="footer.privacy">Privacy policy</a></li>
-            <li class="footer-list-item"><i class="fa-solid fa-cookie-bite" aria-hidden="true"></i><a href="./cookiePolicy.html" data-i18n="footer.cookies">Cookie policy</a></li>
+            <li class="footer-list-item"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><a href="./privacy-policy.html" data-i18n="footer.privacy">Privacy policy</a></li>
+            <li class="footer-list-item"><i class="fa-solid fa-cookie-bite" aria-hidden="true"></i><a href="./cookie-policy.html" data-i18n="footer.cookies">Cookie policy</a></li>
             <li class="footer-list-item"><i class="fa-solid fa-file-contract" aria-hidden="true"></i><a href="./terms.html" data-i18n="footer.terms">Terms</a></li>
             <li class="footer-list-item"><i class="fa-solid fa-life-ring" aria-hidden="true"></i><a href="./support.html" data-i18n="footer.support">Support</a></li>
             <li class="footer-list-item"><i class="fa-solid fa-sliders" aria-hidden="true"></i><a href="#" data-riapri-cookie data-i18n="footer.cookiePreferences">Preferenze cookie</a></li>
@@ -296,49 +296,49 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
     </div>
   </footer>
 
-  <div class="banner-cookie cookieBannerNascosto cookieBannerCompatto" data-banner-cookie hidden>
-    <div class="banner-cookie__intestazione">
-      <div class="banner-cookie__testo">
+  <div class="bannerCookie cookieBannerNascosto cookieBannerCompatto" data-banner-cookie hidden>
+    <div class="bannerCookieIntestazione">
+      <div class="bannerCookieTesto">
         <h2 data-i18n="cookie.titolo">Preferenze cookie</h2>
         <p data-i18n="cookie.descrizione">Utilizziamo cookie per migliorare l'esperienza. Scegli cosa attivare.</p>
       </div>
-      <button class="banner-cookie__chiudi" type="button" data-cookie-chiudi aria-label="Close cookie banner">
+      <button class="bannerCookieChiudi" type="button" data-cookie-chiudi aria-label="Close cookie banner">
         <span aria-hidden="true">×</span>
       </button>
     </div>
-    <div class="banner-cookie__sezione">
-      <div class="banner-cookie__riga">
+    <div class="bannerCookieSezione">
+      <div class="bannerCookieRiga">
         <div>
           <strong data-i18n="cookie.essenzialiTitolo">Essenziali</strong>
-          <div class="banner-cookie__descrizione" data-i18n="cookie.essenzialiDescrizione">Necessari per il funzionamento del sito.</div>
+          <div class="bannerCookieDescrizione" data-i18n="cookie.essenzialiDescrizione">Necessari per il funzionamento del sito.</div>
         </div>
         <input type="checkbox" checked disabled data-opzione-cookie="essenziali" aria-label="Cookie essenziali" data-i18n="cookie.essenzialiTitolo" data-i18n-attr="aria-label">
       </div>
-      <div class="banner-cookie__riga">
+      <div class="bannerCookieRiga">
         <div>
           <strong data-i18n="cookie.analisiTitolo">Analisi</strong>
-          <div class="banner-cookie__descrizione" data-i18n="cookie.analisiDescrizione">Ci aiutano a capire l'uso del sito.</div>
+          <div class="bannerCookieDescrizione" data-i18n="cookie.analisiDescrizione">Ci aiutano a capire l'uso del sito.</div>
         </div>
         <input type="checkbox" data-opzione-cookie="analisi" aria-label="Cookie di analisi" data-i18n="cookie.analisiTitolo" data-i18n-attr="aria-label">
       </div>
-      <div class="banner-cookie__riga">
+      <div class="bannerCookieRiga">
         <div>
           <strong data-i18n="cookie.marketingTitolo">Marketing</strong>
-          <div class="banner-cookie__descrizione" data-i18n="cookie.marketingDescrizione">Personalizzazione e pubblicità.</div>
+          <div class="bannerCookieDescrizione" data-i18n="cookie.marketingDescrizione">Personalizzazione e pubblicità.</div>
         </div>
         <input type="checkbox" data-opzione-cookie="marketing" aria-label="Cookie di marketing" data-i18n="cookie.marketingTitolo" data-i18n-attr="aria-label">
       </div>
     </div>
-    <div class="banner-cookie__azioni">
-      <button class="btn-ghost" data-cookie-personalizza data-i18n="cookie.personalizza">Personalizza</button>
-      <button class="btn-ghost" data-cookie-rifiuta data-i18n="cookie.rifiuta">Rifiuta opzionali</button>
-      <button class="btn-ghost" data-cookie-salva data-i18n="cookie.salva">Salva preferenze</button>
-      <button class="btn-solid" data-cookie-accetta data-i18n="cookie.accetta">Accetta tutto</button>
+    <div class="bannerCookieAzioni">
+      <button class="bottoneSecondario" data-cookie-personalizza data-i18n="cookie.personalizza">Personalizza</button>
+      <button class="bottoneSecondario" data-cookie-rifiuta data-i18n="cookie.rifiuta">Rifiuta opzionali</button>
+      <button class="bottoneSecondario" data-cookie-salva data-i18n="cookie.salva">Salva preferenze</button>
+      <button class="bottonePrimario" data-cookie-accetta data-i18n="cookie.accetta">Accetta tutto</button>
     </div>
-    <div class="banner-cookie__link">
-      <a href="./privacyPolicy.html" data-i18n="cookie.linkPrivacy">Privacy policy</a>
+    <div class="bannerCookieLink">
+      <a href="./privacy-policy.html" data-i18n="cookie.linkPrivacy">Privacy policy</a>
       <span aria-hidden="true">·</span>
-      <a href="./cookiePolicy.html" data-i18n="cookie.linkCookie">Cookie policy</a>
+      <a href="./cookie-policy.html" data-i18n="cookie.linkCookie">Cookie policy</a>
     </div>
   </div>
 
