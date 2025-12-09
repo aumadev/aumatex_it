@@ -27,14 +27,14 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 body {
   min-height: 100vh;
-  font-family: var(--fontSecondaria);
+  font-family: var(--font-secondaria);
   font-size: var(--testo-base);
   background: var(--colore-sfondo);
   color: var(--colore-testo);
   line-height: 1.6;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  font-weight: var(--pesoTesto);
+  font-weight: var(--peso-testo);
 }
 
 a {

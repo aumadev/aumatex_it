@@ -22,31 +22,31 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 */
 
 .testoPrimario {
-  font-family: var(--fontPrimaria);
-  font-weight: var(--pesoTitolo);
+  font-family: var(--font-primaria);
+  font-weight: var(--peso-titolo);
 }
 
 .testoSecondario {
-  font-family: var(--fontSecondaria);
-  font-weight: var(--pesoTesto);
+  font-family: var(--font-secondaria);
+  font-weight: var(--peso-testo);
 }
 
 .titoloPrincipale {
-  font-family: var(--fontPrimaria);
-  font-weight: var(--pesoTitoloForte);
+  font-family: var(--font-primaria);
+  font-weight: var(--peso-titolo-forte);
 }
 
 .titoloSezione {
-  font-family: var(--fontPrimaria);
-  font-weight: var(--pesoTitolo);
+  font-family: var(--font-primaria);
+  font-weight: var(--peso-titolo);
 }
 
 .testoLeggero {
-  font-weight: var(--pesoTitoloLeggero);
+  font-weight: var(--peso-titolo-leggero);
 }
 
 .testoEnfasi {
-  font-weight: var(--pesoTestoEnfasi);
+  font-weight: var(--peso-testo-enfasi);
 }
 
 .titoloIcona {

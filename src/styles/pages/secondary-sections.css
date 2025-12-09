@@ -59,7 +59,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 .bloccoTestoHero {
   display: grid;
   gap: var(--spazio-md);
-  animation: var(--animazioneIngressoDolce);
+  animation: var(--animazione-ingresso-dolce);
 }
 
 .hero-cta {
@@ -80,7 +80,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   box-shadow: var(--ombra-leggera);
   display: grid;
   gap: var(--spazio-sm);
-  animation: var(--animazioneIngressoDolce);
+  animation: var(--animazione-ingresso-dolce);
 }
 
 .pannelloEvidenza .icon-list {
@@ -109,7 +109,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 }
 
 .schedaMissione strong {
-  font-family: var(--fontPrimaria);
+  font-family: var(--font-primaria);
 }
 
 .grigliaCapacita {
@@ -205,7 +205,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   display: grid;
   place-items: center;
   color: var(--colore-accento);
-  font-weight: var(--pesoTitoloForte);
+  font-weight: var(--peso-titolo-forte);
 }
 
 .contattiGrid {
@@ -227,7 +227,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 .schedaContatto a {
   color: var(--colore-accento);
-  font-weight: var(--pesoTitolo);
+  font-weight: var(--peso-titolo);
 }
 
 .formContatti {

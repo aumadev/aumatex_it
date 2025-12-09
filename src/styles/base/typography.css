@@ -23,14 +23,14 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--colore-testo);
-  font-family: var(--fontPrimaria);
-  font-weight: var(--pesoTitolo);
+  font-family: var(--font-primaria);
+  font-weight: var(--peso-titolo);
   line-height: 1.2;
 }
 
 h1 {
   font-size: var(--titolo-1);
-  font-weight: var(--pesoTitoloForte);
+  font-weight: var(--peso-titolo-forte);
 }
 
 h2 { font-size: var(--titolo-2); }
@@ -39,23 +39,23 @@ h4 { font-size: var(--titolo-4); }
 
 p {
   color: var(--colore-testo-secondario);
-  font-family: var(--fontSecondaria);
-  font-weight: var(--pesoTesto);
+  font-family: var(--font-secondaria);
+  font-weight: var(--peso-testo);
 }
 
 .eyebrow {
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-family: var(--fontSecondaria);
-  font-weight: var(--pesoTitolo);
+  font-family: var(--font-secondaria);
+  font-weight: var(--peso-titolo);
   color: var(--colore-accento);
 }
 
 .lede {
   font-size: var(--testo-lead);
   color: var(--colore-testo-secondario);
-  font-family: var(--fontSecondaria);
-  font-weight: var(--pesoTesto);
+  font-family: var(--font-secondaria);
+  font-weight: var(--peso-testo);
 }
 
 .prose h2 {
@@ -68,7 +68,7 @@ p {
 }
 
 em, i {
-  font-family: var(--fontSecondaria);
+  font-family: var(--font-secondaria);
   font-style: italic;
-  font-weight: var(--pesoTestoEnfasi);
+  font-weight: var(--peso-testo-enfasi);
 }

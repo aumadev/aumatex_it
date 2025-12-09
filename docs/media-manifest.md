@@ -69,8 +69,8 @@ src/media/icons/favicons/manifest.json | manifest (json) | Tutte le pagine (head
 
 Percorso | Tipo | Pagina d'uso | Scopo | Note formato
 --- | --- | --- | --- | ---
-src/media/fonts/RobotoSlab-wght.ttf | font variabile | Titoli/UI (fontPrimaria) | RobotoSlab wght 100-900 | TTF variable
-src/media/fonts/Mulish-wght.ttf | font variabile | Testo corpo (fontSecondaria) | Mulish wght 100-900 | TTF variable
+src/media/fonts/RobotoSlab-wght.ttf | font variabile | Titoli/UI (font-primaria) | RobotoSlab wght 100-900 | TTF variable
+src/media/fonts/Mulish-wght.ttf | font variabile | Testo corpo (font-secondaria) | Mulish wght 100-900 | TTF variable
 src/media/fonts/Mulish-Italic-wght.ttf | font variabile | Testo corsivo | Mulish italic wght 100-900 | TTF variable
 src/media/fonts/ImagineExtra-slim.ttf | font display | Branding (logo header/footer) | Imagine Extra Slim per wordmark AUMATEX | TTF
 

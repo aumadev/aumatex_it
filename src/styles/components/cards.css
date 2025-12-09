@@ -33,7 +33,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 }
 
 .card-grid .card {
-  animation: var(--animazioneIngressoDolce);
+  animation: var(--animazione-ingresso-dolce);
 }
 
 .card-grid .card:nth-child(2) {
@@ -71,8 +71,8 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 }
 
 .card h3 {
-  font-family: var(--fontPrimaria);
-  font-weight: var(--pesoTitolo);
+  font-family: var(--font-primaria);
+  font-weight: var(--peso-titolo);
 }
 
 .card .eyebrow {

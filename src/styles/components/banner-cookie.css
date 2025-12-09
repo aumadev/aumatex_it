@@ -38,7 +38,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
-  transition: var(--animazioneCookieBanner);
+  transition: var(--animazione-cookie-banner);
 }
 
 .cookieBannerNascosto {

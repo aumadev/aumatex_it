@@ -51,7 +51,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   - componenti,
   - animazioni,
 devono essere **in camelCase**.  
-  Esempi: `headerPrincipale`, `cookieBannerController`, `browserConfig`, `animazioneHeaderScroll`.
+  Esempi: `headerPrincipale`, `cookieBannerController`, `browserConfig`, `animazione-header-scroll`.
 
 - Se rinomini o sposti file:
   - aggiorna **TUTTI i riferimenti** (import/export, link HTML, path CSS/JS, riferimenti nei JSON, ecc.).
@@ -81,7 +81,7 @@ devono essere **in camelCase**.
   - per colori, font, spaziature, borderRadius, shadow, animazioni, z-index, ecc.
 - Quando ti servono nuovi valori:
   - definisci nuove variables nelle **loro classi/file dedicati** (es. file `variables` / `theme` / `animations` già presenti),
-  - nomi sempre in camelCase (es. `--coloreEvidenzaHeader`, `--animazioneHeaderScroll`).
+  - nomi sempre in camelCase (es. `--coloreEvidenzaHeader`, `--animazione-header-scroll`).
 - Non duplicare valori magici nel codice; referenzia le variables/temi centralizzati.
 
 ---

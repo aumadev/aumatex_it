@@ -24,7 +24,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 .hero {
   position: relative;
   overflow: hidden;
-  animation: var(--animazioneIngressoLenta);
+  animation: var(--animazione-ingresso-lenta);
 }
 
 .hero::before {
@@ -44,7 +44,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 .hero-copy {
   display: grid;
   gap: var(--spazioHeroGap);
-  animation: var(--animazioneIngressoDolce);
+  animation: var(--animazione-ingresso-dolce);
 }
 
 .hero-actions {
@@ -57,7 +57,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   display: flex;
   gap: var(--spazio-sm);
   flex-wrap: wrap;
-  animation: var(--animazioneIngressoDolce);
+  animation: var(--animazione-ingresso-dolce);
 }
 
 .pill {
@@ -69,8 +69,8 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   border: var(--bordo-sottile) solid var(--colore-bordo);
   background: var(--colore-superficie);
   color: var(--colore-testo);
-  font-family: var(--fontSecondaria);
-  font-weight: var(--pesoTitolo);
+  font-family: var(--font-secondaria);
+  font-weight: var(--peso-titolo);
   box-shadow: var(--ombra-leggera);
 }
 
@@ -91,8 +91,8 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   display: inline-flex;
   align-items: center;
   gap: var(--spazio-xs);
-  font-family: var(--fontSecondaria);
-  font-weight: var(--pesoTestoEnfasi);
+  font-family: var(--font-secondaria);
+  font-weight: var(--peso-testo-enfasi);
   color: var(--colore-testo);
 }
 
@@ -105,13 +105,13 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 .hero-media {
   position: relative;
-  animation: var(--animazioneIngressoLenta);
+  animation: var(--animazione-ingresso-lenta);
 }
 
 .hero-media img {
   border-radius: var(--raggio-xl);
   box-shadow: var(--ombra-profonda);
-  animation: var(--animazioneFloatLeggero);
+  animation: var(--animazione-float-leggero);
 }
 
 .badge-decor {
@@ -125,11 +125,11 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   display: grid;
   gap: var(--spazio-2xs);
   max-width: 280px;
-  animation: var(--animazioneIngressoDolce);
+  animation: var(--animazione-ingresso-dolce);
 }
 
 .badge-decor strong {
-  font-family: var(--fontPrimaria);
+  font-family: var(--font-primaria);
   font-size: 1.05rem;
   color: var(--colore-testo);
 }
@@ -150,7 +150,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   text-align: center;
   display: grid;
   gap: var(--spazio-sm);
-  animation: var(--animazioneIngressoDolce);
+  animation: var(--animazione-ingresso-dolce);
 }
 
 .valori-grid {
@@ -169,7 +169,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   gap: var(--spazio-sm);
   position: relative;
   overflow: hidden;
-  animation: var(--animazioneIngressoLenta);
+  animation: var(--animazione-ingresso-lenta);
 }
 
 .valore-card::after {
@@ -183,8 +183,8 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 }
 
 .valore-card h3 {
-  font-family: var(--fontPrimaria);
-  font-weight: var(--pesoTitoloForte);
+  font-family: var(--font-primaria);
+  font-weight: var(--peso-titolo-forte);
 }
 
 .valore-card p {
@@ -208,7 +208,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 .statSection {
   padding: var(--spazioSezione) 0;
-  animation: var(--animazioneIngressoDolce);
+  animation: var(--animazione-ingresso-dolce);
 }
 
 .stat-grid {
@@ -223,26 +223,26 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   padding: var(--spazioSezione);
   border: var(--bordo-sottile) solid var(--colore-bordo);
   box-shadow: var(--ombra-media);
-  animation: var(--animazioneIngressoDolce);
+  animation: var(--animazione-ingresso-dolce);
 }
 
 .stat-number {
-  font-family: var(--fontPrimaria);
+  font-family: var(--font-primaria);
   font-size: 2.6rem;
-  font-weight: var(--pesoTitoloForte);
+  font-weight: var(--peso-titolo-forte);
   color: var(--colore-testo);
 }
 
 .stat-label {
   margin-top: var(--spazio-xs);
   color: var(--colore-testo-secondario);
-  font-family: var(--fontSecondaria);
-  font-weight: var(--pesoTesto);
+  font-family: var(--font-secondaria);
+  font-weight: var(--peso-testo);
 }
 
 .card-section {
   padding: var(--spazioSezioneAmpia) 0;
-  animation: var(--animazioneIngressoLenta);
+  animation: var(--animazione-ingresso-lenta);
 }
 
 .card-section .section-heading {
@@ -251,7 +251,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 .ctaPremium {
   padding: var(--spazioSezioneAmpia) 0;
-  animation: var(--animazioneIngressoLenta);
+  animation: var(--animazione-ingresso-lenta);
 }
 
 .ctaCard {
@@ -261,13 +261,13 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   color: var(--colore-testo);
   border: var(--bordo-sottile) solid rgba(255, 255, 255, 0.08);
   box-shadow: var(--ombra-profonda);
-  animation: var(--animazioneIngressoLenta);
+  animation: var(--animazione-ingresso-lenta);
 }
 
 .statusSection {
   padding: var(--spazioSezione) 0;
   background: var(--colore-superficie);
-  animation: var(--animazioneIngressoDolce);
+  animation: var(--animazione-ingresso-dolce);
 }
 
 .status-grid {
@@ -283,7 +283,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   box-shadow: var(--ombra-leggera);
   display: grid;
   gap: var(--spazio-xs);
-  animation: var(--animazioneIngressoDolce);
+  animation: var(--animazione-ingresso-dolce);
   position: relative;
   overflow: hidden;
 }
@@ -350,21 +350,21 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 }
 
 .status-card h3 {
-  font-family: var(--fontPrimaria);
-  font-weight: var(--pesoTitolo);
+  font-family: var(--font-primaria);
+  font-weight: var(--peso-titolo);
 }
 
 .status-meta {
   display: inline-flex;
   gap: var(--spazio-2xs);
   align-items: center;
-  font-family: var(--fontSecondaria);
-  font-weight: var(--pesoTestoEnfasi);
+  font-family: var(--font-secondaria);
+  font-weight: var(--peso-testo-enfasi);
 }
 
 .ctaCard h2 {
-  font-family: var(--fontPrimaria);
-  font-weight: var(--pesoTitoloForte);
+  font-family: var(--font-primaria);
+  font-weight: var(--peso-titolo-forte);
   font-size: clamp(1.8rem, 3vw, 2.4rem);
 }
 

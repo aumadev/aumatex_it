@@ -22,7 +22,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 */
 
 :root {
-  scroll-padding-top: var(--offsetHeaderSticky, var(--altezzaHeaderCompatto));
+  scroll-padding-top: var(--offsetHeaderSticky, var(--altezza-header-compatto));
 }
 
 .site-header {
@@ -31,7 +31,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   background: var(--colore-sfondo);
   border-bottom: var(--bordo-sottile) solid var(--colore-bordo);
   z-index: 20;
-  transition: var(--animazioneHeaderScroll);
+  transition: var(--animazione-header-scroll);
   backdrop-filter: blur(10px);
   box-shadow: var(--ombraHeader);
 }
@@ -42,23 +42,23 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   align-items: center;
   gap: var(--spazioHeroGap);
   justify-content: space-between;
-  min-height: var(--altezzaHeaderAmpio);
+  min-height: var(--altezza-header-ampio);
   padding: var(--spazioHeaderVerticale) 0;
-  transition: var(--animazioneHeaderScroll);
+  transition: var(--animazione-header-scroll);
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
   gap: var(--spazio-md);
-  font-weight: var(--pesoTitoloForte);
+  font-weight: var(--peso-titolo-forte);
   font-size: 1.15rem;
   line-height: 1;
-  transition: var(--animazioneHeaderScroll);
+  transition: var(--animazione-header-scroll);
 }
 
 .brand-name {
-  font-family: var(--fontLogo) !important;
+  font-family: var(--font-logo) !important;
   font-weight: 200;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -66,13 +66,13 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 }
 
 .brand img {
-  width: var(--dimensioneLogoPrincipale);
-  height: var(--dimensioneLogoPrincipale);
+  width: var(--dimensione-logo-principale);
+  height: var(--dimensione-logo-principale);
   border-radius: var(--raggio-md);
   background-color: transparent;
   box-shadow: none;
   filter: drop-shadow(0 10px 28px var(--colore-ombra));
-  transition: var(--animazioneHeaderScroll);
+  transition: var(--animazione-header-scroll);
   object-fit: contain;
   transform-origin: left center;
 }
@@ -207,13 +207,13 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 .headerCompatto .header-bar {
   padding: var(--spazioHeaderCompatto) 0;
-  min-height: var(--altezzaHeaderCompatto);
+  min-height: var(--altezza-header-compatto);
   gap: var(--spazio-md);
 }
 
 .headerCompatto .brand img {
-  width: var(--dimensioneLogoCompatto);
-  height: var(--dimensioneLogoCompatto);
+  width: var(--dimensione-logo-compatto);
+  height: var(--dimensione-logo-compatto);
 }
 
 .headerCompatto .brand span {

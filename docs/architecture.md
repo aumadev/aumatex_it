@@ -36,7 +36,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 ## CSS a layer
 - Base: root, variabili estetiche/animazioni, reset, typo.
-- Layout: grid, header, footer (header sticky con variabili `--spazioHeaderVerticale`, `--dimensioneLogoPrincipale`, animazione `--animazioneHeaderScroll`).
+- Layout: grid, header, footer (header sticky con variabili `--spazioHeaderVerticale`, `--dimensione-logo-principale`, animazione `--animazione-header-scroll`).
 - Componenti: card, bottoni, form, banner cookie.
 - Temi: light/dark.
 - Utility e overrides (print, RTL).
@@ -44,7 +44,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 ## Tipografia
 - Font principali: `RobotoSlab` per titoli/UI e `Mulish` per testo corrente; entrambi variable (pesi 100–900) con italic Mulish.
 - Definizioni @font-face centralizzate in `src/styles/base/font-face.css` che punta ai file `src/media/fonts/RobotoSlab-wght.ttf`, `src/media/fonts/Mulish-wght.ttf`, `src/media/fonts/Mulish-Italic-wght.ttf`.
-- Variabili di font e pesi in `src/styles/base/variables.css` (`--fontPrimaria`, `--fontSecondaria`, `--pesoTitolo*`, `--pesoTesto*`), applicate a body e heading in `src/styles/base/root.css` e `src/styles/base/typography.css`.
+- Variabili di font e pesi in `src/styles/base/variables.css` (`--font-primaria`, `--font-secondaria`, `--peso-titolo*`, `--peso-testo*`), applicate a body e heading in `src/styles/base/root.css` e `src/styles/base/typography.css`.
 - Utility tipografiche in `src/styles/utilities/typography-utilities.css` per applicare rapidamente famiglia/peso ai componenti.
 
 ## JS a responsabilita
@@ -59,8 +59,8 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 - Banner cookie modulare con preferenze persistite e link alle policy; pulsante di chiusura dedicato e classi `cookieBannerCompatto`/`cookieBannerNascosto`; stile in `src/styles/components/banner-cookie.css`.
 
 ## Comportamenti interattivi
-- Header: sticky e riallineato su scroll con classe `headerCompatto` applicata oltre la soglia `data-header-soglia`; transizioni guidate da `--animazioneHeaderScroll` e dimensioni da variabili dedicate.
-- Cookie banner: markup condiviso nelle pagine root, stile in `src/styles/components/banner-cookie.css` con transizione `--animazioneCookieBanner`; logica in `cookie-consenso.js` che salva preferenze (`preferenzeCookie`) e stato (`cookieConsent`) gestendo pulsanti Personalizza/Accetta/Rifiuta/Chiudi.
+- Header: sticky e riallineato su scroll con classe `headerCompatto` applicata oltre la soglia `data-header-soglia`; transizioni guidate da `--animazione-header-scroll` e dimensioni da variabili dedicate.
+- Cookie banner: markup condiviso nelle pagine root, stile in `src/styles/components/banner-cookie.css` con transizione `--animazione-cookie-banner`; logica in `cookie-consenso.js` che salva preferenze (`preferenzeCookie`) e stato (`cookieConsent`) gestendo pulsanti Personalizza/Accetta/Rifiuta/Chiudi.
 
 ## Automazione
 - Script Python in `python/tasks/` per build e ottimizzazione asset (da completare/estendere).
