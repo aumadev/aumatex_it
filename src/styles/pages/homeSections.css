@@ -97,9 +97,10 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 }
 
 .hero-highlights li::before {
-  content: "+";
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
   color: var(--colore-accento);
-  font-weight: var(--pesoTitoloForte);
 }
 
 .hero-media {
@@ -283,11 +284,39 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   display: grid;
   gap: var(--spazio-xs);
   animation: var(--animazioneIngressoDolce);
+  position: relative;
+  overflow: hidden;
 }
 
 .status-card.successo {
   background: linear-gradient(140deg, color-mix(in srgb, var(--colore-successo) 26%, transparent), color-mix(in srgb, var(--colore-successo) 8%, transparent));
   border-color: color-mix(in srgb, var(--colore-successo) 45%, transparent);
+}
+
+.status-card::before {
+  position: absolute;
+  inset: var(--spazio-sm) var(--spazio-sm) auto auto;
+  font-family: "Font Awesome 6 Free";
+  font-size: 1.15rem;
+  opacity: 0.8;
+}
+
+.status-card.successo::before {
+  content: "\f058";
+  color: var(--colore-successo);
+  font-weight: 900;
+}
+
+.status-card.avviso::before {
+  content: "\f071";
+  color: var(--colore-avviso);
+  font-weight: 900;
+}
+
+.status-card.errore::before {
+  content: "\f06a";
+  color: var(--colore-errore);
+  font-weight: 900;
 }
 
 @keyframes fadeUp {

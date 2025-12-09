@@ -7,10 +7,10 @@ PROJECT: Aumatex Template
  .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
-FILE:        src/styles/components/cards.css
-SCOPO:       Stile delle card di contenuto
-VERSIONE:    1.1
-DATA:        11/03/2026
+FILE:        src/styles/base/icons.css
+SCOPO:       Import e utilità per le icone Font Awesome
+VERSIONE:    1.0
+DATA:        13/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -21,60 +21,4 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 ───────────────────────────────────────────────────────────────────────────────
 */
 
-.card {
-  border: var(--bordo-sottile) solid var(--colore-bordo);
-  border-radius: var(--raggio-xl);
-  background: linear-gradient(180deg, rgba(15, 155, 190, 0.08), rgba(15, 155, 190, 0.02));
-  overflow: hidden;
-  box-shadow: var(--ombra-leggera);
-  display: flex;
-  flex-direction: column;
-  transition: var(--transizione-base);
-}
-
-.card-grid .card {
-  animation: var(--animazioneIngressoDolce);
-}
-
-.card-grid .card:nth-child(2) {
-  animation-delay: 80ms;
-}
-
-.card-grid .card:nth-child(3) {
-  animation-delay: 140ms;
-}
-
-.card-grid .card:nth-child(4) {
-  animation-delay: 200ms;
-}
-
-.card-grid .card:nth-child(n+5) {
-  animation-delay: 260ms;
-}
-
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--ombra-media);
-}
-
-.card-media {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card-body {
-  padding: var(--spazioSezione);
-  display: grid;
-  gap: var(--spazio-sm);
-  background: var(--colore-superficie);
-}
-
-.card h3 {
-  font-family: var(--fontPrimaria);
-  font-weight: var(--pesoTitolo);
-}
-
-.card .eyebrow {
-  color: var(--colore-accento);
-}
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");

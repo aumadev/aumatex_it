@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/styles/base/variabiliEstetiche.css
 SCOPO:       Variabili estetiche di design e tipografia
-VERSIONE:    1.4
-DATA:        12/03/2026
+VERSIONE:    1.5
+DATA:        13/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -26,6 +26,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   --fontPrimaria: "RobotoSlab", "Mulish", system-ui, -apple-system, sans-serif;
   --fontSecondaria: "Mulish", system-ui, -apple-system, sans-serif;
   --fontMono: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --fontLogo: "ImagineExtra", "RobotoSlab", system-ui, serif;
   --testo-base: 16px;
   --titolo-1: 2.6rem;
   --titolo-2: 2rem;

@@ -26,7 +26,7 @@
   },
   "footer": {
     "company": "Aumatex",
-    "tagline": "Costruiamo prodotti digitali di qualità.",
+    "tagline": "Sviluppiamo app, siti e software su misura, con consulenza AI, digitalizzazione aziendale e supporto a gare e licenze.",
     "links": "Link",
     "privacy": "Privacy",
     "cookies": "Cookie",
@@ -35,13 +35,14 @@
     "contact": "Contatti",
     "cookiePreferences": "Preferenze cookie",
     "info": "Informazioni",
-    "pec": "PEC",
+    "pec": "aumatex@pec.it",
     "addressName": "Aumatex srls",
     "addressStreet": "Via Umberto Biancamano, 25",
     "addressCity": "00185 Roma (RM)",
-    "vat": "P. IVA/CF 0000000000000",
-    "capital": "Capitale sociale €10.000,00",
-    "rea": "REA 9090000"
+    "vat": "P.IVA/CF 15617831001",
+    "capital": "Capitale sociale €1.000,00",
+    "rea": "REA RM - 1602584",
+    "copyright": "© {year} Aumatex srls. Tutti i diritti riservati."
   },
   "pillars": {
     "eyebrow": "Dalla discovery al rilascio",
@@ -93,12 +94,46 @@
   },
   "privacy": {
     "title": "Informativa Privacy",
-    "intro": "Questa pagina è un segnaposto per l'informativa privacy. Inserisci qui i testi legali aggiornati.",
-    "dataTitle": "Dati raccolti",
-    "dataPoint1": "Dati di contatto forniti tramite form.",
-    "dataPoint2": "Log tecnici minimi per sicurezza e performance.",
+    "intro": "La presente informativa descrive come Aumatex srls tratta i dati personali in conformità al GDPR (UE) 2016/679 e alla normativa italiana vigente.",
+    "controllerTitle": "Titolare del trattamento",
+    "controllerContent": "Aumatex srls · Via Umberto Biancamano, 25 · 00185 Roma (RM) · info@aumatex.it · aumatex@pec.it · +39 351 8860030.",
+    "legalTitle": "Riferimenti normativi",
+    "legalContent": "Il trattamento si basa sugli artt. 6.1.b, 6.1.c e 6.1.f GDPR per l'erogazione dei servizi, l'adempimento di obblighi di legge e il legittimo interesse alla sicurezza e al buon funzionamento del sito.",
+    "dataTitle": "Dati trattati",
+    "dataPoints": {
+      "navigation": "Dati tecnici di navigazione (indirizzo IP, informazioni su dispositivo/browser, timestamp) generati dai log di accesso per sicurezza e performance.",
+      "contacts": "Dati di contatto e contenuto dei messaggi che ci invii (nome, email, telefono, azienda, servizio richiesto).",
+      "cookies": "Preferenze sui cookie salvate in locale e cookie tecnici erogati dall'hosting provider (Aruba Business) indispensabili per servire il sito."
+    },
+    "purposesTitle": "Finalità e basi giuridiche",
+    "purposesPoints": {
+      "browsing": "Consentire la navigazione del sito e la fruizione delle pagine e delle risorse richieste.",
+      "contact": "Rispondere a richieste informative, commerciali o di supporto che ci invii.",
+      "security": "Tutela della piattaforma, rilevazione di anomalie o abusi e continuità del servizio.",
+      "compliance": "Adempimenti di legge e gestione di eventuali esigenze difensive."
+    },
+    "retentionTitle": "Conservazione",
+    "retentionContent": "I log tecnici sono conservati solo per il tempo necessario a garantire sicurezza e diagnostica (normalmente fino a 12 mesi). Le richieste di contatto sono mantenute per il tempo strettamente necessario a gestire la conversazione e fino a 24 mesi per tracciabilità. Le scelte di consenso cookie sono conservate fino a 12 mesi.",
+    "hostingTitle": "Hosting e terze parti",
+    "hostingContent": "Il sito è ospitato su Aruba Business (Linux) all'interno dell'UE. Aruba può impostare solo cookie tecnici per bilanciamento del carico e sicurezza. Non sono attivi cookie analitici, di marketing o profilazione e i dati non sono condivisi per fini pubblicitari.",
+    "transfersTitle": "Trasferimenti di dati",
+    "transfersContent": "I dati sono conservati nell'UE. Eventuali futuri trasferimenti fuori dallo Spazio Economico Europeo avverranno sulla base di decisioni di adeguatezza o clausole contrattuali standard conformi al GDPR.",
     "rightsTitle": "Diritti degli interessati",
-    "rightsCopy": "Descrivi come gli utenti possono esercitare i diritti di accesso, rettifica, cancellazione e portabilità."
+    "rightsPoints": {
+      "access": "Accesso ai propri dati personali e alle informazioni sul trattamento.",
+      "rectification": "Rettifica dei dati inesatti e integrazione di quelli incompleti.",
+      "erasure": "Cancellazione (\"diritto all'oblio\") nei limiti previsti dalla legge.",
+      "restriction": "Limitazione del trattamento nei casi previsti dall'art. 18 GDPR.",
+      "portability": "Portabilità dei dati forniti, in formato strutturato di uso comune.",
+      "objection": "Opposizione ai trattamenti basati su legittimo interesse, inclusi i controlli di sicurezza.",
+      "complaint": "Reclamo all'Autorità Garante per la protezione dei dati personali."
+    },
+    "exerciseTitle": "Come esercitare i diritti",
+    "exerciseContent": "Puoi scrivere a info@aumatex.it o aumatex@pec.it, oppure chiamare il +39 351 8860030. Risponderemo nel più breve tempo possibile e comunque nei termini previsti dal GDPR.",
+    "securityTitle": "Sicurezza",
+    "securityContent": "Adottiamo misure tecniche e organizzative proporzionate ai rischi (cifratura TLS, controllo accessi, account a privilegi minimi, backup monitorati) per tutelare i dati.",
+    "updatesTitle": "Aggiornamenti",
+    "updatesContent": "Potremmo aggiornare la presente informativa per recepire novità legali o tecniche. Ultimo aggiornamento: 11/03/2026."
   },
   "header": {
     "menu": "Apri menu",
@@ -122,18 +157,30 @@
     "personalizza": "Personalizza",
     "linkPrivacy": "Privacy policy",
     "linkCookie": "Cookie policy",
-    "chiudi": "Chiudi banner cookie"
+    "chiudi": "Chiudi"
   },
   "cookiePolicy": {
     "titolo": "Cookie Policy",
-    "introduzione": "Questa pagina descrive come utilizziamo i cookie e come puoi gestire le tue preferenze.",
-    "sezioneTecniciTitolo": "Cookie tecnici ed essenziali",
-    "sezioneTecniciDescrizione": "Questi cookie sono indispensabili per il funzionamento del sito e non possono essere disattivati.",
-    "sezioneAnalisiTitolo": "Cookie di analisi",
-    "sezioneAnalisiDescrizione": "Servono a raccogliere dati aggregati sull'uso del sito per migliorarne le funzionalità.",
-    "sezioneMarketingTitolo": "Cookie di marketing",
-    "sezioneMarketingDescrizione": "Utilizzati per personalizzazione, remarketing e contenuti promozionali.",
-    "gestioneTitolo": "Gestione delle preferenze",
-    "gestioneDescrizione": "Puoi modificare le scelte in qualsiasi momento tramite il banner o il link nelle note legali del sito."
+    "introduzione": "Questa cookie policy descrive l'uso dei cookie da parte di Aumatex srls su questo sito ospitato su Aruba Business (Linux).",
+    "titolareTitolo": "Titolare del trattamento",
+    "titolareDescrizione": "Aumatex srls · Via Umberto Biancamano, 25 · 00185 Roma (RM) · info@aumatex.it · aumatex@pec.it · +39 351 8860030.",
+    "cheCosaTitolo": "Cosa sono i cookie",
+    "cheCosaDescrizione": "I cookie sono piccoli file di testo che i siti memorizzano sul dispositivo per fornire o migliorare un servizio. Questo sito li utilizza nel rispetto del GDPR, delle Linee guida del Garante e delle regole ePrivacy.",
+    "cookieUsatiTitolo": "Cookie utilizzati",
+    "cookieTecniciPunto1": "Cookie di navigazione e di sessione per erogare le pagine, mantenere le preferenze di lingua e garantire le funzionalità di base.",
+    "cookieTecniciPunto2": "Cookie di sicurezza e bilanciamento del carico rilasciati dal provider di hosting (Aruba) per proteggere l'infrastruttura e distribuire il traffico.",
+    "cookieTecniciPunto3": "Un cookie di consenso che memorizza le scelte effettuate tramite il banner fino a 12 mesi.",
+    "cookieTecniciPunto4": "Non sono attivati cookie di analisi, marketing o profilazione su questo sito.",
+    "profilazioneTitolo": "Cookie di profilazione e terze parti",
+    "profilazioneDescrizione": "Non utilizziamo piattaforme marketing, pixel o network pubblicitari. L'unica terza parte coinvolta è Aruba Business come hosting provider, limitatamente ai cookie tecnici.",
+    "consensoTitolo": "Gestione del consenso",
+    "consensoDescrizione": "I cookie essenziali sono sempre attivi perché necessari al funzionamento del sito. Il banner consente di accettare o rifiutare categorie opzionali; poiché non sono attivi cookie opzionali, la scelta riguarda principalmente la memorizzazione del consenso stesso.",
+    "gestioneTitolo": "Modifica delle preferenze",
+    "gestioneDescrizione": "Puoi riaprire il banner cookie in qualsiasi momento dal link \"Preferenze cookie\" nel footer e aggiornare le tue scelte.",
+    "browserTitolo": "Gestire i cookie dal browser",
+    "browserDescrizione": "Puoi cancellare o bloccare i cookie dalle impostazioni del browser (es. Safari, Chrome, Edge, Firefox). Il blocco dei cookie tecnici può impedire il corretto funzionamento del sito.",
+    "dirittiTitolo": "Diritti e contatti",
+    "dirittiDescrizione": "Per esercitare i tuoi diritti privacy o ottenere ulteriori informazioni, scrivi a info@aumatex.it o consulta la Privacy Policy.",
+    "ultimoAggiornamento": "Ultimo aggiornamento: 11/03/2026."
   }
 }

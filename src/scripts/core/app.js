@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/scripts/core/app.js
 SCOPO:       Bootstrap applicazione tema e init base
-VERSIONE:    1.1
-DATA:        09/03/2026
+VERSIONE:    1.2
+DATA:        13/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -23,11 +23,16 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 (function () {
   const CHIAVE_MEMORIA_TEMA = "tema";
+  const iconeTema = {
+    light: "fa-sun",
+    dark: "fa-moon",
+  };
 
   const Applicazione = {
     avvia() {
       this.applicaTemaSalvato();
       this.collegaCambioTema();
+      this.aggiornaIconeTema();
     },
     applicaTemaSalvato() {
       const temaSalvato = localStorage.getItem(CHIAVE_MEMORIA_TEMA);
@@ -40,7 +45,15 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
           const temaCorrente = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
           document.documentElement.dataset.theme = temaCorrente;
           localStorage.setItem(CHIAVE_MEMORIA_TEMA, temaCorrente);
+          this.aggiornaIconeTema();
         });
+      });
+    },
+    aggiornaIconeTema() {
+      const temaAttivo = document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+      document.querySelectorAll("[data-theme-icon]").forEach(icona => {
+        icona.classList.remove(iconeTema.light, iconeTema.dark);
+        icona.classList.add(iconeTema[temaAttivo]);
       });
     }
   };

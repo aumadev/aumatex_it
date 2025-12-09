@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/scripts/ui/headerController.js
 SCOPO:       Gestione sticky header e riduzione su scroll
-VERSIONE:    1.0
-DATA:        09/03/2026
+VERSIONE:    1.7
+DATA:        13/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -49,5 +49,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
     window.addEventListener("resize", () => aggiornaScrollPadding(header));
   }
 
-  document.addEventListener("DOMContentLoaded", inizializzaHeaderScroll);
+  document.addEventListener("DOMContentLoaded", () => {
+    inizializzaHeaderScroll();
+  });
 })();

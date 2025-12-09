@@ -48,3 +48,32 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 .testoEnfasi {
   font-weight: var(--pesoTestoEnfasi);
 }
+
+.titoloIcona {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spazio-xs);
+}
+
+.titoloIcona i {
+  color: var(--colore-accento);
+}
+
+.icon-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--spazio-xs);
+}
+
+.icon-list li {
+  display: flex;
+  gap: var(--spazio-sm);
+  align-items: flex-start;
+}
+
+.icon-list i {
+  color: var(--colore-accento);
+  margin-top: 4px;
+}

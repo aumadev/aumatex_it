@@ -32,6 +32,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   <link rel="stylesheet" href="./src/styles/base/variabiliAnimazioni.css">
   <link rel="stylesheet" href="./src/styles/base/root.css">
   <link rel="stylesheet" href="./src/styles/base/reset.css">
+  <link rel="stylesheet" href="./src/styles/base/icons.css">
   <link rel="stylesheet" href="./src/styles/base/typography.css">
   <link rel="stylesheet" href="./src/styles/layouts/grid.css">
   <link rel="stylesheet" href="./src/styles/layouts/header.css">
@@ -66,7 +67,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
     <div class="container header-bar">
       <a class="brand" href="./index.html">
         <img src="./src/media/images/logoHeader.png" alt="Logo Aumatex" data-i18n="header.logoAlt" data-i18n-attr="alt">
-        <span class="titoloSezione" data-i18n="header.brand">Aumatex</span>
+        <span class="titoloSezione brand-name" data-brand-typing data-i18n="header.brand">Aumatex</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" data-nav-toggle="#menuPrincipale">
         <span class="sr-only" data-i18n="header.menu">Apri menu</span>
@@ -90,65 +91,103 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
             <option value="es">ES</option>
           </select>
         </div>
-        <button class="btn-ghost" data-theme-toggle aria-label="Toggle theme" data-i18n="header.themeToggle" data-i18n-attr="aria-label">☀︎/☾</button>
+        <button class="btn-ghost" data-theme-toggle aria-label="Toggle theme" data-i18n="header.themeToggle" data-i18n-attr="aria-label">
+          <i class="fa-solid fa-sun" aria-hidden="true" data-theme-icon></i>
+          <span class="sr-only" data-i18n="header.themeToggle">Toggle theme</span>
+        </button>
       </div>
     </div>
   </header>
 
   <main id="page" class="layout-shell">
     <section class="container prose">
-      <h1 data-i18n="cookiePolicy.titolo">Cookie Policy</h1>
-      <p data-i18n="cookiePolicy.introduzione">Questa pagina descrive come utilizziamo i cookie e come puoi gestire le tue preferenze.</p>
+      <h1 class="titoloIcona"><i class="fa-solid fa-cookie-bite" aria-hidden="true"></i><span data-i18n="cookiePolicy.titolo">Cookie Policy</span></h1>
+      <p data-i18n="cookiePolicy.introduzione">This cookie policy describes how Aumatex srls uses cookies on this site hosted on Aruba Business (Linux).</p>
 
-      <h2 data-i18n="cookiePolicy.sezioneTecniciTitolo">Cookie tecnici ed essenziali</h2>
-      <p data-i18n="cookiePolicy.sezioneTecniciDescrizione">Questi cookie sono indispensabili per il funzionamento del sito e non possono essere disattivati.</p>
+      <h2 class="titoloIcona"><i class="fa-solid fa-user-tie" aria-hidden="true"></i><span data-i18n="cookiePolicy.titolareTitolo">Titolare del trattamento</span></h2>
+      <p data-i18n="cookiePolicy.titolareDescrizione">Aumatex srls · Via Umberto Biancamano, 25 · 00185 Roma (RM) · info@aumatex.it · aumatex@pec.it · +39 351 8860030.</p>
 
-      <h2 data-i18n="cookiePolicy.sezioneAnalisiTitolo">Cookie di analisi</h2>
-      <p data-i18n="cookiePolicy.sezioneAnalisiDescrizione">Servono a raccogliere dati aggregati sull'uso del sito per migliorarne le funzionalità.</p>
+      <h2 class="titoloIcona"><i class="fa-solid fa-circle-info" aria-hidden="true"></i><span data-i18n="cookiePolicy.cheCosaTitolo">What cookies are</span></h2>
+      <p data-i18n="cookiePolicy.cheCosaDescrizione">Cookies are small text files that websites store on your device to provide or improve a service. This site uses them in compliance with GDPR, the Italian Data Protection Authority's guidelines and the ePrivacy rules.</p>
 
-      <h2 data-i18n="cookiePolicy.sezioneMarketingTitolo">Cookie di marketing</h2>
-      <p data-i18n="cookiePolicy.sezioneMarketingDescrizione">Utilizzati per personalizzazione, remarketing e contenuti promozionali.</p>
+      <h2 class="titoloIcona"><i class="fa-solid fa-rectangle-list" aria-hidden="true"></i><span data-i18n="cookiePolicy.cookieUsatiTitolo">Cookies we use</span></h2>
+      <ul class="icon-list">
+        <li><i class="fa-solid fa-language" aria-hidden="true"></i><span data-i18n="cookiePolicy.cookieTecniciPunto1">Navigation and session cookies to deliver pages, maintain language preferences and ensure basic functionality.</span></li>
+        <li><i class="fa-solid fa-shield-heart" aria-hidden="true"></i><span data-i18n="cookiePolicy.cookieTecniciPunto2">Security and load-balancing cookies issued by the hosting provider (Aruba) to protect the infrastructure and distribute traffic.</span></li>
+        <li><i class="fa-solid fa-check-double" aria-hidden="true"></i><span data-i18n="cookiePolicy.cookieTecniciPunto3">A consent cookie that stores your choices from the banner for up to 12 months.</span></li>
+        <li><i class="fa-solid fa-ban" aria-hidden="true"></i><span data-i18n="cookiePolicy.cookieTecniciPunto4">No analytics, marketing or profiling cookies are enabled on this site.</span></li>
+      </ul>
 
-      <h2 data-i18n="cookiePolicy.gestioneTitolo">Gestione delle preferenze</h2>
-      <p data-i18n="cookiePolicy.gestioneDescrizione">Puoi modificare le scelte in qualsiasi momento tramite il banner o il link nelle note legali del sito.</p>
+      <h2 class="titoloIcona"><i class="fa-solid fa-eye-slash" aria-hidden="true"></i><span data-i18n="cookiePolicy.profilazioneTitolo">Profiling and third-party cookies</span></h2>
+      <p data-i18n="cookiePolicy.profilazioneDescrizione">We do not use third-party marketing platforms, pixels or advertising networks. The only third party involved is Aruba Business as hosting provider, limited to technical cookies.</p>
+
+      <h2 class="titoloIcona"><i class="fa-solid fa-toggle-on" aria-hidden="true"></i><span data-i18n="cookiePolicy.consensoTitolo">Consent management</span></h2>
+      <p data-i18n="cookiePolicy.consensoDescrizione">Essential cookies are always active because they are necessary for the site to operate. The banner lets you accept or reject optional categories; since no optional cookies are active, your choice mainly concerns the storage of consent itself.</p>
+
+      <h2 class="titoloIcona"><i class="fa-solid fa-sliders" aria-hidden="true"></i><span data-i18n="cookiePolicy.gestioneTitolo">Change your choices</span></h2>
+      <p data-i18n="cookiePolicy.gestioneDescrizione">You can reopen the cookie banner at any time from the footer link "Cookie preferences" and update your consent.</p>
+
+      <h2 class="titoloIcona"><i class="fa-solid fa-browser" aria-hidden="true"></i><span data-i18n="cookiePolicy.browserTitolo">Manage cookies via your browser</span></h2>
+      <p data-i18n="cookiePolicy.browserDescrizione">You can delete or block cookies from your browser settings (e.g., Safari, Chrome, Edge, Firefox). Blocking technical cookies may prevent the site from working correctly.</p>
+
+      <h2 class="titoloIcona"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span data-i18n="cookiePolicy.dirittiTitolo">Rights and contacts</span></h2>
+      <p data-i18n="cookiePolicy.dirittiDescrizione">To exercise your privacy rights or obtain more information, contact info@aumatex.it or see the Privacy Policy.</p>
+
+      <p class="titoloIcona"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i><span data-i18n="cookiePolicy.ultimoAggiornamento">Last update: 11/03/2026.</span></p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
       <section>
-        <h2 data-i18n="footer.company">Aumatex</h2>
-        <p data-i18n="footer.tagline">We build sharp digital products.</p>
+        <h2 class="footer-brand" data-i18n="footer.company">Aumatex</h2>
+        <p class="footer-tagline" data-i18n="footer.tagline">We build sharp digital products.</p>
+        <div class="footer-logos">
+          <img src="./src/media/images/logoSmallFooter-1.png" alt="Logo partner 1">
+          <img src="./src/media/images/logoSmallFooter-2.png" alt="Logo partner 2">
+          <img src="./src/media/images/logoSmallFooter-3.png" alt="Logo partner 3">
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+        </div>
       </section>
       <section>
-        <h2 data-i18n="footer.links">Links</h2>
+        <h2 class="footer-heading"><i class="fa-solid fa-link" aria-hidden="true"></i><span data-i18n="footer.links">Links</span></h2>
         <ul>
-          <li><a href="./privacyPolicy.html" data-i18n="footer.privacy">Privacy policy</a></li>
-          <li><a href="./cookiePolicy.html" data-i18n="footer.cookies">Cookie policy</a></li>
-          <li><a href="./terms.html" data-i18n="footer.terms">Terms</a></li>
-          <li><a href="./support.html" data-i18n="footer.support">Support</a></li>
-          <li><a href="#" data-riapri-cookie data-i18n="footer.cookiePreferences">Preferenze cookie</a></li>
+          <li class="footer-list-item"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><a href="./privacyPolicy.html" data-i18n="footer.privacy">Privacy policy</a></li>
+          <li class="footer-list-item"><i class="fa-solid fa-cookie-bite" aria-hidden="true"></i><a href="./cookiePolicy.html" data-i18n="footer.cookies">Cookie policy</a></li>
+          <li class="footer-list-item"><i class="fa-solid fa-file-contract" aria-hidden="true"></i><a href="./terms.html" data-i18n="footer.terms">Terms</a></li>
+          <li class="footer-list-item"><i class="fa-solid fa-life-ring" aria-hidden="true"></i><a href="./support.html" data-i18n="footer.support">Support</a></li>
+          <li class="footer-list-item"><i class="fa-solid fa-sliders" aria-hidden="true"></i><a href="#" data-riapri-cookie data-i18n="footer.cookiePreferences">Preferenze cookie</a></li>
         </ul>
       </section>
       <section class="footer-info">
-        <h2 data-i18n="footer.info">Informazioni</h2>
+        <h2 class="footer-heading"><i class="fa-solid fa-circle-info" aria-hidden="true"></i><span data-i18n="footer.info">Informazioni</span></h2>
         <ul>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="mailto:aumatex@pec.it" data-i18n="footer.pec">PEC</a></li>
-          <li><a href="tel:+391234567890">+39 123 456 7890</a></li>
+          <li class="footer-list-item"><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:info@aumatex.it">info@aumatex.it</a></li>
+          <li class="footer-list-item"><i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i><a href="mailto:aumatex@pec.it" data-i18n="footer.pec">aumatex@pec.it</a></li>
+          <li class="footer-list-item"><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+393518860030">+39 351 8860030</a></li>
         </ul>
         <div class="footer-info-extra">
-          <p data-i18n="footer.addressName">Aumatex srls</p>
-          <p data-i18n="footer.addressStreet">Via Umberto Biancamano, 25</p>
-          <p data-i18n="footer.addressCity">00185 Roma (RM)</p>
-          <p data-i18n="footer.vat">P. IVA/CF 0000000000000</p>
-          <p data-i18n="footer.capital">Capitale sociale €10.000,00</p>
-          <p data-i18n="footer.rea">REA 9090000</p>
+          <p class="footer-info-line"><i class="fa-solid fa-building" aria-hidden="true"></i><span data-i18n="footer.addressName">Aumatex srls</span></p>
+          <p class="footer-info-line"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span data-i18n="footer.addressStreet">Via Umberto Biancamano, 25</span></p>
+          <p class="footer-info-line"><i class="fa-solid fa-map" aria-hidden="true"></i><span data-i18n="footer.addressCity">00185 Roma (RM)</span></p>
+          <p class="footer-info-line footer-info-strong"><i class="fa-solid fa-id-card" aria-hidden="true"></i><span data-i18n="footer.vat">P.IVA/CF 15617831001</span></p>
+          <p class="footer-info-line footer-info-strong"><i class="fa-solid fa-coins" aria-hidden="true"></i><span data-i18n="footer.capital">Capitale sociale €1.000,00</span></p>
+          <p class="footer-info-line footer-info-strong"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span data-i18n="footer.rea">REA RM - 1602584</span></p>
         </div>
       </section>
     </div>
     <div class="container footer-bottom">
-      <small>© <span data-year></span> Aumatex</small>
+      <small data-i18n="footer.copyright">© <span data-year></span> Aumatex srls. Tutti i diritti riservati.</small>
     </div>
   </footer>
 
@@ -158,9 +197,8 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
         <h2 data-i18n="cookie.titolo">Preferenze cookie</h2>
         <p data-i18n="cookie.descrizione">Utilizziamo cookie per migliorare l'esperienza. Scegli cosa attivare.</p>
       </div>
-      <button class="banner-cookie__chiudi" type="button" data-cookie-chiudi aria-label="Chiudi banner cookie" data-i18n="cookie.chiudi" data-i18n-attr="aria-label">
+      <button class="banner-cookie__chiudi" type="button" data-cookie-chiudi aria-label="Close cookie banner">
         <span aria-hidden="true">×</span>
-        <span class="sr-only" data-i18n="cookie.chiudi">Chiudi banner cookie</span>
       </button>
     </div>
     <div class="banner-cookie__sezione">

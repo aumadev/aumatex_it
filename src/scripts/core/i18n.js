@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/scripts/core/i18n.js
 SCOPO:       Gestione localizzazione client
-VERSIONE:    1.0
-DATA:        04/11/2025
+VERSIONE:    1.1
+DATA:        11/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -37,6 +37,12 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
     return parti.reduce((acc, parte) => (acc && acc[parte] ? acc[parte] : null), stato.dizionario) || chiave;
   };
 
+  const sostituisciSegnaposto = valore => {
+    if (typeof valore !== "string") return valore;
+    const anno = new Date().getFullYear();
+    return valore.replace(/\{year\}/gi, anno);
+  };
+
   async function caricaDizionario(lingua) {
     const risposta = await fetch(`${percorsi.localizzazioni}/${lingua}/common.json`);
     if (!risposta.ok) throw new Error(`Localizzazione mancante per ${lingua}`);
@@ -46,7 +52,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   function applicaTraduzioni() {
     document.querySelectorAll("[data-i18n]").forEach(nodo => {
       const chiave = nodo.getAttribute("data-i18n");
-      const valore = traduciChiave(chiave);
+      const valore = sostituisciSegnaposto(traduciChiave(chiave));
       if (nodo.dataset.i18nAttr) {
         nodo.setAttribute(nodo.dataset.i18nAttr, valore);
       } else {

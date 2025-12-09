@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/styles/layouts/footer.css
 SCOPO:       Layout e stile del footer
-VERSIONE:    1.1
-DATA:        12/03/2026
+VERSIONE:    1.6
+DATA:        14/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -38,9 +38,64 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   margin-bottom: var(--spazio-sm);
 }
 
+.footer-heading {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spazio-xs);
+}
+
+.footer-heading i {
+  color: var(--colore-accento);
+}
+
+.footer-brand {
+  font-family: var(--fontLogo);
+  font-weight: 200;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.footer-tagline {
+  color: var(--colore-testo-secondario);
+  line-height: 1.6;
+  margin-top: var(--spazio-xs);
+}
+
+.footer-logos {
+  display: flex;
+  gap: var(--spazio-sm);
+  margin-top: var(--spazio-sm);
+  align-items: center;
+}
+
+.footer-logos img {
+  height: 64px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 4px 8px var(--colore-ombra));
+}
+
+.footer-info-strong {
+  font-weight: var(--pesoTitolo);
+}
+
 .footer-grid ul {
   list-style: none;
   padding: 0;
+}
+
+.footer-list-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spazio-xs);
+  color: var(--colore-testo);
+}
+
+.footer-list-item i {
+  color: var(--colore-accento);
+  flex-shrink: 0;
 }
 
 .footer-grid a:hover {
@@ -62,4 +117,41 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   display: grid;
   gap: var(--spazio-2xs);
   color: var(--colore-testo-secondario);
+}
+
+.footer-info-line {
+  display: flex;
+  align-items: center;
+  gap: var(--spazio-xs);
+}
+
+.footer-info-line i {
+  color: var(--colore-accento);
+  flex-shrink: 0;
+}
+
+.footer-social {
+  display: flex;
+  gap: var(--spazio-sm);
+  margin-top: var(--spazio-lg);
+}
+
+.footer-social a {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--raggio-md);
+  display: inline-grid;
+  place-items: center;
+  background: var(--colore-superficie-secondaria);
+  color: var(--colore-accento);
+  border: var(--bordo-sottile) solid var(--colore-bordo);
+  transition: var(--transizione-base);
+}
+
+.footer-social a:hover {
+  transform: translateY(-2px);
+  background: var(--colore-accento);
+  color: var(--colore-superficie);
+  border-color: var(--colore-accento);
+  box-shadow: var(--ombra-leggera);
 }

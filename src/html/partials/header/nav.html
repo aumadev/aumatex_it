@@ -25,7 +25,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   <div class="container header-bar">
     <a class="brand" href="./index.html">
       <img src="./src/media/images/logoHeader.png" alt="Logo Aumatex" data-i18n="header.logoAlt" data-i18n-attr="alt">
-      <span class="titoloSezione" data-i18n="header.brand">Aumatex</span>
+      <span class="titoloSezione brand-name" data-brand-typing data-i18n="header.brand">Aumatex</span>
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" data-nav-toggle="#menuPrincipale">
       <span class="sr-only" data-i18n="header.menu">Apri menu</span>
@@ -49,7 +49,10 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
           <option value="es">ES</option>
         </select>
       </div>
-      <button class="btn-ghost" data-theme-toggle aria-label="Toggle theme" data-i18n="header.themeToggle" data-i18n-attr="aria-label">☀︎/☾</button>
+      <button class="btn-ghost" data-theme-toggle aria-label="Toggle theme" data-i18n="header.themeToggle" data-i18n-attr="aria-label">
+        <i class="fa-solid fa-sun" aria-hidden="true" data-theme-icon></i>
+        <span class="sr-only" data-i18n="header.themeToggle">Toggle theme</span>
+      </button>
     </div>
   </div>
 </header>
