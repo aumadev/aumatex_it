@@ -42,6 +42,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   <link rel="stylesheet" href="./src/styles/components/bannerCookie.css">
   <link rel="stylesheet" href="./src/styles/themes/light.css" media="(prefers-color-scheme: light)">
   <link rel="stylesheet" href="./src/styles/themes/dark.css" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" href="./src/styles/pages/homeSections.css">
   <link rel="stylesheet" href="./src/styles/utilities/typographyUtilities.css">
   <link rel="stylesheet" href="./src/styles/utilities/spacing.css">
   <link rel="stylesheet" href="./src/styles/utilities/display.css">
@@ -104,9 +105,18 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
+          <div class="hero-badges">
+            <span class="pill pill-accent" data-i18n="hero.ribbon">Enterprise delivery</span>
+            <span class="pill" data-i18n="hero.subBadge">Cloud-native builds</span>
+          </div>
           <p class="eyebrow" data-i18n="hero.eyebrow">Template</p>
           <h1 data-i18n="hero.title">Launch faster</h1>
           <p class="lede" data-i18n="hero.subtitle">Layouts and assets organized.</p>
+          <ul class="hero-highlights">
+            <li data-i18n="hero.point1">Discovery to delivery with product ownership.</li>
+            <li data-i18n="hero.point2">Composable design system for faster go-live.</li>
+            <li data-i18n="hero.point3">Secure, analytics-ready stack with governance.</li>
+          </ul>
           <div class="hero-actions">
             <a class="btn-solid" href="./contact.html" data-i18n="hero.ctaPrimary">Start a project</a>
             <a class="btn-ghost" href="./services.html" data-i18n="hero.ctaSecondary">View services</a>
@@ -114,11 +124,79 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
         </div>
         <div class="hero-media">
           <img src="./src/media/images/optimized/heroHome.png" data-i18n="hero.alt" data-i18n-attr="alt" alt="Design workspace preview">
+          <div class="badge-decor">
+            <strong data-i18n="hero.badgeTitle">Full-service delivery</strong>
+            <span data-i18n="hero.badgeCopy">Strategy, design, sviluppo e rollout con team dedicati.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sezioneValori">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="pillars.eyebrow">Dalla strategia al rilascio</p>
+          <h2 class="titoloSezione" data-i18n="pillars.title">Soluzioni su misura per digitalizzare il business</h2>
+          <p class="lede" data-i18n="pillars.subtitle">Team multidisciplinari che combinano ricerca, product design e ingegneria per portare valore misurabile.</p>
+        </div>
+        <div class="valori-grid">
+          <article class="valore-card">
+            <span class="valore-icon" data-i18n="pillars.p1Icon">AI</span>
+            <h3 data-i18n="pillars.p1Title">Piattaforme intelligenti</h3>
+            <p data-i18n="pillars.p1Copy">Integriamo AI e automazioni nei flussi aziendali per ridurre tempi di delivery e aumentare la qualità.</p>
+          </article>
+          <article class="valore-card">
+            <span class="valore-icon" data-i18n="pillars.p2Icon">UX</span>
+            <h3 data-i18n="pillars.p2Title">Esperienze premium</h3>
+            <p data-i18n="pillars.p2Copy">Research, service design e UI coerenti con brand e obiettivi, pronte per crescere su web e mobile.</p>
+          </article>
+          <article class="valore-card">
+            <span class="valore-icon" data-i18n="pillars.p3Icon">Ops</span>
+            <h3 data-i18n="pillars.p3Title">Delivery affidabile</h3>
+            <p data-i18n="pillars.p3Copy">DevSecOps, osservabilità, test e release cicliche per portare in produzione feature solide.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="container card-grid" data-card-grid></section>
+    <section class="statSection">
+      <div class="container stat-grid">
+        <article class="stat-card">
+          <p class="stat-number" data-i18n="stats.projects">120+</p>
+          <p class="stat-label" data-i18n="stats.projectsLabel">Progetti enterprise consegnati con team dedicati.</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-number" data-i18n="stats.savings">35%</p>
+          <p class="stat-label" data-i18n="stats.savingsLabel">Riduzione media del time-to-market con approccio modulare.</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-number" data-i18n="stats.satisfaction">98%</p>
+          <p class="stat-label" data-i18n="stats.satisfactionLabel">Clienti che rinnovano gli engagement annuali.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="cards.eyebrow">Capacità end-to-end</p>
+          <h2 class="titoloSezione" data-i18n="cards.title">Dalla discovery alla crescita continuativa</h2>
+          <p class="lede" data-i18n="cards.subtitle">Blueprint, prototipi, sviluppo e operations con un unico partner tecnologico.</p>
+        </div>
+        <section class="card-grid" data-card-grid></section>
+      </div>
+    </section>
+
+    <section class="ctaPremium">
+      <div class="container ctaCard">
+        <p class="eyebrow" data-i18n="cta.eyebrow">Sprint guidati da metriche</p>
+        <h2 class="titoloSezione" data-i18n="cta.title">Allineiamo prodotto, tecnologia e business con roadmap misurabili</h2>
+        <p class="lede" data-i18n="cta.subtitle">Avviamo discovery mirate, definiamo KPI chiari e portiamo in produzione feature che sbloccano crescita e efficienza.</p>
+        <div class="cta-actions">
+          <a class="btn-solid" href="./contact.html" data-i18n="cta.primary">Prenota una call</a>
+          <a class="btn-ghost" href="./services.html" data-i18n="cta.secondary">Scopri i nostri servizi</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">

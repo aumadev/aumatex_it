@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/styles/base/variabiliEstetiche.css
 SCOPO:       Variabili estetiche di design e tipografia
-VERSIONE:    1.2
-DATA:        10/03/2026
+VERSIONE:    1.3
+DATA:        11/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -55,8 +55,13 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   --spazio-lg: 1.5rem;
   --spazio-xl: 2rem;
   --spazio-2xl: 3rem;
-  --spazioHeaderVerticale: 1.5rem;
-  --spazioHeaderCompatto: 0.85rem;
+  --spazioSezione: clamp(2.5rem, 5vw, 4rem);
+  --spazioSezioneAmpia: clamp(3.5rem, 7vw, 5.5rem);
+  --spazioHeroGap: clamp(1.5rem, 4vw, 3rem);
+  --spazioHeroVerticale: clamp(2.5rem, 6vw, 4.5rem);
+  --spazioCluster: clamp(1rem, 3vw, 2rem);
+  --spazioHeaderVerticale: 2.2rem;
+  --spazioHeaderCompatto: 1.2rem;
 
   /* Raggi */
   --raggio-xs: 4px;
@@ -64,6 +69,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   --raggio-md: 12px;
   --raggio-lg: 18px;
   --raggio-xl: 24px;
+  --raggio-full: 999px;
 
   /* Bordi */
   --bordo-sottile: 1px;
@@ -76,8 +82,8 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   --ombraHeader: 0 10px 30px rgba(17, 24, 39, 0.12);
 
   /* Dimensioni header */
-  --dimensioneLogoPrincipale: 64px;
-  --dimensioneLogoCompatto: 44px;
-  --altezzaHeaderAmpio: 108px;
-  --altezzaHeaderCompatto: 78px;
+  --dimensioneLogoPrincipale: 92px;
+  --dimensioneLogoCompatto: 56px;
+  --altezzaHeaderAmpio: 138px;
+  --altezzaHeaderCompatto: 88px;
 }

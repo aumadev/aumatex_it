@@ -7,12 +7,19 @@
     "contact": "Contatti"
   },
   "hero": {
-    "eyebrow": "Template Aumatex",
-    "title": "Lancia più veloce con una base modulare",
-    "subtitle": "Layout, componenti e asset ordinati per siti multilingua.",
-    "ctaPrimary": "Avvia un progetto",
-    "ctaSecondary": "Vedi servizi",
-    "alt": "Anteprima area di lavoro"
+    "eyebrow": "Technology studio",
+    "title": "Porta in produzione prodotti digitali audaci senza rallentare",
+    "subtitle": "Strategia, design, ingegneria e crescita con un unico partner responsabile e KPI chiari.",
+    "ctaPrimary": "Prenota una call",
+    "ctaSecondary": "Vedi i servizi",
+    "alt": "Anteprima workspace di prodotto",
+    "ribbon": "Delivery enterprise",
+    "subBadge": "Architetture cloud-native",
+    "point1": "Dalla discovery al rollout con ownership di prodotto.",
+    "point2": "Design system componibile e ingegneria resiliente.",
+    "point3": "Stack sicuro e pronto all'analytics con governance.",
+    "badgeTitle": "Delivery full-service",
+    "badgeCopy": "Squad dedicate per strategia, design, build ed enablement."
   },
   "buttons": {
     "readMore": "Scopri di più"
@@ -27,6 +34,40 @@
     "support": "Supporto",
     "contact": "Contatti",
     "cookiePreferences": "Preferenze cookie"
+  },
+  "pillars": {
+    "eyebrow": "Dalla discovery al rilascio",
+    "title": "Soluzioni su misura per digitalizzare il business",
+    "subtitle": "Team multidisciplinari che combinano ricerca, product design e ingegneria per portare valore misurabile.",
+    "p1Icon": "AI",
+    "p1Title": "Piattaforme intelligenti",
+    "p1Copy": "Integriamo AI e automazioni nei flussi aziendali per ridurre tempi di delivery e aumentare la qualità.",
+    "p2Icon": "UX",
+    "p2Title": "Esperienze premium",
+    "p2Copy": "Research, service design e UI coerenti con brand e obiettivi, pronte per crescere su web e mobile.",
+    "p3Icon": "Ops",
+    "p3Title": "Delivery affidabile",
+    "p3Copy": "DevSecOps, osservabilità, test e release cicliche per portare in produzione feature solide."
+  },
+  "stats": {
+    "projects": "120+",
+    "projectsLabel": "Progetti enterprise consegnati con team dedicati.",
+    "savings": "35%",
+    "savingsLabel": "Riduzione media del time-to-market con approccio modulare.",
+    "satisfaction": "98%",
+    "satisfactionLabel": "Clienti che rinnovano gli engagement annuali."
+  },
+  "cards": {
+    "eyebrow": "Capacità end-to-end",
+    "title": "Dalla discovery alla crescita continuativa",
+    "subtitle": "Blueprint, prototipi, sviluppo e operations con un unico partner tecnologico."
+  },
+  "cta": {
+    "eyebrow": "Sprint guidati da metriche",
+    "title": "Allineiamo prodotto, tecnologia e business con roadmap misurabili",
+    "subtitle": "Avviamo discovery mirate, definiamo KPI chiari e portiamo in produzione feature che sbloccano crescita e efficienza.",
+    "primary": "Prenota una call",
+    "secondary": "Scopri i nostri servizi"
   },
   "privacy": {
     "title": "Informativa Privacy",

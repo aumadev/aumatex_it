@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        docs/contentModel.md
 SCOPO:       Descrizione del modello contenuti e dati
-VERSIONE:    1.0
-DATA:        04/11/2025
+VERSIONE:    1.1
+DATA:        11/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -27,10 +27,11 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 - Navigazione principale in `config/navigation.json`.
 - Pagine root condivise (`index.html`, `privacyPolicy.html`, `cookiePolicy.html`) con testi i18n.
 - Sezioni riutilizzabili (hero, card, footer) via partial `src/html/partials/`.
+- Homepage con sezioni aggiuntive (pillars, statistiche, CTA) gestite in `index.html` con stili `src/styles/pages/homeSections.css`.
 
 ## Localizzazione e dati
 - Stringhe UI in `src/locales/<lang>/common.json`.
-- Contenuti dinamici (es. card home) in `src/data/content/`.
+- Contenuti dinamici (es. card home) in `src/data/content/` con varianti per lingua.
 - Dizionari caricati client-side e sincronizzati con select lingua.
 
 ## Media

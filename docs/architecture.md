@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        docs/architecture.md
 SCOPO:       Documentazione dell'architettura del template
-VERSIONE:    1.2
-DATA:        10/03/2026
+VERSIONE:    1.3
+DATA:        11/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -30,7 +30,8 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 ## HTML e contenuti
 - Layout base in `src/html/layouts`, partial header/footer/componenti in `src/html/partials`.
 - Pagine root (`index.html`, `privacyPolicy.html`, `cookiePolicy.html`) neutre e i18n-driven.
-- Header principale replicato dai partial in `src/html/partials/header/nav.html` con brand i18n (`Aumatex`) e toggle tema (`header.themeToggle`).
+- Header principale replicato dai partial in `src/html/partials/header/nav.html` con brand i18n (`header.brand`) e toggle tema (`header.themeToggle`).
+- Homepage potenziata con sezioni premium (pillars, statistiche, CTA) e styling dedicato in `src/styles/pages/homeSections.css`.
 - Contenuti strutturati in `src/data/`, stringhe UI in `src/locales/`.
 
 ## CSS a layer

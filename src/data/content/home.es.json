@@ -1,28 +1,28 @@
 {
   "cards": [
     {
-      "categoria": "Diseño",
-      "titolo": "Layouts centrados en UX",
-      "descrizione": "Patrones listos desde el hero hasta el footer.",
-      "url": "/services/design",
+      "categoria": "Estrategia",
+      "titolo": "Discovery y blueprint",
+      "descrizione": "Research de usuarios, mapas de journey, KPI y pruebas técnicas para una hoja de ruta segura.",
+      "url": "/services/discovery",
       "immagine": "./src/media/images/optimized/card-1.png",
-      "cta": "Leer más"
+      "cta": "Explorar"
     },
     {
-      "categoria": "Desarrollo",
-      "titolo": "Código listo para producción",
-      "descrizione": "HTML, CSS y JS modulares listos para empaquetar.",
-      "url": "/services/dev",
+      "categoria": "Ingeniería",
+      "titolo": "Entrega cloud-native",
+      "descrizione": "Arquitecturas componibles, servicios API-first y CI/CD con monitoreo y QA automático.",
+      "url": "/services/engineering",
       "immagine": "./src/media/images/optimized/card-2.png",
-      "cta": "Leer más"
+      "cta": "Explorar"
     },
     {
-      "categoria": "Contenido",
-      "titolo": "Preparado para multilenguaje",
-      "descrizione": "Locales, rutas y datos estructurados por idioma.",
-      "url": "/services/content",
+      "categoria": "Growth",
+      "titolo": "Optimización continua",
+      "descrizione": "Experimentación, analytics y personalización para mejorar activación y retención.",
+      "url": "/services/growth",
       "immagine": "./src/media/images/optimized/card-3.png",
-      "cta": "Leer más"
+      "cta": "Explorar"
     }
   ]
 }

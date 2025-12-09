@@ -1,28 +1,28 @@
 {
   "cards": [
     {
-      "categoria": "Design",
-      "titolo": "UX-first layouts",
-      "descrizione": "Pre-built patterns to start from hero to footer.",
-      "url": "/services/design",
+      "categoria": "Strategy",
+      "titolo": "Product discovery sprints",
+      "descrizione": "User research, journey mapping, KPI definition and technical spikes to derisk roadmap.",
+      "url": "/services/discovery",
       "immagine": "./src/media/images/optimized/card-1.png",
-      "cta": "Read more"
+      "cta": "Explore"
     },
     {
-      "categoria": "Development",
-      "titolo": "Production-ready code",
-      "descrizione": "Modular HTML, CSS, and JS ready for bundling.",
-      "url": "/services/dev",
+      "categoria": "Engineering",
+      "titolo": "Cloud-native delivery",
+      "descrizione": "Composable architectures, API-first services and CI/CD with monitoring and QA automation.",
+      "url": "/services/engineering",
       "immagine": "./src/media/images/optimized/card-2.png",
-      "cta": "Read more"
+      "cta": "Explore"
     },
     {
-      "categoria": "Content",
-      "titolo": "Multilingual ready",
-      "descrizione": "Locales, routes, and content data structured per language.",
-      "url": "/services/content",
+      "categoria": "Growth",
+      "titolo": "Lifecycle optimization",
+      "descrizione": "Experimentation, analytics and personalization to improve activation, retention and revenue.",
+      "url": "/services/growth",
       "immagine": "./src/media/images/optimized/card-3.png",
-      "cta": "Read more"
+      "cta": "Explore"
     }
   ]
 }

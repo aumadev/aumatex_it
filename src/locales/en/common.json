@@ -7,12 +7,19 @@
     "contact": "Contact"
   },
   "hero": {
-    "eyebrow": "Aumatex template",
-    "title": "Launch faster with a modular HTML base",
-    "subtitle": "Layouts, components, and assets organized for real-world multi-language sites.",
-    "ctaPrimary": "Start a project",
-    "ctaSecondary": "View services",
-    "alt": "Design workspace preview"
+    "eyebrow": "Technology studio",
+    "title": "Ship bold digital products without slowing down",
+    "subtitle": "Strategy, design, engineering and growth under one accountable partner with measurable outcomes.",
+    "ctaPrimary": "Book a call",
+    "ctaSecondary": "See services",
+    "alt": "Product workspace dashboard preview",
+    "ribbon": "Enterprise delivery",
+    "subBadge": "Cloud-native builds",
+    "point1": "From discovery to rollout with product ownership.",
+    "point2": "Composable design system and resilient engineering.",
+    "point3": "Secure, analytics-ready stack with governance.",
+    "badgeTitle": "Full-service delivery",
+    "badgeCopy": "Dedicated squads for strategy, design, build and enablement."
   },
   "buttons": {
     "readMore": "Read more"
@@ -27,6 +34,40 @@
     "support": "Support",
     "contact": "Contact",
     "cookiePreferences": "Cookie preferences"
+  },
+  "pillars": {
+    "eyebrow": "From discovery to launch",
+    "title": "Tailored solutions to digitalize your business",
+    "subtitle": "Multidisciplinary teams combining research, product design and engineering to deliver measurable value.",
+    "p1Icon": "AI",
+    "p1Title": "Intelligent platforms",
+    "p1Copy": "We embed AI and automation into business flows to accelerate delivery and boost quality.",
+    "p2Icon": "UX",
+    "p2Title": "Premium experiences",
+    "p2Copy": "Research, service design and UI consistent with your brand, ready to scale across web and mobile.",
+    "p3Icon": "Ops",
+    "p3Title": "Reliable delivery",
+    "p3Copy": "DevSecOps, observability, testing and cyclical releases to ship robust features."
+  },
+  "stats": {
+    "projects": "120+",
+    "projectsLabel": "Enterprise projects delivered with dedicated squads.",
+    "savings": "35%",
+    "savingsLabel": "Average time-to-market reduction with our modular approach.",
+    "satisfaction": "98%",
+    "satisfactionLabel": "Clients renewing their yearly engagements."
+  },
+  "cards": {
+    "eyebrow": "End-to-end capability",
+    "title": "From discovery to continuous growth",
+    "subtitle": "Blueprints, prototypes, development and operations with one technology partner."
+  },
+  "cta": {
+    "eyebrow": "Metric-driven sprints",
+    "title": "We align product, technology and business with measurable roadmaps",
+    "subtitle": "We run focused discovery, define clear KPIs and ship features that unlock growth and efficiency.",
+    "primary": "Book a call",
+    "secondary": "See our services"
   },
   "privacy": {
     "title": "Privacy Policy",

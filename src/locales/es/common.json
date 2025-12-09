@@ -7,12 +7,19 @@
     "contact": "Contacto"
   },
   "hero": {
-    "eyebrow": "Plantilla Aumatex",
-    "title": "Lanza más rápido con una base modular",
-    "subtitle": "Layouts, componentes y assets organizados para sitios multilenguaje.",
-    "ctaPrimary": "Iniciar proyecto",
+    "eyebrow": "Technology studio",
+    "title": "Lanza productos digitales ambiciosos sin frenar la entrega",
+    "subtitle": "Estrategia, diseño, ingeniería y growth con un único partner responsable y resultados medibles.",
+    "ctaPrimary": "Reserva una llamada",
     "ctaSecondary": "Ver servicios",
-    "alt": "Vista previa del workspace"
+    "alt": "Vista previa del workspace de producto",
+    "ribbon": "Entrega enterprise",
+    "subBadge": "Arquitecturas cloud-native",
+    "point1": "De la discovery al rollout con ownership de producto.",
+    "point2": "Design system componible e ingeniería resiliente.",
+    "point3": "Stack seguro y listo para analytics con governance.",
+    "badgeTitle": "Delivery full-service",
+    "badgeCopy": "Squads dedicados para estrategia, diseño, construcción y enablement."
   },
   "buttons": {
     "readMore": "Leer más"
@@ -27,6 +34,40 @@
     "support": "Soporte",
     "contact": "Contacto",
     "cookiePreferences": "Preferencias de cookies"
+  },
+  "pillars": {
+    "eyebrow": "De la discovery al lanzamiento",
+    "title": "Soluciones a medida para digitalizar tu negocio",
+    "subtitle": "Equipos multidisciplinares que combinan research, product design e ingeniería para aportar valor medible.",
+    "p1Icon": "AI",
+    "p1Title": "Plataformas inteligentes",
+    "p1Copy": "Integramos IA y automatizaciones en los flujos del negocio para reducir tiempos y elevar la calidad.",
+    "p2Icon": "UX",
+    "p2Title": "Experiencias premium",
+    "p2Copy": "Research, service design y UI coherente con tu marca, lista para escalar en web y mobile.",
+    "p3Icon": "Ops",
+    "p3Title": "Entrega confiable",
+    "p3Copy": "DevSecOps, observabilidad, testing y releases cíclicas para llevar features sólidas a producción."
+  },
+  "stats": {
+    "projects": "120+",
+    "projectsLabel": "Proyectos enterprise entregados con squads dedicados.",
+    "savings": "35%",
+    "savingsLabel": "Reducción media del time-to-market con nuestro enfoque modular.",
+    "satisfaction": "98%",
+    "satisfactionLabel": "Clientes que renuevan los compromisos anuales."
+  },
+  "cards": {
+    "eyebrow": "Capacidad end-to-end",
+    "title": "De la discovery al crecimiento continuo",
+    "subtitle": "Blueprints, prototipos, desarrollo y operations con un único partner tecnológico."
+  },
+  "cta": {
+    "eyebrow": "Sprints guiados por métricas",
+    "title": "Alineamos producto, tecnología y negocio con roadmaps medibles",
+    "subtitle": "Ejecutamos discovery enfocadas, definimos KPI claros y liberamos features que desbloquean crecimiento y eficiencia.",
+    "primary": "Reserva una llamada",
+    "secondary": "Conoce nuestros servicios"
   },
   "privacy": {
     "title": "Política de Privacidad",

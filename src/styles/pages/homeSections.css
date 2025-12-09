@@ -1,0 +1,278 @@
+/*
+PROJECT: Aumatex Template
+───────────────────────────────────────────────────────────────────────────────
+    |     '||'  '|' '||    ||'     |     '||''|.   '||''''|  '||'  '|'
+   |||     ||    |   |||  |||     |||     ||   ||   ||  .     '|.  .'
+  |  ||    ||    |   |'|..'||    |  ||    ||    ||  ||''|      ||  |
+ .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
+.|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
+───────────────────────────────────────────────────────────────────────────────
+FILE:        src/styles/pages/homeSections.css
+SCOPO:       Stili premium per homepage e sezioni dedicate
+VERSIONE:    1.0
+DATA:        11/03/2026
+AUTORE:      Aumatex srls  |  www.aumatex.it
+AMBIENTE:    sviluppo
+BUILD:       beta
+STACK:       CSS3
+REPO:        https://github.com/aumadev/aumatex_it
+LICENZA:     Software proprietario © 2025 Aumatex srls
+NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzata.
+───────────────────────────────────────────────────────────────────────────────
+*/
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 10% -30% auto;
+  height: 420px;
+  background: radial-gradient(circle at 20% 20%, rgba(15, 155, 190, 0.22), transparent 55%), radial-gradient(circle at 80% 10%, rgba(242, 139, 43, 0.18), transparent 45%);
+  filter: blur(6px);
+  pointer-events: none;
+}
+
+.hero-grid {
+  position: relative;
+}
+
+.hero-copy {
+  display: grid;
+  gap: var(--spazioHeroGap);
+}
+
+.hero-actions {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--spazioCluster);
+}
+
+.hero-badges {
+  display: flex;
+  gap: var(--spazio-sm);
+  flex-wrap: wrap;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spazio-2xs);
+  padding: var(--spazio-2xs) var(--spazio-sm);
+  border-radius: var(--raggio-full, 999px);
+  border: var(--bordo-sottile) solid var(--colore-bordo);
+  background: var(--colore-superficie);
+  color: var(--colore-testo);
+  font-family: var(--fontSecondaria);
+  font-weight: var(--pesoTitolo);
+  box-shadow: var(--ombra-leggera);
+}
+
+.pill-accent {
+  background: linear-gradient(120deg, rgba(15, 155, 190, 0.16), rgba(242, 139, 43, 0.14));
+  border-color: rgba(15, 155, 190, 0.3);
+}
+
+.hero-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--spazio-xs);
+}
+
+.hero-highlights li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spazio-xs);
+  font-family: var(--fontSecondaria);
+  font-weight: var(--pesoTestoEnfasi);
+  color: var(--colore-testo);
+}
+
+.hero-highlights li::before {
+  content: "+";
+  color: var(--colore-accento);
+  font-weight: var(--pesoTitoloForte);
+}
+
+.hero-media {
+  position: relative;
+}
+
+.hero-media img {
+  border-radius: var(--raggio-xl);
+  box-shadow: var(--ombra-profonda);
+}
+
+.badge-decor {
+  position: absolute;
+  inset: auto 8% 10% auto;
+  background: var(--colore-superficie);
+  padding: var(--spazio-sm) var(--spazio-md);
+  border-radius: var(--raggio-lg);
+  border: var(--bordo-sottile) solid var(--colore-bordo);
+  box-shadow: var(--ombra-media);
+  display: grid;
+  gap: var(--spazio-2xs);
+  max-width: 280px;
+}
+
+.badge-decor strong {
+  font-family: var(--fontPrimaria);
+  font-size: 1.05rem;
+  color: var(--colore-testo);
+}
+
+.badge-decor span {
+  font-size: 0.95rem;
+  color: var(--colore-testo-secondario);
+}
+
+.sezioneValori {
+  padding: var(--spazioSezioneAmpia) 0;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin: 0 auto var(--spazioSezione);
+  text-align: center;
+  display: grid;
+  gap: var(--spazio-sm);
+}
+
+.valori-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spazioSezione);
+}
+
+.valore-card {
+  background: linear-gradient(150deg, rgba(15, 155, 190, 0.08), rgba(15, 155, 190, 0.02));
+  border: var(--bordo-sottile) solid var(--colore-bordo);
+  border-radius: var(--raggio-xl);
+  padding: var(--spazioSezione);
+  box-shadow: var(--ombra-leggera);
+  display: grid;
+  gap: var(--spazio-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.valore-card::after {
+  content: "";
+  position: absolute;
+  inset: -20% 60% auto auto;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle at center, rgba(242, 139, 43, 0.15), transparent 60%);
+  transform: rotate(18deg);
+}
+
+.valore-card h3 {
+  font-family: var(--fontPrimaria);
+  font-weight: var(--pesoTitoloForte);
+}
+
+.valore-card p {
+  position: relative;
+  z-index: 1;
+}
+
+.valore-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--raggio-lg);
+  background: var(--colore-superficie);
+  border: var(--bordo-sottile) solid var(--colore-bordo);
+  display: grid;
+  place-items: center;
+  color: var(--colore-accento);
+  box-shadow: var(--ombra-leggera);
+  position: relative;
+  z-index: 1;
+}
+
+.statSection {
+  padding: var(--spazioSezione) 0;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spazioHeroGap);
+}
+
+.stat-card {
+  background: linear-gradient(120deg, rgba(15, 155, 190, 0.14), rgba(15, 155, 190, 0.04));
+  border-radius: var(--raggio-xl);
+  padding: var(--spazioSezione);
+  border: var(--bordo-sottile) solid var(--colore-bordo);
+  box-shadow: var(--ombra-media);
+}
+
+.stat-number {
+  font-family: var(--fontPrimaria);
+  font-size: 2.6rem;
+  font-weight: var(--pesoTitoloForte);
+  color: var(--colore-testo);
+}
+
+.stat-label {
+  margin-top: var(--spazio-xs);
+  color: var(--colore-testo-secondario);
+  font-family: var(--fontSecondaria);
+  font-weight: var(--pesoTesto);
+}
+
+.card-section {
+  padding: var(--spazioSezioneAmpia) 0;
+}
+
+.card-section .section-heading {
+  margin-bottom: var(--spazioHeroGap);
+}
+
+.ctaPremium {
+  padding: var(--spazioSezioneAmpia) 0;
+}
+
+.ctaCard {
+  background: radial-gradient(circle at 20% 20%, rgba(15, 155, 190, 0.24), rgba(15, 155, 190, 0.08)), radial-gradient(circle at 80% 0%, rgba(242, 139, 43, 0.24), rgba(242, 139, 43, 0.08));
+  border-radius: var(--raggio-xl);
+  padding: var(--spazioSezioneAmpia);
+  color: var(--colore-testo);
+  border: var(--bordo-sottile) solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--ombra-profonda);
+}
+
+.ctaCard h2 {
+  font-family: var(--fontPrimaria);
+  font-weight: var(--pesoTitoloForte);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+.ctaCard .lede {
+  max-width: 720px;
+}
+
+.cta-actions {
+  display: flex;
+  gap: var(--spazio-sm);
+  margin-top: var(--spazio-md);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 720px) {
+  .hero::before {
+    inset: 14% -40% auto;
+  }
+  .badge-decor {
+    position: relative;
+    inset: 0;
+    margin-top: var(--spazio-md);
+  }
+}

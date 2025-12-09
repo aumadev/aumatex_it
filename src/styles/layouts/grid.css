@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/styles/layouts/grid.css
 SCOPO:       Grid e container layout
-VERSIONE:    1.0
-DATA:        04/11/2025
+VERSIONE:    1.1
+DATA:        11/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -27,15 +27,15 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 }
 
 .layout-shell {
-  padding: var(--spazio-2xl) 0;
+  padding: var(--spazioSezioneAmpia) 0;
 }
 
 .hero-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: var(--spazio-xl);
+  gap: var(--spazioHeroGap);
   align-items: center;
-  padding: var(--spazio-2xl) 0;
+  padding: var(--spazioHeroVerticale) 0;
 }
 
 .card-grid {
