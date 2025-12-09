@@ -1,5 +1,5 @@
 /*
-PROJECT: Interactive Muse
+PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
     |     '||'  '|' '||    ||'     |     '||''|.   '||''''|  '||'  '|'
    |||     ||    |   |||  |||     |||     ||   ||   ||  .     '|.  .'
@@ -15,7 +15,7 @@ AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
 STACK:       JavaScript
-REPO:        https://github.com/aumadev/openart
+REPO:        https://github.com/aumadev/aumatex_it
 LICENZA:     Software proprietario © 2025 Aumatex srls
 NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzata.
 ───────────────────────────────────────────────────────────────────────────────

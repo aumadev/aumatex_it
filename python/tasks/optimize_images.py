@@ -1,4 +1,4 @@
-# PROJECT: Interactive Muse
+# PROJECT: Aumatex Template
 # ───────────────────────────────────────────────────────────────────────────────
 #     |     '||'  '|' '||    ||'     |     '||''|.   '||''''|  '||'  '|'
 #    |||     ||    |   |||  |||     |||     ||   ||   ||  .     '|.  .'
@@ -14,7 +14,7 @@
 # AMBIENTE:    sviluppo
 # BUILD:       beta
 # STACK:       Python
-# REPO:        https://github.com/aumadev/openart
+# REPO:        https://github.com/aumadev/aumatex_it
 # LICENZA:     Software proprietario © 2025 Aumatex srls
 # NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzata.
 # ───────────────────────────────────────────────────────────────────────────────
