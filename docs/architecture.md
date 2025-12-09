@@ -44,7 +44,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 ## Tipografia
 - Font principali: `RobotoSlab` per titoli/UI e `Mulish` per testo corrente; entrambi variable (pesi 100–900) con italic Mulish.
 - Definizioni @font-face centralizzate in `src/styles/base/font-face.css` che punta ai file `src/media/fonts/RobotoSlab-wght.ttf`, `src/media/fonts/Mulish-wght.ttf`, `src/media/fonts/Mulish-Italic-wght.ttf`.
-- Variabili di font e pesi in `src/styles/base/variabili-estetiche.css` (`--fontPrimaria`, `--fontSecondaria`, `--pesoTitolo*`, `--pesoTesto*`), applicate a body e heading in `src/styles/base/root.css` e `src/styles/base/typography.css`.
+- Variabili di font e pesi in `src/styles/base/variables.css` (`--fontPrimaria`, `--fontSecondaria`, `--pesoTitolo*`, `--pesoTesto*`), applicate a body e heading in `src/styles/base/root.css` e `src/styles/base/typography.css`.
 - Utility tipografiche in `src/styles/utilities/typography-utilities.css` per applicare rapidamente famiglia/peso ai componenti.
 
 ## JS a responsabilita
