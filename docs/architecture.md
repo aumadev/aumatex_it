@@ -49,11 +49,11 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 ## Media e compliance
 - Media organizzati per tipo in `src/media/` con manifest dedicato.
-- Banner cookie modulare con preferenze persistite e link alle policy; pulsante di chiusura dedicato e classi `cookieBannerCompatto`/`cookieBannerNascosto`.
+- Banner cookie modulare con preferenze persistite e link alle policy; pulsante di chiusura dedicato e classi `cookieBannerCompatto`/`cookieBannerNascosto`; stile in `src/styles/components/bannerCookie.css`.
 
 ## Comportamenti interattivi
 - Header: sticky e riallineato su scroll con classe `headerCompatto` applicata oltre la soglia `data-header-soglia`; transizioni guidate da `--animazioneHeaderScroll` e dimensioni da variabili dedicate.
-- Cookie banner: markup condiviso nelle pagine root, stile in `src/styles/components/banner-cookie.css` con transizione `--animazioneCookieBanner`; logica in `cookie-consenso.js` che salva preferenze (`preferenzeCookie`) e stato (`cookieConsent`) gestendo pulsanti Personalizza/Accetta/Rifiuta/Chiudi.
+- Cookie banner: markup condiviso nelle pagine root, stile in `src/styles/components/bannerCookie.css` con transizione `--animazioneCookieBanner`; logica in `cookie-consenso.js` che salva preferenze (`preferenzeCookie`) e stato (`cookieConsent`) gestendo pulsanti Personalizza/Accetta/Rifiuta/Chiudi.
 
 ## Automazione
 - Script Python in `python/tasks/` per build e ottimizzazione asset (da completare/estendere).
