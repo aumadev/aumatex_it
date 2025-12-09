@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/styles/base/root.css
 SCOPO:       Stili base per body e link
-VERSIONE:    1.0
-DATA:        04/11/2025
+VERSIONE:    1.1
+DATA:        10/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -27,13 +27,14 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 body {
   min-height: 100vh;
-  font-family: var(--font-primario);
+  font-family: var(--fontSecondaria);
   font-size: var(--testo-base);
   background: var(--colore-sfondo);
   color: var(--colore-testo);
   line-height: 1.6;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  font-weight: var(--pesoTesto);
 }
 
 a {

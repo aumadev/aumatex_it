@@ -8,9 +8,9 @@ PROJECT: Aumatex Template
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/styles/base/variabiliEstetiche.css
-SCOPO:       Variabili estetiche di design
-VERSIONE:    1.1
-DATA:        09/03/2026
+SCOPO:       Variabili estetiche di design e tipografia
+VERSIONE:    1.2
+DATA:        10/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -23,14 +23,20 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 :root {
   /* Tipografia */
-  --font-primario: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-mono: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+  --fontPrimaria: "RobotoSlab", "Mulish", system-ui, -apple-system, sans-serif;
+  --fontSecondaria: "Mulish", system-ui, -apple-system, sans-serif;
+  --fontMono: ui-monospace, "SFMono-Regular", Menlo, monospace;
   --testo-base: 16px;
   --titolo-1: 2.6rem;
   --titolo-2: 2rem;
   --titolo-3: 1.6rem;
   --titolo-4: 1.25rem;
   --testo-lead: 1.125rem;
+  --pesoTitoloLeggero: 300;
+  --pesoTitolo: 600;
+  --pesoTitoloForte: 700;
+  --pesoTesto: 400;
+  --pesoTestoEnfasi: 500;
 
   /* Colori (override nei temi) */
   --colore-sfondo: #f7f5f1;

@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        docs/architecture.md
 SCOPO:       Documentazione dell'architettura del template
-VERSIONE:    1.1
-DATA:        09/03/2026
+VERSIONE:    1.2
+DATA:        10/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -39,6 +39,12 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 - Componenti: card, bottoni, form, banner cookie.
 - Temi: light/dark.
 - Utility e overrides (print, RTL).
+
+## Tipografia
+- Font principali: `RobotoSlab` per titoli/UI e `Mulish` per testo corrente; entrambi variable (pesi 100–900) con italic Mulish.
+- Definizioni @font-face centralizzate in `src/styles/base/fontFace.css` che punta ai file `src/media/fonts/RobotoSlab-wght.ttf`, `src/media/fonts/Mulish-wght.ttf`, `src/media/fonts/Mulish-Italic-wght.ttf`.
+- Variabili di font e pesi in `src/styles/base/variabiliEstetiche.css` (`--fontPrimaria`, `--fontSecondaria`, `--pesoTitolo*`, `--pesoTesto*`), applicate a body e heading in `src/styles/base/root.css` e `src/styles/base/typography.css`.
+- Utility tipografiche in `src/styles/utilities/typographyUtilities.css` per applicare rapidamente famiglia/peso ai componenti.
 
 ## JS a responsabilita
 - Core/app: gestione tema; consenso cookie in `src/scripts/core/cookie-consenso.js` con stato persistito (`cookieConsent`).

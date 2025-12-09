@@ -7,9 +7,9 @@ PROJECT: Aumatex Template
  .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
-FILE:        src/styles/base/typography.css
-SCOPO:       Regole tipografiche e gerarchie testo
-VERSIONE:    1.1
+FILE:        src/styles/utilities/typographyUtilities.css
+SCOPO:       Utility tipografiche per font e pesi
+VERSIONE:    1.0
 DATA:        10/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
@@ -21,54 +21,30 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 ───────────────────────────────────────────────────────────────────────────────
 */
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--colore-testo);
+.testoPrimario {
   font-family: var(--fontPrimaria);
   font-weight: var(--pesoTitolo);
-  line-height: 1.2;
 }
 
-h1 {
-  font-size: var(--titolo-1);
+.testoSecondario {
+  font-family: var(--fontSecondaria);
+  font-weight: var(--pesoTesto);
+}
+
+.titoloPrincipale {
+  font-family: var(--fontPrimaria);
   font-weight: var(--pesoTitoloForte);
 }
 
-h2 { font-size: var(--titolo-2); }
-h3 { font-size: var(--titolo-3); }
-h4 { font-size: var(--titolo-4); }
-
-p {
-  color: var(--colore-testo-secondario);
-  font-family: var(--fontSecondaria);
-  font-weight: var(--pesoTesto);
-}
-
-.eyebrow {
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-family: var(--fontSecondaria);
+.titoloSezione {
+  font-family: var(--fontPrimaria);
   font-weight: var(--pesoTitolo);
-  color: var(--colore-accento);
 }
 
-.lede {
-  font-size: var(--testo-lead);
-  color: var(--colore-testo-secondario);
-  font-family: var(--fontSecondaria);
-  font-weight: var(--pesoTesto);
+.testoLeggero {
+  font-weight: var(--pesoTitoloLeggero);
 }
 
-.prose h2 {
-  margin-top: var(--spazio-lg);
-  margin-bottom: var(--spazio-sm);
-}
-
-.prose p, .prose ul {
-  margin-bottom: var(--spazio-sm);
-}
-
-em, i {
-  font-family: var(--fontSecondaria);
-  font-style: italic;
+.testoEnfasi {
   font-weight: var(--pesoTestoEnfasi);
 }

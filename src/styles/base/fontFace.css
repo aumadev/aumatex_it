@@ -7,9 +7,9 @@ PROJECT: Aumatex Template
  .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
-FILE:        src/styles/base/typography.css
-SCOPO:       Regole tipografiche e gerarchie testo
-VERSIONE:    1.1
+FILE:        src/styles/base/fontFace.css
+SCOPO:       Definizione @font-face per RobotoSlab e Mulish variabili
+VERSIONE:    1.0
 DATA:        10/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
@@ -21,54 +21,26 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 ───────────────────────────────────────────────────────────────────────────────
 */
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--colore-testo);
-  font-family: var(--fontPrimaria);
-  font-weight: var(--pesoTitolo);
-  line-height: 1.2;
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("/src/media/fonts/RobotoSlab-wght.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 
-h1 {
-  font-size: var(--titolo-1);
-  font-weight: var(--pesoTitoloForte);
+@font-face {
+  font-family: "Mulish";
+  src: url("/src/media/fonts/Mulish-wght.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 
-h2 { font-size: var(--titolo-2); }
-h3 { font-size: var(--titolo-3); }
-h4 { font-size: var(--titolo-4); }
-
-p {
-  color: var(--colore-testo-secondario);
-  font-family: var(--fontSecondaria);
-  font-weight: var(--pesoTesto);
-}
-
-.eyebrow {
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-family: var(--fontSecondaria);
-  font-weight: var(--pesoTitolo);
-  color: var(--colore-accento);
-}
-
-.lede {
-  font-size: var(--testo-lead);
-  color: var(--colore-testo-secondario);
-  font-family: var(--fontSecondaria);
-  font-weight: var(--pesoTesto);
-}
-
-.prose h2 {
-  margin-top: var(--spazio-lg);
-  margin-bottom: var(--spazio-sm);
-}
-
-.prose p, .prose ul {
-  margin-bottom: var(--spazio-sm);
-}
-
-em, i {
-  font-family: var(--fontSecondaria);
+@font-face {
+  font-family: "Mulish";
+  src: url("/src/media/fonts/Mulish-Italic-wght.ttf") format("truetype-variations");
+  font-weight: 100 900;
   font-style: italic;
-  font-weight: var(--pesoTestoEnfasi);
+  font-display: swap;
 }
