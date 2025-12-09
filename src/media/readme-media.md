@@ -34,4 +34,4 @@ audio | Tracce audio/podcast | MP3/OGG 320 kbps
 fonts | Font personalizzati | WOFF2/WOFF
 downloads | File scaricabili (PDF/ZIP) | Formati originali
 
-Consulta `docs/mediaManifest.md` per risoluzioni consigliate e scopi per asset principali.
+Consulta `docs/media-manifest.md` per risoluzioni consigliate e scopi per asset principali.

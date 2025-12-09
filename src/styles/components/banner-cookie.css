@@ -87,12 +87,17 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   flex-wrap: wrap;
 }
 
-.bannerCookieAzioni .bottonePrimario {
-  flex: 1 1 auto;
+.bannerCookieAzioni .bottonePrimario,
+.bannerCookieAzioni .btn-solid {
+  flex: 1 1 48%;
+  min-width: 180px;
 }
 
-.bannerCookieAzioni .bottoneSecondario {
-  flex: 1 1 auto;
+.bannerCookieAzioni .bottoneSecondario,
+.bannerCookieAzioni .bottoneCollegamento,
+.bannerCookieAzioni .btn-ghost {
+  flex: 1 1 48%;
+  min-width: 180px;
 }
 
 .bannerCookie input[type="checkbox"] {

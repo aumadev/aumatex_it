@@ -1,0 +1,278 @@
+/*
+PROJECT: Aumatex Template
+───────────────────────────────────────────────────────────────────────────────
+    |     '||'  '|' '||    ||'     |     '||''|.   '||''''|  '||'  '|'
+   |||     ||    |   |||  |||     |||     ||   ||   ||  .     '|.  .'
+  |  ||    ||    |   |'|..'||    |  ||    ||    ||  ||''|      ||  |
+ .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
+.|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
+───────────────────────────────────────────────────────────────────────────────
+FILE:        src/styles/pages/secondary-sections.css
+SCOPO:       Stili per pagine secondarie (about, servizi, contatti)
+VERSIONE:    1.0
+DATA:        09/12/2025
+AUTORE:      Aumatex srls  |  www.aumatex.it
+AMBIENTE:    sviluppo
+BUILD:       beta
+STACK:       CSS3
+REPO:        https://github.com/aumadev/aumatex_it
+LICENZA:     Software proprietario © 2025 Aumatex srls
+NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzata.
+───────────────────────────────────────────────────────────────────────────────
+*/
+
+.paginaHero {
+  position: relative;
+  padding: var(--spazioSezioneAmpia) 0 var(--spazioSezione);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--colore-accento) 14%, transparent), color-mix(in srgb, var(--colore-accento-secondario) 10%, transparent));
+  overflow: hidden;
+}
+
+.paginaHero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--colore-sfondo) 65%, transparent) 0%, transparent 28%, transparent 72%, color-mix(in srgb, var(--colore-sfondo) 65%, transparent) 100%);
+  pointer-events: none;
+}
+
+.paginaHero::after {
+  content: "";
+  position: absolute;
+  inset: 20% -30% auto auto;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle at center, color-mix(in srgb, var(--colore-accento) 16%, transparent), transparent 60%);
+  filter: blur(12px);
+  opacity: 0.5;
+}
+
+.grigliaHeroSecondaria {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spazioSezione);
+  align-items: center;
+  padding: 0 var(--spazio-sm);
+}
+
+.bloccoTestoHero {
+  display: grid;
+  gap: var(--spazio-md);
+  animation: var(--animazioneIngressoDolce);
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--spazio-sm);
+  flex-wrap: wrap;
+}
+
+.hero-cta i {
+  margin-right: var(--spazio-2xs);
+}
+
+.pannelloEvidenza {
+  background: var(--colore-superficie);
+  border: var(--bordo-sottile) solid var(--colore-bordo);
+  border-radius: var(--raggio-lg);
+  padding: var(--spazio-lg);
+  box-shadow: var(--ombra-leggera);
+  display: grid;
+  gap: var(--spazio-sm);
+  animation: var(--animazioneIngressoDolce);
+}
+
+.pannelloEvidenza .icon-list {
+  gap: var(--spazio-sm);
+}
+
+.pannelloEvidenza .icon-list i {
+  margin-top: 2px;
+}
+
+.grigliaMissione {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spazioSezione);
+  margin: var(--spazioSezione) 0;
+}
+
+.schedaMissione {
+  background: var(--colore-superficie);
+  border: var(--bordo-sottile) solid var(--colore-bordo);
+  border-radius: var(--raggio-lg);
+  padding: var(--spazio-lg);
+  box-shadow: var(--ombra-leggera);
+  display: grid;
+  gap: var(--spazio-xs);
+}
+
+.schedaMissione strong {
+  font-family: var(--fontPrimaria);
+}
+
+.grigliaCapacita {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--spazioSezione);
+  margin-top: var(--spazioSezione);
+}
+
+.cardCapacita {
+  border-radius: var(--raggio-xl);
+  border: var(--bordo-sottile) solid var(--colore-bordo);
+  padding: var(--spazioSezione);
+  background: linear-gradient(160deg, color-mix(in srgb, var(--colore-accento) 8%, transparent), var(--colore-superficie));
+  box-shadow: var(--ombra-leggera);
+  display: grid;
+  gap: var(--spazio-sm);
+}
+
+.cardCapacita i {
+  color: var(--colore-accento);
+  font-size: 1.4rem;
+}
+
+.timeline {
+  display: grid;
+  gap: var(--spazio-md);
+  margin: var(--spazioSezione) 0;
+}
+
+.paginaSecondaria .section-heading {
+  margin-bottom: var(--spazioSezione);
+}
+
+.paginaSecondaria section.container {
+  margin: var(--spazioSezione) auto;
+}
+
+.stepTimeline {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--spazio-sm);
+  align-items: flex-start;
+}
+
+.stepTimeline .step-icona {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--raggio-md);
+  background: var(--colore-superficie-secondaria);
+  display: inline-grid;
+  place-items: center;
+  color: var(--colore-accento);
+  box-shadow: var(--ombra-leggera);
+  border: var(--bordo-sottile) solid var(--colore-bordo);
+}
+
+.grigliaServizi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--spazioSezione);
+  margin: var(--spazioSezione) 0;
+}
+
+.schedaServizio {
+  border: var(--bordo-sottile) solid var(--colore-bordo);
+  border-radius: var(--raggio-lg);
+  padding: var(--spazioSezione);
+  background: var(--colore-superficie);
+  box-shadow: var(--ombra-leggera);
+  display: grid;
+  gap: var(--spazio-sm);
+}
+
+.processoServizi {
+  display: grid;
+  gap: var(--spazio-md);
+  margin: var(--spazioSezione) 0;
+}
+
+.processoServizi li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--spazio-sm);
+  align-items: flex-start;
+}
+
+.processoServizi .passo {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--raggio-md);
+  background: var(--colore-superficie-secondaria);
+  display: grid;
+  place-items: center;
+  color: var(--colore-accento);
+  font-weight: var(--pesoTitoloForte);
+}
+
+.contattiGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--spazioSezione);
+  margin: var(--spazioSezione) 0;
+}
+
+.schedaContatto {
+  border: var(--bordo-sottile) solid var(--colore-bordo);
+  border-radius: var(--raggio-lg);
+  padding: var(--spazioSezione);
+  background: var(--colore-superficie);
+  box-shadow: var(--ombra-leggera);
+  display: grid;
+  gap: var(--spazio-sm);
+}
+
+.schedaContatto a {
+  color: var(--colore-accento);
+  font-weight: var(--pesoTitolo);
+}
+
+.formContatti {
+  background: var(--colore-superficie);
+  border: var(--bordo-sottile) solid var(--colore-bordo);
+  border-radius: var(--raggio-lg);
+  padding: var(--spazioSezione);
+  box-shadow: var(--ombra-leggera);
+  display: grid;
+  gap: var(--spazio-sm);
+}
+
+.formContatti .rigaCampi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spazio-sm);
+}
+
+.ctaSecondaria {
+  margin: var(--spazioSezione) 0;
+  display: grid;
+  gap: var(--spazio-sm);
+  background: linear-gradient(130deg, color-mix(in srgb, var(--colore-accento) 14%, transparent), var(--colore-superficie));
+  border: var(--bordo-sottile) solid var(--colore-bordo);
+  border-radius: var(--raggio-xl);
+  padding: var(--spazioSezione);
+  box-shadow: var(--ombra-media);
+  text-align: center;
+}
+
+.ctaSecondaria .azioniCta {
+  display: flex;
+  gap: var(--spazio-sm);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .paginaHero {
+    padding: var(--spazioSezione) 0;
+  }
+
+  .cardCapacita,
+  .schedaServizio,
+  .schedaContatto {
+    padding: var(--spazio-lg);
+  }
+}

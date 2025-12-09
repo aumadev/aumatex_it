@@ -7,10 +7,10 @@ PROJECT: Aumatex Template
  .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
-FILE:        cookie-policy.html
-SCOPO:       Pagina cookie policy e preferenze
-VERSIONE:    1.2
-DATA:        10/03/2026
+FILE:        services.html
+SCOPO:       Pagina "Servizi" con offering, processi e stack
+VERSIONE:    1.0
+DATA:        09/12/2025
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -26,7 +26,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="cookiePolicy.titolo">Cookie Policy</title>
+  <title data-i18n="servicesPage.title">Servizi</title>
   <link rel="stylesheet" href="./src/styles/base/variabili-estetiche.css">
   <link rel="stylesheet" href="./src/styles/base/font-face.css">
   <link rel="stylesheet" href="./src/styles/base/variabili-animazioni.css">
@@ -38,11 +38,16 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   <link rel="stylesheet" href="./src/styles/layouts/header.css">
   <link rel="stylesheet" href="./src/styles/layouts/footer.css">
   <link rel="stylesheet" href="./src/styles/components/buttons.css">
+  <link rel="stylesheet" href="./src/styles/components/cards.css">
+  <link rel="stylesheet" href="./src/styles/components/forms.css">
   <link rel="stylesheet" href="./src/styles/components/banner-cookie.css">
-  <link rel="stylesheet" href="./src/styles/utilities/typography-utilities.css">
+  <link rel="stylesheet" href="./src/styles/pages/homeSections.css">
   <link rel="stylesheet" href="./src/styles/themes/light.css" media="(prefers-color-scheme: light)">
   <link rel="stylesheet" href="./src/styles/themes/dark.css" media="(prefers-color-scheme: dark)">
-  <link rel="stylesheet" href="./src/styles/overrides/print.css">
+  <link rel="stylesheet" href="./src/styles/utilities/typography-utilities.css">
+  <link rel="stylesheet" href="./src/styles/utilities/spacing.css">
+  <link rel="stylesheet" href="./src/styles/utilities/display.css">
+  <link rel="stylesheet" href="./src/styles/pages/secondary-sections.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./src/media/icons/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./src/media/icons/favicons/favicon-16x16.png">
   <link rel="shortcut icon" href="./src/media/icons/favicons/favicon.ico">
@@ -98,41 +103,85 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
     </div>
   </header>
 
-  <main id="page" class="layout-shell">
-    <section class="container prose">
-      <h1 class="titoloIcona"><i class="fa-solid fa-cookie-bite" aria-hidden="true"></i><span data-i18n="cookiePolicy.titolo">Cookie Policy</span></h1>
-      <p data-i18n="cookiePolicy.introduzione">This cookie policy describes how Aumatex srls uses cookies on this site hosted on Aruba Business (Linux).</p>
+  <main id="page" class="layout-shell paginaSecondaria">
+    <section class="paginaHero">
+      <div class="container grigliaHeroSecondaria">
+        <div class="bloccoTestoHero">
+          <p class="sottotitoloBreve" data-i18n="servicesPage.heroEyebrow">Servizi</p>
+          <h1 class="titoloPrincipale" data-i18n="servicesPage.heroTitle">Delivery full-stack per prodotti digitali scalabili</h1>
+          <p class="lede" data-i18n="servicesPage.heroSubtitle">Dalla strategia alla messa in produzione: squadre integrate che combinano design, ingegneria, AI e governance.</p>
+          <div class="hero-cta">
+            <a class="btn-solid" href="./contact.html"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i><span data-i18n="servicesPage.heroCtaPrimary">Prenota una call</span></a>
+            <a class="btn-ghost" href="./about.html"><i class="fa-solid fa-people-group" aria-hidden="true"></i><span data-i18n="servicesPage.heroCtaSecondary">Conosci il team</span></a>
+          </div>
+        </div>
+        <div class="pannelloEvidenza">
+          <h2 class="titoloSezione" data-i18n="servicesPage.offeringTitle">Cosa ottieni</h2>
+          <ul class="icon-list">
+            <li><i class="fa-solid fa-sitemap" aria-hidden="true"></i><span data-i18n="servicesPage.offeringPoint1">Architetture cloud-native, API-first e integrazioni sicure.</span></li>
+            <li><i class="fa-solid fa-gauge-high" aria-hidden="true"></i><span data-i18n="servicesPage.offeringPoint2">Roadmap iterative, KPI e rilascio continuo con quality-by-design.</span></li>
+            <li><i class="fa-solid fa-shield-heart" aria-hidden="true"></i><span data-i18n="servicesPage.offeringPoint3">Security e compliance integrate con monitoraggio e runbook condivisi.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-      <h2 class="titoloIcona"><i class="fa-solid fa-user-tie" aria-hidden="true"></i><span data-i18n="cookiePolicy.titolareTitolo">Titolare del trattamento</span></h2>
-      <p data-i18n="cookiePolicy.titolareDescrizione">Aumatex srls · Via Umberto Biancamano, 25 · 00185 Roma (RM) · info@aumatex.it · aumatex@pec.it · +39 351 8860030.</p>
+    <section class="container">
+      <div class="section-heading">
+        <p class="sottotitoloBreve" data-i18n="servicesPage.servicesEyebrow">Cosa facciamo</p>
+        <h2 class="titoloSezione" data-i18n="servicesPage.servicesTitle">Servizi modulari per prodotti, piattaforme e sistemi</h2>
+        <p class="lede" data-i18n="servicesPage.servicesSubtitle">Squadre cross-funzionali che coprono discovery, design system, sviluppo front-end/back-end, AI, DevOps e supporto.</p>
+      </div>
+      <div class="grigliaServizi">
+        <article class="schedaServizio">
+          <h3 data-i18n="servicesPage.service1Title">Product strategy & discovery</h3>
+          <p data-i18n="servicesPage.service1Copy">Ricerca utenti, definizione KPI, roadmap e validazione con prototipi.</p>
+          <ul class="icon-list">
+            <li><i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i><span data-i18n="servicesPage.service1Point1">Assessment di processi e piattaforme esistenti.</span></li>
+            <li><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i><span data-i18n="servicesPage.service1Point2">Design system componibile e linee guida UI.</span></li>
+          </ul>
+        </article>
+        <article class="schedaServizio">
+          <h3 data-i18n="servicesPage.service2Title">Ingegneria e integrazione</h3>
+          <p data-i18n="servicesPage.service2Copy">Sviluppo front-end, back-end e API-first con AI e sicurezza integrate.</p>
+          <ul class="icon-list">
+            <li><i class="fa-solid fa-cloud-bolt" aria-hidden="true"></i><span data-i18n="servicesPage.service2Point1">Microservizi, data layer e scalabilità cloud-native.</span></li>
+            <li><i class="fa-solid fa-robot" aria-hidden="true"></i><span data-i18n="servicesPage.service2Point2">Automazioni e AI per efficienza e qualità.</span></li>
+          </ul>
+        </article>
+        <article class="schedaServizio">
+          <h3 data-i18n="servicesPage.service3Title">Ops, sicurezza e crescita</h3>
+          <p data-i18n="servicesPage.service3Copy">Osservabilità, incident management, governance e continuous improvement.</p>
+          <ul class="icon-list">
+            <li><i class="fa-solid fa-shield" aria-hidden="true"></i><span data-i18n="servicesPage.service3Point1">DevSecOps, controlli di conformità e runbook.</span></li>
+            <li><i class="fa-solid fa-chart-line" aria-hidden="true"></i><span data-i18n="servicesPage.service3Point2">Dashboard KPI, A/B test e ottimizzazioni.</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-      <h2 class="titoloIcona"><i class="fa-solid fa-circle-info" aria-hidden="true"></i><span data-i18n="cookiePolicy.cheCosaTitolo">What cookies are</span></h2>
-      <p data-i18n="cookiePolicy.cheCosaDescrizione">Cookies are small text files that websites store on your device to provide or improve a service. This site uses them in compliance with GDPR, the Italian Data Protection Authority's guidelines and the ePrivacy rules.</p>
+    <section class="container">
+      <div class="section-heading">
+        <p class="sottotitoloBreve" data-i18n="servicesPage.processEyebrow">Come lavoriamo</p>
+        <h2 class="titoloSezione" data-i18n="servicesPage.processTitle">Processo chiaro, rilasci continui</h2>
+        <p class="lede" data-i18n="servicesPage.processSubtitle">Fasi iterative, ownership condivisa e qualità misurabile in ogni sprint.</p>
+      </div>
+      <ol class="processoServizi">
+        <li><span class="passo">1</span><div><strong data-i18n="servicesPage.step1Title">Scoperta e blueprint</strong><p data-i18n="servicesPage.step1Copy">KPI, requisiti, architettura e backlog prioritizzato.</p></div></li>
+        <li><span class="passo">2</span><div><strong data-i18n="servicesPage.step2Title">Design & prototipi</strong><p data-i18n="servicesPage.step2Copy">Wireframe, UI e usability test su casi d’uso reali.</p></div></li>
+        <li><span class="passo">3</span><div><strong data-i18n="servicesPage.step3Title">Build & integrazioni</strong><p data-i18n="servicesPage.step3Copy">Sviluppo modulare, API-first, automazioni e QA continuo.</p></div></li>
+        <li><span class="passo">4</span><div><strong data-i18n="servicesPage.step4Title">Rollout & crescita</strong><p data-i18n="servicesPage.step4Copy">Rilasci controllati, monitoraggio, ottimizzazioni e training.</p></div></li>
+      </ol>
+    </section>
 
-      <h2 class="titoloIcona"><i class="fa-solid fa-rectangle-list" aria-hidden="true"></i><span data-i18n="cookiePolicy.cookieUsatiTitolo">Cookies we use</span></h2>
-      <ul class="icon-list">
-        <li><i class="fa-solid fa-language" aria-hidden="true"></i><span data-i18n="cookiePolicy.cookieTecniciPunto1">Navigation and session cookies to deliver pages, maintain language preferences and ensure basic functionality.</span></li>
-        <li><i class="fa-solid fa-shield-heart" aria-hidden="true"></i><span data-i18n="cookiePolicy.cookieTecniciPunto2">Security and load-balancing cookies issued by the hosting provider (Aruba) to protect the infrastructure and distribute traffic.</span></li>
-        <li><i class="fa-solid fa-check-double" aria-hidden="true"></i><span data-i18n="cookiePolicy.cookieTecniciPunto3">A consent cookie that stores your choices from the banner for up to 12 months.</span></li>
-        <li><i class="fa-solid fa-ban" aria-hidden="true"></i><span data-i18n="cookiePolicy.cookieTecniciPunto4">No analytics, marketing or profiling cookies are enabled on this site.</span></li>
-      </ul>
-
-      <h2 class="titoloIcona"><i class="fa-solid fa-eye-slash" aria-hidden="true"></i><span data-i18n="cookiePolicy.profilazioneTitolo">Profiling and third-party cookies</span></h2>
-      <p data-i18n="cookiePolicy.profilazioneDescrizione">We do not use third-party marketing platforms, pixels or advertising networks. The only third party involved is Aruba Business as hosting provider, limited to technical cookies.</p>
-
-      <h2 class="titoloIcona"><i class="fa-solid fa-toggle-on" aria-hidden="true"></i><span data-i18n="cookiePolicy.consensoTitolo">Consent management</span></h2>
-      <p data-i18n="cookiePolicy.consensoDescrizione">Essential cookies are always active because they are necessary for the site to operate. The banner lets you accept or reject optional categories; since no optional cookies are active, your choice mainly concerns the storage of consent itself.</p>
-
-      <h2 class="titoloIcona"><i class="fa-solid fa-sliders" aria-hidden="true"></i><span data-i18n="cookiePolicy.gestioneTitolo">Change your choices</span></h2>
-      <p data-i18n="cookiePolicy.gestioneDescrizione">You can reopen the cookie banner at any time from the footer link "Cookie preferences" and update your consent.</p>
-
-      <h2 class="titoloIcona"><i class="fa-solid fa-browser" aria-hidden="true"></i><span data-i18n="cookiePolicy.browserTitolo">Manage cookies via your browser</span></h2>
-      <p data-i18n="cookiePolicy.browserDescrizione">You can delete or block cookies from your browser settings (e.g., Safari, Chrome, Edge, Firefox). Blocking technical cookies may prevent the site from working correctly.</p>
-
-      <h2 class="titoloIcona"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span data-i18n="cookiePolicy.dirittiTitolo">Rights and contacts</span></h2>
-      <p data-i18n="cookiePolicy.dirittiDescrizione">To exercise your privacy rights or obtain more information, contact info@aumatex.it or see the Privacy Policy.</p>
-
-      <p class="titoloIcona"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i><span data-i18n="cookiePolicy.ultimoAggiornamento">Last update: 11/03/2026.</span></p>
+    <section class="container ctaSecondaria">
+      <p class="sottotitoloBreve" data-i18n="servicesPage.ctaEyebrow">Pronti a partire</p>
+      <h2 class="titoloSezione" data-i18n="servicesPage.ctaTitle">Mettiamo in produzione la tua prossima iniziativa</h2>
+      <p class="lede" data-i18n="servicesPage.ctaSubtitle">Squadre dedicate, governance condivisa e un piano di rilascio concreto.</p>
+      <div class="azioniCta">
+        <a class="btn-solid" href="./contact.html"><i class="fa-solid fa-headset" aria-hidden="true"></i><span data-i18n="servicesPage.ctaPrimary">Parla con un esperto</span></a>
+        <a class="btn-ghost" href="./about.html"><i class="fa-solid fa-people-group" aria-hidden="true"></i><span data-i18n="servicesPage.ctaSecondary">Conosci il team</span></a>
+      </div>
     </section>
   </main>
 
@@ -227,10 +276,10 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
       </div>
     </div>
     <div class="bannerCookieAzioni">
-      <button class="bottoneSecondario" data-cookie-personalizza data-i18n="cookie.personalizza">Personalizza</button>
-      <button class="bottoneSecondario" data-cookie-rifiuta data-i18n="cookie.rifiuta">Rifiuta opzionali</button>
-      <button class="bottoneSecondario" data-cookie-salva data-i18n="cookie.salva">Salva preferenze</button>
-      <button class="bottonePrimario" data-cookie-accetta data-i18n="cookie.accetta">Accetta tutto</button>
+      <button class="btn-ghost" data-cookie-personalizza data-i18n="cookie.personalizza">Personalizza</button>
+      <button class="btn-ghost" data-cookie-rifiuta data-i18n="cookie.rifiuta">Rifiuta opzionali</button>
+      <button class="btn-ghost" data-cookie-salva data-i18n="cookie.salva">Salva preferenze</button>
+      <button class="btn-solid" data-cookie-accetta data-i18n="cookie.accetta">Accetta tutto</button>
     </div>
     <div class="bannerCookieLink">
       <a href="./privacy-policy.html" data-i18n="cookie.linkPrivacy">Privacy policy</a>

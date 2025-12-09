@@ -7,7 +7,7 @@ PROJECT: Aumatex Template
  .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
-FILE:        docs/mediaManifest.md
+FILE:        docs/media-manifest.md
 SCOPO:       Manifest asset media e specifiche
 VERSIONE:    1.2
 DATA:        13/03/2026

@@ -7,7 +7,7 @@ PROJECT: Aumatex Template
  .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
-FILE:        docs/contentModel.md
+FILE:        docs/content-model.md
 SCOPO:       Descrizione del modello contenuti e dati
 VERSIONE:    1.1
 DATA:        11/03/2026
@@ -35,7 +35,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 - Dizionari caricati client-side e sincronizzati con select lingua.
 
 ## Media
-- Immagini, icone, font, audio, video, download in `src/media/` con manifest dettagliato (`docs/mediaManifest.md`).
+- Immagini, icone, font, audio, video, download in `src/media/` con manifest dettagliato (`docs/media-manifest.md`).
 - Palette temi in `config/themes/palette.json` usata da CSS.
 
 ## Temi e stili

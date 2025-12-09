@@ -39,6 +39,9 @@ src/media/ | Immagini, icone, font, audio, video, download
 index.html | Homepage neutra i18n-ready
 privacy-policy.html | Pagina privacy i18n-ready
 cookie-policy.html | Pagina cookie i18n-ready
+about.html | Pagina chi siamo (missione, metodo, CTA)
+services.html | Pagina servizi (offering, processo, CTA)
+contact.html | Pagina contatti (canali diretti e form)
 tests/ | Checklist test HTML/CSS/JS
 
 ## Guiding principles

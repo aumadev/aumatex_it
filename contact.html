@@ -7,10 +7,10 @@ PROJECT: Aumatex Template
  .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
-FILE:        cookie-policy.html
-SCOPO:       Pagina cookie policy e preferenze
-VERSIONE:    1.2
-DATA:        10/03/2026
+FILE:        contact.html
+SCOPO:       Pagina "Contatti" con call-to-action, recapiti e form
+VERSIONE:    1.0
+DATA:        09/12/2025
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -26,7 +26,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="cookiePolicy.titolo">Cookie Policy</title>
+  <title data-i18n="contactPage.title">Contatti</title>
   <link rel="stylesheet" href="./src/styles/base/variabili-estetiche.css">
   <link rel="stylesheet" href="./src/styles/base/font-face.css">
   <link rel="stylesheet" href="./src/styles/base/variabili-animazioni.css">
@@ -38,11 +38,16 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   <link rel="stylesheet" href="./src/styles/layouts/header.css">
   <link rel="stylesheet" href="./src/styles/layouts/footer.css">
   <link rel="stylesheet" href="./src/styles/components/buttons.css">
+  <link rel="stylesheet" href="./src/styles/components/cards.css">
+  <link rel="stylesheet" href="./src/styles/components/forms.css">
   <link rel="stylesheet" href="./src/styles/components/banner-cookie.css">
-  <link rel="stylesheet" href="./src/styles/utilities/typography-utilities.css">
+  <link rel="stylesheet" href="./src/styles/pages/homeSections.css">
   <link rel="stylesheet" href="./src/styles/themes/light.css" media="(prefers-color-scheme: light)">
   <link rel="stylesheet" href="./src/styles/themes/dark.css" media="(prefers-color-scheme: dark)">
-  <link rel="stylesheet" href="./src/styles/overrides/print.css">
+  <link rel="stylesheet" href="./src/styles/utilities/typography-utilities.css">
+  <link rel="stylesheet" href="./src/styles/utilities/spacing.css">
+  <link rel="stylesheet" href="./src/styles/utilities/display.css">
+  <link rel="stylesheet" href="./src/styles/pages/secondary-sections.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./src/media/icons/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./src/media/icons/favicons/favicon-16x16.png">
   <link rel="shortcut icon" href="./src/media/icons/favicons/favicon.ico">
@@ -98,41 +103,103 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
     </div>
   </header>
 
-  <main id="page" class="layout-shell">
-    <section class="container prose">
-      <h1 class="titoloIcona"><i class="fa-solid fa-cookie-bite" aria-hidden="true"></i><span data-i18n="cookiePolicy.titolo">Cookie Policy</span></h1>
-      <p data-i18n="cookiePolicy.introduzione">This cookie policy describes how Aumatex srls uses cookies on this site hosted on Aruba Business (Linux).</p>
+  <main id="page" class="layout-shell paginaSecondaria">
+    <section class="paginaHero">
+      <div class="container grigliaHeroSecondaria">
+        <div class="bloccoTestoHero">
+          <p class="sottotitoloBreve" data-i18n="contactPage.heroEyebrow">Contatti</p>
+          <h1 class="titoloPrincipale" data-i18n="contactPage.heroTitle">Parla con una squadra che consegna</h1>
+          <p class="lede" data-i18n="contactPage.heroSubtitle">Scrivici per roadmap, discovery, supporto o partnership: rispondiamo con un piano concreto e tempi di rilascio.</p>
+          <div class="hero-cta">
+            <a class="btn-solid" href="mailto:info@aumatex.it"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span data-i18n="contactPage.heroCtaPrimary">Scrivici ora</span></a>
+            <a class="btn-ghost" href="tel:+393518860030"><i class="fa-solid fa-phone" aria-hidden="true"></i><span data-i18n="contactPage.heroCtaSecondary">Chiama il team</span></a>
+          </div>
+        </div>
+        <div class="pannelloEvidenza">
+          <h2 class="titoloSezione" data-i18n="contactPage.trustTitle">Cosa aspettarti</h2>
+          <ul class="icon-list">
+            <li><i class="fa-solid fa-clock" aria-hidden="true"></i><span data-i18n="contactPage.trustPoint1">Risposta entro 1 giorno lavorativo con prossimi step chiari.</span></li>
+            <li><i class="fa-solid fa-file-signature" aria-hidden="true"></i><span data-i18n="contactPage.trustPoint2">Analisi iniziale gratuita e proposta di engagement modulare.</span></li>
+            <li><i class="fa-solid fa-handshake" aria-hidden="true"></i><span data-i18n="contactPage.trustPoint3">Un referente unico per progetto, governance e delivery.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-      <h2 class="titoloIcona"><i class="fa-solid fa-user-tie" aria-hidden="true"></i><span data-i18n="cookiePolicy.titolareTitolo">Titolare del trattamento</span></h2>
-      <p data-i18n="cookiePolicy.titolareDescrizione">Aumatex srls · Via Umberto Biancamano, 25 · 00185 Roma (RM) · info@aumatex.it · aumatex@pec.it · +39 351 8860030.</p>
+    <section class="container">
+      <div class="section-heading">
+        <p class="sottotitoloBreve" data-i18n="contactPage.contactsEyebrow">Canali diretti</p>
+        <h2 class="titoloSezione" data-i18n="contactPage.contactsTitle">Scegli il canale migliore per te</h2>
+        <p class="lede" data-i18n="contactPage.contactsSubtitle">Email, PEC o telefono dedicato: rispondiamo con next-step e materiali utili.</p>
+      </div>
+      <div class="contattiGrid">
+        <article class="schedaContatto">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          <h3 data-i18n="contactPage.cardEmailTitle">Email</h3>
+          <p data-i18n="contactPage.cardEmailCopy">Per richieste di progetto, partnership o informazioni commerciali.</p>
+          <a href="mailto:info@aumatex.it">info@aumatex.it</a>
+        </article>
+        <article class="schedaContatto">
+          <i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i>
+          <h3 data-i18n="contactPage.cardPecTitle">PEC</h3>
+          <p data-i18n="contactPage.cardPecCopy">Per comunicazioni formali e documentazione ufficiale.</p>
+          <a href="mailto:aumatex@pec.it">aumatex@pec.it</a>
+        </article>
+        <article class="schedaContatto">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          <h3 data-i18n="contactPage.cardPhoneTitle">Telefono</h3>
+          <p data-i18n="contactPage.cardPhoneCopy">Parla con un referente tecnico o commerciale.</p>
+          <a href="tel:+393518860030">+39 351 8860030</a>
+        </article>
+      </div>
+    </section>
 
-      <h2 class="titoloIcona"><i class="fa-solid fa-circle-info" aria-hidden="true"></i><span data-i18n="cookiePolicy.cheCosaTitolo">What cookies are</span></h2>
-      <p data-i18n="cookiePolicy.cheCosaDescrizione">Cookies are small text files that websites store on your device to provide or improve a service. This site uses them in compliance with GDPR, the Italian Data Protection Authority's guidelines and the ePrivacy rules.</p>
+    <section class="container">
+      <div class="section-heading">
+        <p class="sottotitoloBreve" data-i18n="contactPage.formEyebrow">Brief rapido</p>
+        <h2 class="titoloSezione" data-i18n="contactPage.formTitle">Raccontaci il progetto</h2>
+        <p class="lede" data-i18n="contactPage.formSubtitle">Inserisci i dettagli principali: ti risponderemo con i prossimi step e un piano sintetico.</p>
+      </div>
+      <form class="formContatti">
+        <div class="rigaCampi">
+          <label>
+            <span data-i18n="contactPage.formName">Nome e cognome</span>
+            <input type="text" name="nome" required>
+          </label>
+          <label>
+            <span data-i18n="contactPage.formEmail">Email</span>
+            <input type="email" name="email" required>
+          </label>
+        </div>
+        <div class="rigaCampi">
+          <label>
+            <span data-i18n="contactPage.formCompany">Azienda</span>
+            <input type="text" name="azienda">
+          </label>
+          <label>
+            <span data-i18n="contactPage.formService">Servizio di interesse</span>
+            <input type="text" name="servizio">
+          </label>
+        </div>
+        <label>
+          <span data-i18n="contactPage.formMessage">Descrivi cosa vuoi realizzare</span>
+          <textarea name="messaggio" rows="4"></textarea>
+        </label>
+        <div class="hero-cta">
+          <button class="btn-solid" type="submit"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i><span data-i18n="contactPage.formSubmit">Invia richiesta</span></button>
+          <a class="btn-ghost" href="./privacy-policy.html"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span data-i18n="contactPage.formPrivacy">Leggi la privacy</span></a>
+        </div>
+      </form>
+    </section>
 
-      <h2 class="titoloIcona"><i class="fa-solid fa-rectangle-list" aria-hidden="true"></i><span data-i18n="cookiePolicy.cookieUsatiTitolo">Cookies we use</span></h2>
-      <ul class="icon-list">
-        <li><i class="fa-solid fa-language" aria-hidden="true"></i><span data-i18n="cookiePolicy.cookieTecniciPunto1">Navigation and session cookies to deliver pages, maintain language preferences and ensure basic functionality.</span></li>
-        <li><i class="fa-solid fa-shield-heart" aria-hidden="true"></i><span data-i18n="cookiePolicy.cookieTecniciPunto2">Security and load-balancing cookies issued by the hosting provider (Aruba) to protect the infrastructure and distribute traffic.</span></li>
-        <li><i class="fa-solid fa-check-double" aria-hidden="true"></i><span data-i18n="cookiePolicy.cookieTecniciPunto3">A consent cookie that stores your choices from the banner for up to 12 months.</span></li>
-        <li><i class="fa-solid fa-ban" aria-hidden="true"></i><span data-i18n="cookiePolicy.cookieTecniciPunto4">No analytics, marketing or profiling cookies are enabled on this site.</span></li>
-      </ul>
-
-      <h2 class="titoloIcona"><i class="fa-solid fa-eye-slash" aria-hidden="true"></i><span data-i18n="cookiePolicy.profilazioneTitolo">Profiling and third-party cookies</span></h2>
-      <p data-i18n="cookiePolicy.profilazioneDescrizione">We do not use third-party marketing platforms, pixels or advertising networks. The only third party involved is Aruba Business as hosting provider, limited to technical cookies.</p>
-
-      <h2 class="titoloIcona"><i class="fa-solid fa-toggle-on" aria-hidden="true"></i><span data-i18n="cookiePolicy.consensoTitolo">Consent management</span></h2>
-      <p data-i18n="cookiePolicy.consensoDescrizione">Essential cookies are always active because they are necessary for the site to operate. The banner lets you accept or reject optional categories; since no optional cookies are active, your choice mainly concerns the storage of consent itself.</p>
-
-      <h2 class="titoloIcona"><i class="fa-solid fa-sliders" aria-hidden="true"></i><span data-i18n="cookiePolicy.gestioneTitolo">Change your choices</span></h2>
-      <p data-i18n="cookiePolicy.gestioneDescrizione">You can reopen the cookie banner at any time from the footer link "Cookie preferences" and update your consent.</p>
-
-      <h2 class="titoloIcona"><i class="fa-solid fa-browser" aria-hidden="true"></i><span data-i18n="cookiePolicy.browserTitolo">Manage cookies via your browser</span></h2>
-      <p data-i18n="cookiePolicy.browserDescrizione">You can delete or block cookies from your browser settings (e.g., Safari, Chrome, Edge, Firefox). Blocking technical cookies may prevent the site from working correctly.</p>
-
-      <h2 class="titoloIcona"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span data-i18n="cookiePolicy.dirittiTitolo">Rights and contacts</span></h2>
-      <p data-i18n="cookiePolicy.dirittiDescrizione">To exercise your privacy rights or obtain more information, contact info@aumatex.it or see the Privacy Policy.</p>
-
-      <p class="titoloIcona"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i><span data-i18n="cookiePolicy.ultimoAggiornamento">Last update: 11/03/2026.</span></p>
+    <section class="container ctaSecondaria">
+      <p class="sottotitoloBreve" data-i18n="contactPage.ctaEyebrow">Incontriamoci</p>
+      <h2 class="titoloSezione" data-i18n="contactPage.ctaTitle">Demo live o workshop di 60 minuti</h2>
+      <p class="lede" data-i18n="contactPage.ctaSubtitle">Mostriamo case study, stack tecnologico e come impostiamo roadmap e governance.</p>
+      <div class="azioniCta">
+        <a class="btn-solid" href="./services.html"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><span data-i18n="contactPage.ctaPrimary">Scopri i servizi</span></a>
+        <a class="btn-ghost" href="./about.html"><i class="fa-solid fa-people-group" aria-hidden="true"></i><span data-i18n="contactPage.ctaSecondary">Conosci il team</span></a>
+      </div>
     </section>
   </main>
 
@@ -227,10 +294,10 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
       </div>
     </div>
     <div class="bannerCookieAzioni">
-      <button class="bottoneSecondario" data-cookie-personalizza data-i18n="cookie.personalizza">Personalizza</button>
-      <button class="bottoneSecondario" data-cookie-rifiuta data-i18n="cookie.rifiuta">Rifiuta opzionali</button>
-      <button class="bottoneSecondario" data-cookie-salva data-i18n="cookie.salva">Salva preferenze</button>
-      <button class="bottonePrimario" data-cookie-accetta data-i18n="cookie.accetta">Accetta tutto</button>
+      <button class="btn-ghost" data-cookie-personalizza data-i18n="cookie.personalizza">Personalizza</button>
+      <button class="btn-ghost" data-cookie-rifiuta data-i18n="cookie.rifiuta">Rifiuta opzionali</button>
+      <button class="btn-ghost" data-cookie-salva data-i18n="cookie.salva">Salva preferenze</button>
+      <button class="btn-solid" data-cookie-accetta data-i18n="cookie.accetta">Accetta tutto</button>
     </div>
     <div class="bannerCookieLink">
       <a href="./privacy-policy.html" data-i18n="cookie.linkPrivacy">Privacy policy</a>
