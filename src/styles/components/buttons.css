@@ -25,6 +25,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: var(--spazio-xs);
   padding: var(--spazio-sm) var(--spazio-md);
   border-radius: var(--raggio-md);
   border: var(--bordo-medio) solid transparent;
@@ -36,6 +37,8 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 }
 
 .btn-solid:hover {
+  background: var(--coloreAccentoHover, var(--colore-accento-secondario));
+  color: var(--colore-superficie);
   transform: translateY(-1px);
   box-shadow: var(--ombra-leggera);
 }
