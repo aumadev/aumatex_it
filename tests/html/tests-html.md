@@ -7,8 +7,8 @@ PROJECT: Aumatex Template
  .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
-FILE:        tests/css/testsCss.md
-SCOPO:       Linee guida per verifiche CSS
+FILE:        tests/html/tests-html.md
+SCOPO:       Linee guida per verifiche HTML
 VERSIONE:    1.0
 DATA:        04/11/2025
 AUTORE:      Aumatex srls  |  www.aumatex.it
@@ -21,18 +21,19 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 ───────────────────────────────────────────────────────────────────────────────
 -->
 
-# CSS checks
+# HTML checks
 
-## Struttura e lint
-- Linting per layer (base, layout, componenti, temi, utility, overrides) con naming coerente.
-- Nessuna regola orfana o duplicata; niente !important non motivati.
+## Validazione
+- W3C HTML per tutte le pagine (root e partial inclusi).
+- Nessun errore di struttura, chiusura tag, attributi duplicati.
 
-## Variabili e temi
-- Uso esclusivo di variabili definite in `src/styles/base/variabili-*`.
-- Temi light/dark coerenti: colori di testo sfondo e accent senza conflitti.
-- Verifica contrasto (WCAG) per link, bottoni, banner.
+## Accessibilita
+- Title e meta viewport presenti.
+- Attributi `alt` completi per immagini e icone decorative marcate con `aria-hidden="true"` se necessario.
+- `aria-label` o `aria-labelledby` per controlli interattivi (nav toggle, lingua, cookie).
+- Gerarchia heading coerente (H1 per pagina, poi H2/H3).
+- Focus visibile e navigazione tastiera funzionante.
 
-## Responsive e layout
-- Header/nav responsivo (desktop inline, mobile overlay).
-- Grid e card fluidi con gap costanti (`spazio-*`).
-- Banner cookie e footer centrati e leggibili su mobile.
+## I18n e contenuti
+- Attributo `lang` su `html` aggiornato dalla lingua selezionata.
+- Testi dinamici sotto `data-i18n` popolati correttamente per tutte le lingue.

@@ -5,7 +5,7 @@
       "titolo": "Discovery y blueprint",
       "descrizione": "Research de usuarios, mapas de journey, KPI y pruebas técnicas para una hoja de ruta segura.",
       "url": "/services/discovery",
-      "immagine": "./src/media/images/optimized/card-1.png",
+      "immagine": "./src/media/images/optimized/home-card-1.png",
       "cta": "Explorar"
     },
     {
@@ -13,7 +13,7 @@
       "titolo": "Entrega cloud-native",
       "descrizione": "Arquitecturas componibles, servicios API-first y CI/CD con monitoreo y QA automático.",
       "url": "/services/engineering",
-      "immagine": "./src/media/images/optimized/card-2.png",
+      "immagine": "./src/media/images/optimized/home-card-2.png",
       "cta": "Explorar"
     },
     {
@@ -21,7 +21,7 @@
       "titolo": "Optimización continua",
       "descrizione": "Experimentación, analytics y personalización para mejorar activación y retención.",
       "url": "/services/growth",
-      "immagine": "./src/media/images/optimized/card-3.png",
+      "immagine": "./src/media/images/optimized/home-card-3.png",
       "cta": "Explorar"
     }
   ]

@@ -7,8 +7,8 @@ PROJECT: Aumatex Template
  .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
-FILE:        tests/html/testsHtml.md
-SCOPO:       Linee guida per verifiche HTML
+FILE:        tests/js/tests-js.md
+SCOPO:       Linee guida per verifiche JavaScript
 VERSIONE:    1.0
 DATA:        04/11/2025
 AUTORE:      Aumatex srls  |  www.aumatex.it
@@ -21,19 +21,21 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 ───────────────────────────────────────────────────────────────────────────────
 -->
 
-# HTML checks
+# JS checks
 
-## Validazione
-- W3C HTML per tutte le pagine (root e partial inclusi).
-- Nessun errore di struttura, chiusura tag, attributi duplicati.
+## Qualita e lint
+- Linting per moduli core/ui/forms/analytics con regole uniformi.
+- Nessun uso di var o global non necessario; funzioni in italiano camelCase.
 
-## Accessibilita
-- Title e meta viewport presenti.
-- Attributi `alt` completi per immagini e icone decorative marcate con `aria-hidden="true"` se necessario.
-- `aria-label` o `aria-labelledby` per controlli interattivi (nav toggle, lingua, cookie).
-- Gerarchia heading coerente (H1 per pagina, poi H2/H3).
-- Focus visibile e navigazione tastiera funzionante.
+## Interazioni UI
+- Toggle nav mobile: apertura/chiusura overlay, blocco scroll body, chiusura su click link/overlay.
+- Accordion: apertura/chiusura mirata sugli elementi target.
+- Theme toggle: persistenza in localStorage e applicazione data-theme.
 
-## I18n e contenuti
-- Attributo `lang` su `html` aggiornato dalla lingua selezionata.
-- Testi dinamici sotto `data-i18n` popolati correttamente per tutte le lingue.
+## Localizzazione e dati
+- i18n loader: caricamento dizionari, sync select lingua, aggiorna `lang` su html.
+- Loader contenuti: render card da JSON per ogni lingua senza errori fetch.
+
+## Form e consenso
+- Validation: blocco submit se campi required vuoti, aria-invalid coerente.
+- Consenso cookie: preferenze salvate, stati compresso/espanso funzionanti, riapertura dal footer.

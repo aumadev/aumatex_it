@@ -1,4 +1,4 @@
-<!--
+/*
 PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
     |     '||'  '|' '||    ||'     |     '||''|.   '||''''|  '||'  '|'
@@ -7,35 +7,48 @@ PROJECT: Aumatex Template
  .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
-FILE:        tests/js/testsJs.md
-SCOPO:       Linee guida per verifiche JavaScript
-VERSIONE:    1.0
-DATA:        04/11/2025
+FILE:        src/styles/base/font-face.css
+SCOPO:       Definizione @font-face per RobotoSlab e Mulish variabili
+VERSIONE:    1.1
+DATA:        13/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
-STACK:       Markdown
+STACK:       CSS3
 REPO:        https://github.com/aumadev/aumatex_it
 LICENZA:     Software proprietario © 2025 Aumatex srls
 NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzata.
 ───────────────────────────────────────────────────────────────────────────────
--->
+*/
 
-# JS checks
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("/src/media/fonts/RobotoSlab-wght.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
-## Qualita e lint
-- Linting per moduli core/ui/forms/analytics con regole uniformi.
-- Nessun uso di var o global non necessario; funzioni in italiano camelCase.
+@font-face {
+  font-family: "Mulish";
+  src: url("/src/media/fonts/Mulish-wght.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
-## Interazioni UI
-- Toggle nav mobile: apertura/chiusura overlay, blocco scroll body, chiusura su click link/overlay.
-- Accordion: apertura/chiusura mirata sugli elementi target.
-- Theme toggle: persistenza in localStorage e applicazione data-theme.
+@font-face {
+  font-family: "Mulish";
+  src: url("/src/media/fonts/Mulish-Italic-wght.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
 
-## Localizzazione e dati
-- i18n loader: caricamento dizionari, sync select lingua, aggiorna `lang` su html.
-- Loader contenuti: render card da JSON per ogni lingua senza errori fetch.
-
-## Form e consenso
-- Validation: blocco submit se campi required vuoti, aria-invalid coerente.
-- Consenso cookie: preferenze salvate, stati compresso/espanso funzionanti, riapertura dal footer.
+@font-face {
+  font-family: "ImagineExtra";
+  src: url("/src/media/fonts/ImagineExtra-slim.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}

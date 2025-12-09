@@ -25,14 +25,14 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 Percorso | Tipo | Pagina d'uso | Scopo | Risoluzione consigliata / formato preferito
 --- | --- | --- | --- | ---
-src/media/images/logoHeader.png | immagine (png) | Header di tutte le pagine | Logo principale nel menu e branding | 160x160 px
-src/media/images/logoSmallFooter-1.png | immagine (png) | Footer tutte le pagine | Logo partner/accreditamento 1 | 120x40 px (scalabile 2x se necessario)
-src/media/images/logoSmallFooter-2.png | immagine (png) | Footer tutte le pagine | Logo partner/accreditamento 2 | 120x40 px (scalabile 2x se necessario)
-src/media/images/logoSmallFooter-3.png | immagine (png) | Footer tutte le pagine | Logo partner/accreditamento 3 | 120x40 px (scalabile 2x se necessario)
-src/media/images/optimized/heroHome.png | immagine (png) | Sezione hero home | Visual hero principale | 1920x1080 px desktop, 1200x800 px mobile
-src/media/images/optimized/card-1.png | immagine (png) | Card servizi | Anteprima card 1 | 800x500 px
-src/media/images/optimized/card-2.png | immagine (png) | Card servizi | Anteprima card 2 | 800x500 px
-src/media/images/optimized/card-3.png | immagine (png) | Card servizi | Anteprima card 3 | 800x500 px
+src/media/images/header-logo.png | immagine (png) | Header di tutte le pagine | Logo principale nel menu e branding | 160x160 px
+src/media/images/footer-logo-1.png | immagine (png) | Footer tutte le pagine | Logo partner/accreditamento 1 | 120x40 px (scalabile 2x se necessario)
+src/media/images/footer-logo-2.png | immagine (png) | Footer tutte le pagine | Logo partner/accreditamento 2 | 120x40 px (scalabile 2x se necessario)
+src/media/images/footer-logo-3.png | immagine (png) | Footer tutte le pagine | Logo partner/accreditamento 3 | 120x40 px (scalabile 2x se necessario)
+src/media/images/optimized/home-hero.png | immagine (png) | Sezione hero home | Visual hero principale | 1920x1080 px desktop, 1200x800 px mobile
+src/media/images/optimized/home-card-1.png | immagine (png) | Card servizi | Anteprima card 1 | 800x500 px
+src/media/images/optimized/home-card-2.png | immagine (png) | Card servizi | Anteprima card 2 | 800x500 px
+src/media/images/optimized/home-card-3.png | immagine (png) | Card servizi | Anteprima card 3 | 800x500 px
 
 ## Icone e favicons
 
@@ -78,7 +78,7 @@ src/media/fonts/ImagineExtra-slim.ttf | font display | Branding (logo header/foo
 
 Percorso | Tipo | Pagina d'uso | Scopo | Note
 --- | --- | --- | --- | ---
-src/media/mediaReadme.md | markdown | Repository media | Linee guida interne asset | Consultazione interna, non pubblico
+src/media/readme-media.md | markdown | Repository media | Linee guida interne asset | Consultazione interna, non pubblico
 
 ## Video
 

@@ -7,7 +7,7 @@ PROJECT: Aumatex Template
  .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
-FILE:        src/scripts/ui/headerController.js
+FILE:        src/scripts/ui/header-controller.js
 SCOPO:       Gestione sticky header e riduzione su scroll
 VERSIONE:    1.7
 DATA:        13/03/2026

@@ -1,4 +1,4 @@
-/*
+<!--
 PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
     |     '||'  '|' '||    ||'     |     '||''|.   '||''''|  '||'  '|'
@@ -7,48 +7,31 @@ PROJECT: Aumatex Template
  .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
-FILE:        src/styles/base/fontFace.css
-SCOPO:       Definizione @font-face per RobotoSlab e Mulish variabili
-VERSIONE:    1.1
-DATA:        13/03/2026
+FILE:        src/media/readme-media.md
+SCOPO:       Guida alla struttura delle cartelle media
+VERSIONE:    1.0
+DATA:        04/11/2025
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
-STACK:       CSS3
+STACK:       Markdown
 REPO:        https://github.com/aumadev/aumatex_it
 LICENZA:     Software proprietario © 2025 Aumatex srls
 NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzata.
 ───────────────────────────────────────────────────────────────────────────────
-*/
+-->
 
-@font-face {
-  font-family: "RobotoSlab";
-  src: url("/src/media/fonts/RobotoSlab-wght.ttf") format("truetype-variations");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
+# Media layout
 
-@font-face {
-  font-family: "Mulish";
-  src: url("/src/media/fonts/Mulish-wght.ttf") format("truetype-variations");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
+Percorso | Uso | Formato preferito
+--- | --- | ---
+images/raw | Sorgenti non ottimizzate | PNG
+images/optimized | Immagini ottimizzate per il web | PNG (o JPG se necessario)
+icons/svg | Icone inline/SVG loghi | SVG
+icons/favicons | Favicon set e manifest | PNG multipli (16/32/48)
+video | Clip video locali/fallback | MP4/WEBM 1080p
+audio | Tracce audio/podcast | MP3/OGG 320 kbps
+fonts | Font personalizzati | WOFF2/WOFF
+downloads | File scaricabili (PDF/ZIP) | Formati originali
 
-@font-face {
-  font-family: "Mulish";
-  src: url("/src/media/fonts/Mulish-Italic-wght.ttf") format("truetype-variations");
-  font-weight: 100 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "ImagineExtra";
-  src: url("/src/media/fonts/ImagineExtra-slim.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
+Consulta `docs/mediaManifest.md` per risoluzioni consigliate e scopi per asset principali.

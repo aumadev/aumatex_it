@@ -7,8 +7,8 @@ PROJECT: Aumatex Template
  .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
-FILE:        src/media/mediaReadme.md
-SCOPO:       Guida alla struttura delle cartelle media
+FILE:        tests/css/tests-css.md
+SCOPO:       Linee guida per verifiche CSS
 VERSIONE:    1.0
 DATA:        04/11/2025
 AUTORE:      Aumatex srls  |  www.aumatex.it
@@ -21,17 +21,18 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 ───────────────────────────────────────────────────────────────────────────────
 -->
 
-# Media layout
+# CSS checks
 
-Percorso | Uso | Formato preferito
---- | --- | ---
-images/raw | Sorgenti non ottimizzate | PNG
-images/optimized | Immagini ottimizzate per il web | PNG (o JPG se necessario)
-icons/svg | Icone inline/SVG loghi | SVG
-icons/favicons | Favicon set e manifest | PNG multipli (16/32/48)
-video | Clip video locali/fallback | MP4/WEBM 1080p
-audio | Tracce audio/podcast | MP3/OGG 320 kbps
-fonts | Font personalizzati | WOFF2/WOFF
-downloads | File scaricabili (PDF/ZIP) | Formati originali
+## Struttura e lint
+- Linting per layer (base, layout, componenti, temi, utility, overrides) con naming coerente.
+- Nessuna regola orfana o duplicata; niente !important non motivati.
 
-Consulta `docs/mediaManifest.md` per risoluzioni consigliate e scopi per asset principali.
+## Variabili e temi
+- Uso esclusivo di variabili definite in `src/styles/base/variabili-*`.
+- Temi light/dark coerenti: colori di testo sfondo e accent senza conflitti.
+- Verifica contrasto (WCAG) per link, bottoni, banner.
+
+## Responsive e layout
+- Header/nav responsivo (desktop inline, mobile overlay).
+- Grid e card fluidi con gap costanti (`spazio-*`).
+- Banner cookie e footer centrati e leggibili su mobile.
