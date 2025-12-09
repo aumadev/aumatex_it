@@ -1,4 +1,4 @@
-<!--
+/*
 PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
     |     '||'  '|' '||    ||'     |     '||''|.   '||''''|  '||'  '|'
@@ -7,43 +7,47 @@ PROJECT: Aumatex Template
  .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
-FILE:        docs/contentModel.md
-SCOPO:       Descrizione del modello contenuti e dati
+FILE:        src/scripts/ui/headerController.js
+SCOPO:       Gestione sticky header e riduzione su scroll
 VERSIONE:    1.0
-DATA:        04/11/2025
+DATA:        09/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
-STACK:       Markdown
+STACK:       JavaScript
 REPO:        https://github.com/aumadev/aumatex_it
 LICENZA:     Software proprietario © 2025 Aumatex srls
 NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzata.
 ───────────────────────────────────────────────────────────────────────────────
--->
+*/
 
-# Content model
+(function () {
+  const CLASSE_COMPATTO = "headerCompatto";
+  const SOGLIA_SCROLL_PREDEFINITA = 96;
 
-## Navigazione e pagine
-- Navigazione principale in `config/navigation.json`.
-- Pagine root condivise (`index.html`, `privacyPolicy.html`, `cookiePolicy.html`) con testi i18n.
-- Sezioni riutilizzabili (hero, card, footer) via partial `src/html/partials/`.
+  function aggiornaScrollPadding(header) {
+    document.documentElement.style.setProperty("--offsetHeaderSticky", `${header.offsetHeight}px`);
+  }
 
-## Localizzazione e dati
-- Stringhe UI in `src/locales/<lang>/common.json`.
-- Contenuti dinamici (es. card home) in `src/data/content/`.
-- Dizionari caricati client-side e sincronizzati con select lingua.
+  function aggiornaStatoHeader(header, soglia) {
+    const compatto = window.scrollY > soglia;
+    header.classList.toggle(CLASSE_COMPATTO, compatto);
+  }
 
-## Media
-- Immagini, icone, font, audio, video, download in `src/media/` con manifest dettagliato (`docs/mediaManifest.md`).
-- Palette temi in `config/themes/palette.json` usata da CSS.
+  function inizializzaHeaderScroll() {
+    const header = document.querySelector("[data-header]");
+    if (!header) return;
 
-## Temi e stili
-- Temi light/dark in `src/styles/themes/`.
-- Variabili estetiche e animazioni in `src/styles/base/`.
-- Componenti e layout separati per header, footer, card, banner cookie.
+    const soglia = Number(header.dataset.headerSoglia || SOGLIA_SCROLL_PREDEFINITA);
+    const aggiorna = () => {
+      aggiornaStatoHeader(header, soglia);
+      aggiornaScrollPadding(header);
+    };
 
-## Consenso e compliance
-- Banner cookie gestito da `src/scripts/core/cookie-consenso.js` con preferenze essenziali/analisi/marketing e link a policy.
+    aggiorna();
+    window.addEventListener("scroll", aggiorna, { passive: true });
+    window.addEventListener("resize", () => aggiornaScrollPadding(header));
+  }
 
-## Automazione
-- Pipeline Python da completare per render statico, merge i18n/dati, ottimizzazione asset (`python/tasks/`).
+  document.addEventListener("DOMContentLoaded", inizializzaHeaderScroll);
+})();

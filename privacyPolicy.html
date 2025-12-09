@@ -7,10 +7,10 @@ PROJECT: Aumatex Template
  .''''|.   ||    |   | '|' ||   .''''|.   ||    ||  ||          |||
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
-FILE:        cookie-policy.html
-SCOPO:       Pagina cookie policy e preferenze
-VERSIONE:    1.0
-DATA:        04/11/2025
+FILE:        privacyPolicy.html
+SCOPO:       Pagina informativa privacy
+VERSIONE:    1.1
+DATA:        09/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -26,7 +26,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="cookiePolicy.titolo">Cookie Policy</title>
+  <title data-i18n="privacy.title">Privacy Policy</title>
   <link rel="stylesheet" href="./src/styles/base/variabili-estetiche.css">
   <link rel="stylesheet" href="./src/styles/base/variabili-animazioni.css">
   <link rel="stylesheet" href="./src/styles/base/root.css">
@@ -60,13 +60,13 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   <meta name="theme-color" content="#000000">
 </head>
 <body>
-  <header class="site-header" data-header>
+  <header class="site-header" data-header data-header-soglia="96">
     <div class="container header-bar">
       <a class="brand" href="./index.html">
         <img src="./src/media/images/logoHeader.png" alt="Logo Aumatex" data-i18n="header.logoAlt" data-i18n-attr="alt">
-        <span>Aumatex</span>
+        <span data-i18n="Aumatex">Aumatex</span>
       </a>
-      <button class="menu-toggle" type="button" data-nav-toggle="#menuPrincipale">
+      <button class="menu-toggle" type="button" aria-expanded="false" data-nav-toggle="#menuPrincipale">
         <span class="sr-only" data-i18n="header.menu">Apri menu</span>
         <span class="linea"></span>
       </button>
@@ -88,27 +88,22 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
             <option value="es">ES</option>
           </select>
         </div>
-        <button class="btn-ghost" data-theme-toggle aria-label="Toggle theme">☀︎/☾</button>
+        <button class="btn-ghost" data-theme-toggle aria-label="Toggle theme" data-i18n="header.themeToggle" data-i18n-attr="aria-label">☀︎/☾</button>
       </div>
     </div>
   </header>
 
   <main id="page" class="layout-shell">
     <section class="container prose">
-      <h1 data-i18n="cookiePolicy.titolo">Cookie Policy</h1>
-      <p data-i18n="cookiePolicy.introduzione">Questa pagina descrive come utilizziamo i cookie e come puoi gestire le tue preferenze.</p>
-
-      <h2 data-i18n="cookiePolicy.sezioneTecniciTitolo">Cookie tecnici ed essenziali</h2>
-      <p data-i18n="cookiePolicy.sezioneTecniciDescrizione">Questi cookie sono indispensabili per il funzionamento del sito e non possono essere disattivati.</p>
-
-      <h2 data-i18n="cookiePolicy.sezioneAnalisiTitolo">Cookie di analisi</h2>
-      <p data-i18n="cookiePolicy.sezioneAnalisiDescrizione">Servono a raccogliere dati aggregati sull'uso del sito per migliorarne le funzionalità.</p>
-
-      <h2 data-i18n="cookiePolicy.sezioneMarketingTitolo">Cookie di marketing</h2>
-      <p data-i18n="cookiePolicy.sezioneMarketingDescrizione">Utilizzati per personalizzazione, remarketing e contenuti promozionali.</p>
-
-      <h2 data-i18n="cookiePolicy.gestioneTitolo">Gestione delle preferenze</h2>
-      <p data-i18n="cookiePolicy.gestioneDescrizione">Puoi modificare le scelte in qualsiasi momento tramite il banner o il link nelle note legali del sito.</p>
+      <h1 data-i18n="privacy.title">Privacy Policy</h1>
+      <p data-i18n="privacy.intro">This is a placeholder for the privacy policy. Replace with your legal copy.</p>
+      <h2 data-i18n="privacy.dataTitle">Data collected</h2>
+      <ul>
+        <li data-i18n="privacy.dataPoint1">Contact data provided via forms.</li>
+        <li data-i18n="privacy.dataPoint2">Minimal technical logs for security and performance.</li>
+      </ul>
+      <h2 data-i18n="privacy.rightsTitle">User rights</h2>
+      <p data-i18n="privacy.rightsCopy">Describe how users can exercise access, rectification, deletion, and portability rights.</p>
     </section>
   </main>
 
@@ -121,8 +116,8 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
       <section>
         <h2 data-i18n="footer.links">Links</h2>
         <ul>
-          <li><a href="./privacy-policy.html" data-i18n="footer.privacy">Privacy policy</a></li>
-          <li><a href="./cookie-policy.html" data-i18n="footer.cookies">Cookie policy</a></li>
+          <li><a href="./privacyPolicy.html" data-i18n="footer.privacy">Privacy policy</a></li>
+          <li><a href="./cookiePolicy.html" data-i18n="footer.cookies">Cookie policy</a></li>
           <li><a href="./terms.html" data-i18n="footer.terms">Terms</a></li>
           <li><a href="./support.html" data-i18n="footer.support">Support</a></li>
           <li><a href="#" data-riapri-cookie data-i18n="footer.cookiePreferences">Preferenze cookie</a></li>
@@ -141,10 +136,16 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
     </div>
   </footer>
 
-  <div class="banner-cookie" data-banner-cookie hidden>
-    <div class="banner-cookie__testo">
-      <h2 data-i18n="cookie.titolo">Preferenze cookie</h2>
-      <p data-i18n="cookie.descrizione">Utilizziamo cookie per migliorare l'esperienza. Scegli cosa attivare.</p>
+  <div class="banner-cookie cookieBannerNascosto cookieBannerCompatto" data-banner-cookie hidden>
+    <div class="banner-cookie__intestazione">
+      <div class="banner-cookie__testo">
+        <h2 data-i18n="cookie.titolo">Preferenze cookie</h2>
+        <p data-i18n="cookie.descrizione">Utilizziamo cookie per migliorare l'esperienza. Scegli cosa attivare.</p>
+      </div>
+      <button class="banner-cookie__chiudi" type="button" data-cookie-chiudi aria-label="Chiudi banner cookie" data-i18n="cookie.chiudi" data-i18n-attr="aria-label">
+        <span aria-hidden="true">×</span>
+        <span class="sr-only" data-i18n="cookie.chiudi">Chiudi banner cookie</span>
+      </button>
     </div>
     <div class="banner-cookie__sezione">
       <div class="banner-cookie__riga">
@@ -176,9 +177,9 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
       <button class="btn-solid" data-cookie-accetta data-i18n="cookie.accetta">Accetta tutto</button>
     </div>
     <div class="banner-cookie__link">
-      <a href="./privacy-policy.html" data-i18n="cookie.linkPrivacy">Privacy policy</a>
-      <span>·</span>
-      <a href="./cookie-policy.html" data-i18n="cookie.linkCookie">Cookie policy</a>
+      <a href="./privacyPolicy.html" data-i18n="cookie.linkPrivacy">Privacy policy</a>
+      <span aria-hidden="true">·</span>
+      <a href="./cookiePolicy.html" data-i18n="cookie.linkCookie">Cookie policy</a>
     </div>
   </div>
 
@@ -186,6 +187,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   <script src="./src/scripts/core/cookie-consenso.js" defer></script>
   <script src="./src/scripts/data/content-loader.js" defer></script>
   <script src="./src/scripts/core/i18n.js" defer></script>
+  <script src="./src/scripts/ui/headerController.js" defer></script>
   <script src="./src/scripts/ui/nav.js" defer></script>
   <script src="./src/scripts/ui/accordion.js" defer></script>
   <script src="./src/scripts/forms/validation.js" defer></script>

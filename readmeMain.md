@@ -37,8 +37,8 @@ src/data/ | JSON per contenuti e navigazione
 src/locales/ | Testi localizzati per lingua
 src/media/ | Immagini, icone, font, audio, video, download
 index.html | Homepage neutra i18n-ready
-privacy-policy.html | Pagina privacy i18n-ready
-cookie-policy.html | Pagina cookie i18n-ready
+privacyPolicy.html | Pagina privacy i18n-ready
+cookiePolicy.html | Pagina cookie i18n-ready
 tests/ | Checklist test HTML/CSS/JS
 
 ## Guiding principles

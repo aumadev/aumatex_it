@@ -40,7 +40,9 @@
   "header": {
     "menu": "Open menu",
     "langLabel": "Language",
-    "logoAlt": "Aumatex logo"
+    "logoAlt": "Aumatex logo",
+    "brand": "Aumatex",
+    "themeToggle": "Toggle theme"
   },
   "cookie": {
     "titolo": "Cookie preferences",
@@ -56,7 +58,8 @@
     "salva": "Save preferences",
     "personalizza": "Customize",
     "linkPrivacy": "Privacy policy",
-    "linkCookie": "Cookie policy"
+    "linkCookie": "Cookie policy",
+    "chiudi": "Close cookie banner"
   },
   "cookiePolicy": {
     "titolo": "Cookie Policy",

@@ -8,9 +8,9 @@ PROJECT: Aumatex Template
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/scripts/core/app.js
-SCOPO:       Bootstrap applicazione tema e header
-VERSIONE:    1.0
-DATA:        04/11/2025
+SCOPO:       Bootstrap applicazione tema e init base
+VERSIONE:    1.1
+DATA:        09/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -22,18 +22,17 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 */
 
 (function () {
-const CHIAVE_MEMORIA_TEMA = "tema";
+  const CHIAVE_MEMORIA_TEMA = "tema";
 
-const Applicazione = {
-  avvia() {
-    this.applicaTemaSalvato();
-    this.collegaCambioTema();
-    this.compressioneHeader();
-  },
-  applicaTemaSalvato() {
-    const temaSalvato = localStorage.getItem(CHIAVE_MEMORIA_TEMA);
-    if (temaSalvato) document.documentElement.dataset.theme = temaSalvato;
-  },
+  const Applicazione = {
+    avvia() {
+      this.applicaTemaSalvato();
+      this.collegaCambioTema();
+    },
+    applicaTemaSalvato() {
+      const temaSalvato = localStorage.getItem(CHIAVE_MEMORIA_TEMA);
+      if (temaSalvato) document.documentElement.dataset.theme = temaSalvato;
+    },
     collegaCambioTema() {
       const pulsanti = document.querySelectorAll("[data-theme-toggle]");
       pulsanti.forEach(pulsante => {
@@ -43,16 +42,6 @@ const Applicazione = {
           localStorage.setItem(CHIAVE_MEMORIA_TEMA, temaCorrente);
         });
       });
-    },
-    compressioneHeader() {
-      const header = document.querySelector("[data-header]");
-      if (!header) return;
-      const gestisciScroll = () => {
-        const scrolled = window.scrollY > 8;
-        header.classList.toggle("site-header--compresso", scrolled);
-      };
-      gestisciScroll();
-      window.addEventListener("scroll", gestisciScroll);
     }
   };
 

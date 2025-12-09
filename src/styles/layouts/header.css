@@ -8,9 +8,9 @@ PROJECT: Aumatex Template
 .|.  .||.   '|..'   .|. | .||. .|.  .||. .||...|'  .||.....|     |
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/styles/layouts/header.css
-SCOPO:       Layout responsivo dell'header
-VERSIONE:    1.0
-DATA:        04/11/2025
+SCOPO:       Layout responsivo dell'header sticky e compatto
+VERSIONE:    1.1
+DATA:        09/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -21,38 +21,47 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 ───────────────────────────────────────────────────────────────────────────────
 */
 
+:root {
+  scroll-padding-top: var(--offsetHeaderSticky, var(--altezzaHeaderCompatto));
+}
+
 .site-header {
   position: sticky;
   top: 0;
   background: var(--colore-sfondo);
   border-bottom: var(--bordo-sottile) solid var(--colore-bordo);
   z-index: 20;
-  transition: var(--transizione-base);
-  backdrop-filter: blur(8px);
+  transition: var(--animazioneHeaderScroll);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--ombraHeader);
 }
 
 .header-bar {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: var(--spazio-md);
+  gap: var(--spazio-lg);
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: var(--spazio-lg) 0;
-  transition: var(--transizione-base);
+  min-height: var(--altezzaHeaderAmpio);
+  padding: var(--spazioHeaderVerticale) 0;
+  transition: var(--animazioneHeaderScroll);
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: var(--spazio-xs);
+  gap: var(--spazio-sm);
   font-weight: 800;
+  font-size: 1.1rem;
+  line-height: 1;
 }
 
 .brand img {
-  width: 42px;
-  height: 42px;
+  width: var(--dimensioneLogoPrincipale);
+  height: var(--dimensioneLogoPrincipale);
   border-radius: var(--raggio-md);
   box-shadow: var(--ombra-leggera);
+  transition: var(--animazioneHeaderScroll);
 }
 
 .brand-mark {
@@ -68,18 +77,21 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 .primary-nav .nav-list {
   display: flex;
+  align-items: center;
   gap: var(--spazio-md);
   list-style: none;
 }
 
 .primary-nav {
   flex: 1;
+  justify-self: end;
 }
 
 .primary-nav a {
   padding: var(--spazio-xs) var(--spazio-sm);
   border-radius: var(--raggio-sm);
   transition: var(--transizione-base);
+  font-weight: 600;
 }
 
 .primary-nav a:hover {
@@ -92,6 +104,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   align-items: center;
   gap: var(--spazio-sm);
   margin-left: auto;
+  justify-self: end;
 }
 
 .lang-switcher button {
@@ -175,21 +188,32 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   transform: translateY(-6px) rotate(-45deg);
 }
 
-.site-header--compresso .header-bar {
-  padding: var(--spazio-md) 0;
+.headerCompatto {
+  box-shadow: var(--ombra-leggera);
 }
 
-.site-header--compresso .brand img {
-  width: 34px;
-  height: 34px;
+.headerCompatto .header-bar {
+  padding: var(--spazioHeaderCompatto) 0;
+  min-height: var(--altezzaHeaderCompatto);
+  gap: var(--spazio-md);
 }
 
-.site-header--compresso .brand-mark {
-  transform: scale(0.92);
+.headerCompatto .brand img {
+  width: var(--dimensioneLogoCompatto);
+  height: var(--dimensioneLogoCompatto);
+}
+
+.headerCompatto .brand span {
+  font-size: 1rem;
+}
+
+.headerCompatto .primary-nav a {
+  padding: var(--spazio-2xs) var(--spazio-sm);
 }
 
 @media (max-width: 900px) {
   .header-bar {
+    grid-template-columns: auto 1fr;
     gap: var(--spazio-sm);
   }
   .primary-nav {

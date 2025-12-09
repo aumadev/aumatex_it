@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/scripts/ui/nav.js
 SCOPO:       Gestione navigazione mobile e overlay
-VERSIONE:    1.0
-DATA:        04/11/2025
+VERSIONE:    1.1
+DATA:        09/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -25,12 +25,14 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   function chiudiNavigazione(navigazione, interruttore) {
     navigazione.classList.remove("is-open");
     interruttore?.classList.remove("is-open");
+    interruttore?.setAttribute("aria-expanded", "false");
     document.body.classList.remove("nav-aperta");
   }
 
   function apriNavigazione(navigazione, interruttore) {
     navigazione.classList.add("is-open");
     interruttore?.classList.add("is-open");
+    interruttore?.setAttribute("aria-expanded", "true");
     document.body.classList.add("nav-aperta");
   }
 

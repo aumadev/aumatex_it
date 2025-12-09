@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/styles/components/banner-cookie.css
 SCOPO:       Stile del banner cookie
-VERSIONE:    1.0
-DATA:        04/11/2025
+VERSIONE:    1.1
+DATA:        09/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -35,6 +35,24 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   display: grid;
   gap: var(--spazio-md);
   z-index: 30;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  transition: var(--animazioneCookieBanner);
+}
+
+.cookieBannerNascosto {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(10px);
+  pointer-events: none;
+}
+
+.banner-cookie__intestazione {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--spazio-md);
 }
 
 .banner-cookie__testo p {
@@ -53,7 +71,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 .banner-cookie__riga {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: var(--spazio-sm);
 }
@@ -82,6 +100,25 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   height: 18px;
 }
 
+.banner-cookie__chiudi {
+  min-width: 40px;
+  height: 40px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: var(--raggio-sm);
+  border: var(--bordo-sottile) solid var(--colore-bordo);
+  background: var(--colore-superficie);
+  color: var(--colore-testo);
+  transition: var(--transizione-base);
+}
+
+.banner-cookie__chiudi:hover {
+  background: var(--colore-superficie);
+  color: var(--colore-accento);
+  border-color: var(--colore-accento);
+  box-shadow: var(--ombra-leggera);
+}
+
 .banner-cookie__link {
   display: inline-flex;
   gap: var(--spazio-xs);
@@ -90,16 +127,16 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   font-weight: 600;
 }
 
-.banner-cookie--compresso .banner-cookie__sezione,
-.banner-cookie--compresso [data-cookie-salva] {
+.cookieBannerCompatto .banner-cookie__sezione,
+.cookieBannerCompatto [data-cookie-salva] {
   display: none;
 }
 
-.banner-cookie--compresso .banner-cookie__azioni {
+.cookieBannerCompatto .banner-cookie__azioni {
   justify-content: center;
 }
 
-.banner-cookie--compresso {
+.cookieBannerCompatto {
   padding: var(--spazio-md) var(--spazio-lg);
 }
 

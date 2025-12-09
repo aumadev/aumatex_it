@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/styles/base/variabili-animazioni.css
 SCOPO:       Variabili di animazione
-VERSIONE:    1.0
-DATA:        04/11/2025
+VERSIONE:    1.1
+DATA:        09/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -28,4 +28,6 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   --easing-base: cubic-bezier(0.4, 0.14, 0.3, 1);
   --easing-uscita: cubic-bezier(0.2, 0.8, 0.2, 1);
   --transizione-base: color var(--durata-media) var(--easing-base), background-color var(--durata-media) var(--easing-base), border-color var(--durata-media) var(--easing-base), box-shadow var(--durata-media) var(--easing-base), transform var(--durata-media) var(--easing-base);
+  --animazioneHeaderScroll: padding var(--durata-lunga) var(--easing-base), min-height var(--durata-lunga) var(--easing-base), background-color var(--durata-lunga) var(--easing-base), box-shadow var(--durata-lunga) var(--easing-base), gap var(--durata-lunga) var(--easing-base);
+  --animazioneCookieBanner: opacity var(--durata-lunga) var(--easing-base), transform var(--durata-lunga) var(--easing-base), visibility var(--durata-lunga) var(--easing-base);
 }

@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/styles/base/variabili-estetiche.css
 SCOPO:       Variabili estetiche di design
-VERSIONE:    1.0
-DATA:        04/11/2025
+VERSIONE:    1.1
+DATA:        09/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -49,6 +49,8 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   --spazio-lg: 1.5rem;
   --spazio-xl: 2rem;
   --spazio-2xl: 3rem;
+  --spazioHeaderVerticale: 1.5rem;
+  --spazioHeaderCompatto: 0.85rem;
 
   /* Raggi */
   --raggio-xs: 4px;
@@ -65,4 +67,11 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   --ombra-leggera: 0 8px 24px rgba(17, 24, 39, 0.08);
   --ombra-media: 0 14px 36px rgba(17, 24, 39, 0.12);
   --ombra-profonda: 0 18px 60px rgba(17, 24, 39, 0.18);
+  --ombraHeader: 0 10px 30px rgba(17, 24, 39, 0.12);
+
+  /* Dimensioni header */
+  --dimensioneLogoPrincipale: 64px;
+  --dimensioneLogoCompatto: 44px;
+  --altezzaHeaderAmpio: 108px;
+  --altezzaHeaderCompatto: 78px;
 }

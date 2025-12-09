@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/scripts/core/cookie-consenso.js
 SCOPO:       Gestione banner consenso cookie
-VERSIONE:    1.0
-DATA:        04/11/2025
+VERSIONE:    1.1
+DATA:        09/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -23,6 +23,9 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 (function () {
   const CHIAVE_CONSENSO = "preferenzeCookie";
+  const CHIAVE_STATO_CONSENSO = "cookieConsent";
+  const CLASSE_COMPATTA = "cookieBannerCompatto";
+  const CLASSE_NASCOSTA = "cookieBannerNascosto";
   const banner = document.querySelector("[data-banner-cookie]");
 
   if (!banner) return;
@@ -34,22 +37,38 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
       essenziali: true,
       analisi: false,
       marketing: false,
-      consensoDato: false
+      consensoDato: false,
+      statoConsenso: "indefinito"
     };
+  }
+
+  function salvaStatoConsensoCookie(stato) {
+    localStorage.setItem(CHIAVE_STATO_CONSENSO, stato);
+  }
+
+  function caricaStatoConsensoCookie() {
+    return localStorage.getItem(CHIAVE_STATO_CONSENSO) || "indefinito";
   }
 
   function caricaPreferenze() {
     try {
       const salvate = JSON.parse(localStorage.getItem(CHIAVE_CONSENSO));
-      if (salvate && typeof salvate === "object") return { ...statoPredefinito(), ...salvate };
+      if (salvate && typeof salvate === "object") {
+        return {
+          ...statoPredefinito(),
+          ...salvate,
+          statoConsenso: salvate.statoConsenso || caricaStatoConsensoCookie()
+        };
+      }
     } catch (e) {
       console.error(e);
     }
-    return statoPredefinito();
+    return { ...statoPredefinito(), statoConsenso: caricaStatoConsensoCookie() };
   }
 
   function salvaPreferenze(preferenze) {
     localStorage.setItem(CHIAVE_CONSENSO, JSON.stringify(preferenze));
+    salvaStatoConsensoCookie(preferenze.statoConsenso || "indefinito");
   }
 
   function applicaUI(preferenze) {
@@ -72,49 +91,60 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
       preferenze[chiave] = input.checked;
     });
     preferenze.consensoDato = true;
+    preferenze.statoConsenso = "personalizzato";
     return preferenze;
   }
 
-  function mostraBanner() {
+  function mostraBanner(compatta = true) {
     banner.hidden = false;
-    banner.classList.add("banner-cookie--compresso");
+    banner.classList.toggle(CLASSE_COMPATTA, compatta);
+    requestAnimationFrame(() => {
+      banner.classList.remove(CLASSE_NASCOSTA);
+    });
   }
 
   function nascondiBanner() {
-    banner.hidden = true;
+    banner.classList.add(CLASSE_NASCOSTA);
+    window.setTimeout(() => {
+      banner.hidden = true;
+    }, 280);
   }
 
   function applicaPreferenze(preferenze) {
-    // Punto di integrazione per script di terze parti (analytics/marketing) in base alle scelte.
-    // Per ora si limita a salvare.
     salvaPreferenze(preferenze);
     applicaUI(preferenze);
   }
 
   function accettaTutto() {
-    const preferenze = { essenziali: true, analisi: true, marketing: true, consensoDato: true };
+    const preferenze = { essenziali: true, analisi: true, marketing: true, consensoDato: true, statoConsenso: "all" };
     applicaPreferenze(preferenze);
     nascondiBanner();
   }
 
   function rifiutaOpzionali() {
-    const preferenze = { essenziali: true, analisi: false, marketing: false, consensoDato: true };
+    const preferenze = { essenziali: true, analisi: false, marketing: false, consensoDato: true, statoConsenso: "necessary" };
     applicaPreferenze(preferenze);
     nascondiBanner();
   }
 
   function salvaCorrenti() {
-    const preferenze = leggiUI();
+    const preferenze = { ...leggiUI(), statoConsenso: "custom" };
     applicaPreferenze(preferenze);
     nascondiBanner();
   }
 
   function espandiBanner() {
-    banner.classList.remove("banner-cookie--compresso");
+    banner.classList.remove(CLASSE_COMPATTA);
   }
 
   function comprimiBanner() {
-    banner.classList.add("banner-cookie--compresso");
+    banner.classList.add(CLASSE_COMPATTA);
+  }
+
+  function chiudiBannerSenzaAccettare() {
+    const preferenze = { essenziali: true, analisi: false, marketing: false, consensoDato: true, statoConsenso: "necessary" };
+    applicaPreferenze(preferenze);
+    nascondiBanner();
   }
 
   function collegaAzioni() {
@@ -122,7 +152,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
     banner.querySelector("[data-cookie-rifiuta]")?.addEventListener("click", rifiutaOpzionali);
     banner.querySelector("[data-cookie-salva]")?.addEventListener("click", salvaCorrenti);
     banner.querySelector("[data-cookie-personalizza]")?.addEventListener("click", espandiBanner);
-    banner.querySelector("[data-cookie-chiudi]")?.addEventListener("click", comprimiBanner);
+    banner.querySelector("[data-cookie-chiudi]")?.addEventListener("click", chiudiBannerSenzaAccettare);
   }
 
   function collegaRiapri() {
@@ -139,7 +169,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   function avvia() {
     const preferenze = caricaPreferenze();
     applicaUI(preferenze);
-    if (!preferenze.consensoDato) {
+    if (!preferenze.consensoDato || caricaStatoConsensoCookie() === "indefinito") {
       mostraBanner();
     } else {
       nascondiBanner();
