@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/styles/pages/homeSections.css
 SCOPO:       Stili premium per homepage e sezioni dedicate
-VERSIONE:    1.0
-DATA:        11/03/2026
+VERSIONE:    1.1
+DATA:        12/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -24,6 +24,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 .hero {
   position: relative;
   overflow: hidden;
+  animation: var(--animazioneIngressoLenta);
 }
 
 .hero::before {
@@ -43,6 +44,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 .hero-copy {
   display: grid;
   gap: var(--spazioHeroGap);
+  animation: var(--animazioneIngressoDolce);
 }
 
 .hero-actions {
@@ -55,6 +57,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   display: flex;
   gap: var(--spazio-sm);
   flex-wrap: wrap;
+  animation: var(--animazioneIngressoDolce);
 }
 
 .pill {
@@ -101,11 +104,13 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 .hero-media {
   position: relative;
+  animation: var(--animazioneIngressoLenta);
 }
 
 .hero-media img {
   border-radius: var(--raggio-xl);
   box-shadow: var(--ombra-profonda);
+  animation: var(--animazioneFloatLeggero);
 }
 
 .badge-decor {
@@ -119,6 +124,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   display: grid;
   gap: var(--spazio-2xs);
   max-width: 280px;
+  animation: var(--animazioneIngressoDolce);
 }
 
 .badge-decor strong {
@@ -134,6 +140,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 .sezioneValori {
   padding: var(--spazioSezioneAmpia) 0;
+  background: var(--colore-superficie-secondaria);
 }
 
 .section-heading {
@@ -142,6 +149,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   text-align: center;
   display: grid;
   gap: var(--spazio-sm);
+  animation: var(--animazioneIngressoDolce);
 }
 
 .valori-grid {
@@ -160,6 +168,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   gap: var(--spazio-sm);
   position: relative;
   overflow: hidden;
+  animation: var(--animazioneIngressoLenta);
 }
 
 .valore-card::after {
@@ -198,6 +207,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 .statSection {
   padding: var(--spazioSezione) 0;
+  animation: var(--animazioneIngressoDolce);
 }
 
 .stat-grid {
@@ -212,6 +222,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   padding: var(--spazioSezione);
   border: var(--bordo-sottile) solid var(--colore-bordo);
   box-shadow: var(--ombra-media);
+  animation: var(--animazioneIngressoDolce);
 }
 
 .stat-number {
@@ -230,6 +241,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 .card-section {
   padding: var(--spazioSezioneAmpia) 0;
+  animation: var(--animazioneIngressoLenta);
 }
 
 .card-section .section-heading {
@@ -238,6 +250,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 
 .ctaPremium {
   padding: var(--spazioSezioneAmpia) 0;
+  animation: var(--animazioneIngressoLenta);
 }
 
 .ctaCard {
@@ -247,6 +260,77 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   color: var(--colore-testo);
   border: var(--bordo-sottile) solid rgba(255, 255, 255, 0.08);
   box-shadow: var(--ombra-profonda);
+  animation: var(--animazioneIngressoLenta);
+}
+
+.statusSection {
+  padding: var(--spazioSezione) 0;
+  background: var(--colore-superficie);
+  animation: var(--animazioneIngressoDolce);
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spazioHeroGap);
+}
+
+.status-card {
+  padding: var(--spazioSezione);
+  border-radius: var(--raggio-xl);
+  border: var(--bordo-sottile) solid var(--colore-bordo);
+  box-shadow: var(--ombra-leggera);
+  display: grid;
+  gap: var(--spazio-xs);
+  animation: var(--animazioneIngressoDolce);
+}
+
+.status-card.successo {
+  background: linear-gradient(140deg, color-mix(in srgb, var(--colore-successo) 26%, transparent), color-mix(in srgb, var(--colore-successo) 8%, transparent));
+  border-color: color-mix(in srgb, var(--colore-successo) 45%, transparent);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatSoft {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-8px);
+  }
+}
+
+.status-card.avviso {
+  background: linear-gradient(140deg, color-mix(in srgb, var(--colore-avviso) 26%, transparent), color-mix(in srgb, var(--colore-avviso) 8%, transparent));
+  border-color: color-mix(in srgb, var(--colore-avviso) 45%, transparent);
+}
+
+.status-card.errore {
+  background: linear-gradient(140deg, color-mix(in srgb, var(--colore-errore) 24%, transparent), color-mix(in srgb, var(--colore-errore) 8%, transparent));
+  border-color: color-mix(in srgb, var(--colore-errore) 45%, transparent);
+}
+
+.status-card h3 {
+  font-family: var(--fontPrimaria);
+  font-weight: var(--pesoTitolo);
+}
+
+.status-meta {
+  display: inline-flex;
+  gap: var(--spazio-2xs);
+  align-items: center;
+  font-family: var(--fontSecondaria);
+  font-weight: var(--pesoTestoEnfasi);
 }
 
 .ctaCard h2 {

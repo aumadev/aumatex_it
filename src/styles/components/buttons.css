@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/styles/components/buttons.css
 SCOPO:       Stile dei pulsanti
-VERSIONE:    1.0
-DATA:        04/11/2025
+VERSIONE:    1.1
+DATA:        12/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -29,7 +29,7 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   border-radius: var(--raggio-md);
   border: var(--bordo-medio) solid transparent;
   background: var(--colore-accento);
-  color: #fff;
+  color: var(--colore-superficie);
   font-weight: 700;
   cursor: pointer;
   transition: var(--transizione-base);

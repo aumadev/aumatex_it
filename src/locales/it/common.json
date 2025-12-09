@@ -33,7 +33,15 @@
     "terms": "Termini",
     "support": "Supporto",
     "contact": "Contatti",
-    "cookiePreferences": "Preferenze cookie"
+    "cookiePreferences": "Preferenze cookie",
+    "info": "Informazioni",
+    "pec": "PEC",
+    "addressName": "Aumatex srls",
+    "addressStreet": "Via Umberto Biancamano, 25",
+    "addressCity": "00185 Roma (RM)",
+    "vat": "P. IVA/CF 0000000000000",
+    "capital": "Capitale sociale €10.000,00",
+    "rea": "REA 9090000"
   },
   "pillars": {
     "eyebrow": "Dalla discovery al rilascio",
@@ -68,6 +76,20 @@
     "subtitle": "Avviamo discovery mirate, definiamo KPI chiari e portiamo in produzione feature che sbloccano crescita e efficienza.",
     "primary": "Prenota una call",
     "secondary": "Scopri i nostri servizi"
+  },
+  "status": {
+    "eyebrow": "Qualità e affidabilità",
+    "title": "Monitoriamo delivery, sicurezza e supporto in tempo reale",
+    "subtitle": "Dashboard operative e runbook condivisi per team business e tech.",
+    "successTitle": "Uptime e SLA",
+    "successCopy": "Cluster multi-AZ, risposta agli incidenti in pochi minuti e SLA enterprise.",
+    "successMeta": "99,95% uptime rolling",
+    "warningTitle": "Change e rollout",
+    "warningCopy": "Release con feature flag, canary e rollback automatici per ridurre il rischio.",
+    "warningMeta": "Deployment giornalieri controllati",
+    "errorTitle": "Sicurezza e alerting",
+    "errorCopy": "Monitoraggio, alerting e playbook di sicurezza co-gestiti con il tuo team.",
+    "errorMeta": "Zero criticità aperte"
   },
   "privacy": {
     "title": "Informativa Privacy",

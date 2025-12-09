@@ -9,8 +9,8 @@ PROJECT: Aumatex Template
 ───────────────────────────────────────────────────────────────────────────────
 FILE:        src/styles/layouts/footer.css
 SCOPO:       Layout e stile del footer
-VERSIONE:    1.0
-DATA:        04/11/2025
+VERSIONE:    1.1
+DATA:        12/03/2026
 AUTORE:      Aumatex srls  |  www.aumatex.it
 AMBIENTE:    sviluppo
 BUILD:       beta
@@ -54,5 +54,12 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
   align-items: center;
   border-top: var(--bordo-sottile) solid var(--colore-bordo);
   padding-top: var(--spazio-md);
+  color: var(--colore-testo-secondario);
+}
+
+.footer-info-extra {
+  margin-top: var(--spazio-md);
+  display: grid;
+  gap: var(--spazio-2xs);
   color: var(--colore-testo-secondario);
 }

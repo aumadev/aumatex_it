@@ -24,11 +24,23 @@ NOTE:        Uso interno. Vietata qualsiasi diffusione o modifica non autorizzat
 :root,
 :root[data-theme="light"] {
   color-scheme: light;
-  --colore-sfondo: #f8f6f2;
+
+  --colore-sfondo: #f6f8fb;
   --colore-superficie: #ffffff;
-  --colore-testo: #161c2d;
-  --colore-testo-secondario: #4b5563;
-  --colore-accento: #0f9bbe;
-  --colore-accento-secondario: #f2a33a;
-  --colore-bordo: #dce1eb;
+  --colore-superficie-secondaria: #f0f3f7;
+
+  --colore-testo: #1c2a3a;
+  --colore-testo-secondario: #55657d;
+
+  --colore-accento: #2a72b8;
+  --colore-accento-secondario: #ff8f3e;
+
+  --colore-bordo: #d6dce5;
+
+  --colore-successo: #3abf99;
+  --colore-avviso: #eab64f;
+  --colore-errore: #e05858;
+
+  --colore-ombra: rgba(0, 0, 0, 0.07);
+  --colore-shadow-strong: rgba(0, 0, 0, 0.12);
 }

@@ -33,7 +33,15 @@
     "terms": "Terms",
     "support": "Support",
     "contact": "Contact",
-    "cookiePreferences": "Cookie preferences"
+    "cookiePreferences": "Cookie preferences",
+    "info": "Information",
+    "pec": "PEC",
+    "addressName": "Aumatex srls",
+    "addressStreet": "Via Umberto Biancamano, 25",
+    "addressCity": "00185 Roma (RM)",
+    "vat": "VAT/Tax ID 0000000000000",
+    "capital": "Share capital €10,000.00",
+    "rea": "REA 9090000"
   },
   "pillars": {
     "eyebrow": "From discovery to launch",
@@ -68,6 +76,20 @@
     "subtitle": "We run focused discovery, define clear KPIs and ship features that unlock growth and efficiency.",
     "primary": "Book a call",
     "secondary": "See our services"
+  },
+  "status": {
+    "eyebrow": "Quality & reliability",
+    "title": "We monitor delivery, security and support in real time",
+    "subtitle": "Operational dashboards and runbooks shared with business and tech teams.",
+    "successTitle": "Uptime & SLA",
+    "successCopy": "Multi-AZ clusters, incident response in minutes and enterprise-grade SLAs.",
+    "successMeta": "99.95% rolling uptime",
+    "warningTitle": "Change & rollout",
+    "warningCopy": "Releases via feature flags, canary and automatic rollback to mitigate risk.",
+    "warningMeta": "Controlled daily deployments",
+    "errorTitle": "Security & alerting",
+    "errorCopy": "Monitoring, alerting and security playbooks co-owned with your team.",
+    "errorMeta": "Zero critical outstanding"
   },
   "privacy": {
     "title": "Privacy Policy",
